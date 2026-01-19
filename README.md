@@ -5,9 +5,9 @@ Generate Anki flashcard decks with AI-voiced audio.
 ## Quick Start
 
 ```bash
-pip install anki-voiced
-anki-voiced init
-anki-voiced create vocabulary.csv
+pip install anki-voiced       # Install the tool
+anki-voiced init              # Create sample vocabulary.csv and deck.toml
+anki-voiced create vocabulary.csv  # Generate deck with AI audio
 ```
 
 ## Installation
