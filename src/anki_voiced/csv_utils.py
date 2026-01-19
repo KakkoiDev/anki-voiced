@@ -256,9 +256,9 @@ def create_sample_csv(path: Path, language: str = "english", template: str = "do
         },
         "japanese": {
             "double-card": [
-                ("会議【かいぎ】は10時【じ】に始【はじ】まります。", "The meeting starts at 10.", "かいぎはじゅうじにはじまります。", "business"),
-                ("プルリクエストをレビューしていただけますか?", "Could you review my pull request?", "プルリクエストをレビューしていただけますか", "development"),
-                ("画面【がめん】を共有【きょうゆう】させてください。", "Let me share my screen.", "がめんをきょうゆうさせてください", "meetings"),
+                ("これは何【なん】ですか?", "What is this?", "これはなんですか", "basics"),
+                ("水【みず】をください。", "Water, please.", "みずをください", "restaurant"),
+                ("駅【えき】はどこですか?", "Where is the station?", "えきはどこですか", "travel"),
             ],
             "basic": [
                 ("こんにちは", "Hello"),
@@ -266,9 +266,9 @@ def create_sample_csv(path: Path, language: str = "english", template: str = "do
                 ("ありがとう", "Thank you"),
             ],
             "cloze": [
-                ("私は{{c1::りんご}}が好きです。", "noun: apple"),
-                ("彼女は毎日{{c1::走り}}ます。", "verb: to run"),
-                ("{{c1::API}}はJSONデータを返します。", "エーピーアイ"),
+                ("私【わたし】は{{c1::りんご}}が好【す】きです。", "noun: apple"),
+                ("今日【きょう】は{{c1::暑【あつ】い}}です。", "adjective: hot"),
+                ("毎日【まいにち】{{c1::勉強【べんきょう】}}します。", "verb: to study"),
             ],
         },
         "french": {
