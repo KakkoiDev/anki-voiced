@@ -3,6 +3,7 @@
 import genanki
 
 from ..models import VocabEntry
+from ..preprocessing.japanese import to_ruby_html
 
 # Stable model ID
 MODEL_ID = 1607392320
@@ -52,7 +53,17 @@ def create_basic_model() -> genanki.Model:
     font-size: 28px;
     font-weight: bold;
     margin: 20px 0;
-    line-height: 1.5;
+    line-height: 2;
+}
+
+ruby {
+    ruby-align: center;
+}
+
+ruby rt {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
 }
 
 .back {
@@ -89,10 +100,13 @@ class BasicTemplate:
     @classmethod
     def create_note(cls, entry: VocabEntry, audio_ref: str = "") -> genanki.Note:
         """Create a note for the basic template."""
+        # Convert bracket furigana to ruby HTML for display
+        front_html = to_ruby_html(entry.front)
+
         return genanki.Note(
             model=cls.get_model(),
             fields=[
-                entry.front,
+                front_html,
                 entry.back,
                 audio_ref,
             ],

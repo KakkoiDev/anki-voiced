@@ -3,6 +3,7 @@
 import genanki
 
 from ..models import VocabEntry
+from ..preprocessing.japanese import to_ruby_html
 
 # Stable model ID
 MODEL_ID = 1607392319
@@ -45,7 +46,6 @@ def create_double_card_model() -> genanki.Model:
 <div class="tags">{{Tags}}</div>
 <hr id="answer">
 <div class="translation">{{Translation}}</div>
-<div class="pronunciation">{{Pronunciation}}</div>
 """,
             },
             # Card B: Production
@@ -63,7 +63,6 @@ def create_double_card_model() -> genanki.Model:
 <hr id="answer">
 <div class="sentence">{{Sentence}}</div>
 <div class="audio">{{Audio}}</div>
-<div class="pronunciation">{{Pronunciation}}</div>
 """,
             },
         ],
@@ -89,7 +88,17 @@ def create_double_card_model() -> genanki.Model:
     font-size: 28px;
     font-weight: bold;
     margin: 20px 0;
-    line-height: 1.5;
+    line-height: 2;
+}
+
+ruby {
+    ruby-align: center;
+}
+
+ruby rt {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
 }
 
 .translation {
@@ -98,12 +107,6 @@ def create_double_card_model() -> genanki.Model:
     margin: 15px 0;
 }
 
-.pronunciation {
-    font-size: 18px;
-    color: #666;
-    margin: 15px 0;
-    line-height: 1.8;
-}
 
 .tags {
     display: inline-block;
@@ -161,10 +164,13 @@ class DoubleCardTemplate:
         if not hint and entry.sentence:
             hint = entry.sentence[:2] + "..." if len(entry.sentence) > 2 else entry.sentence
 
+        # Convert bracket furigana to ruby HTML for display
+        sentence_html = to_ruby_html(entry.sentence)
+
         return genanki.Note(
             model=cls.get_model(),
             fields=[
-                entry.sentence,
+                sentence_html,
                 entry.translation,
                 entry.pronunciation,
                 hint,

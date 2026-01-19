@@ -207,6 +207,25 @@ def extract_furigana(text: str) -> str:
     return re.sub(pattern, replace_with_reading, text)
 
 
+def to_ruby_html(text: str) -> str:
+    """Convert bracket notation to HTML ruby tags for furigana display.
+
+    Converts: 会議【かいぎ】は10時【じ】に → <ruby>会議<rt>かいぎ</rt></ruby>は10<ruby>時<rt>じ</rt></ruby>に
+
+    Pattern: kanji【reading】 → <ruby>kanji<rt>reading</rt></ruby>
+    Only kanji characters are wrapped in ruby tags, not preceding numbers.
+    """
+    # Match only kanji (no leading digits) followed by furigana
+    pattern = r"([\u4e00-\u9fff]+)【([^】]+)】"
+
+    def replace_with_ruby(match):
+        base = match.group(1)
+        reading = match.group(2)
+        return f"<ruby>{base}<rt>{reading}</rt></ruby>"
+
+    return re.sub(pattern, replace_with_ruby, text)
+
+
 def convert_acronym(match: re.Match) -> str:
     """Convert an English acronym/word to katakana."""
     word = match.group(0)
