@@ -122,6 +122,11 @@ class TestShouldAddCommaAfterGa:
         assert should_add_comma_after_ga("方がいい", 1) is False
         assert should_add_comma_after_ga("ほうがいい", 2) is False
 
+    def test_hou_ga_ii_with_furigana(self):
+        """方【ほう】がいい should not have comma even with furigana annotation."""
+        assert should_add_comma_after_ga("方【ほう】がいい", 5) is False
+        assert should_add_comma_after_ga("聞いた方【ほう】がいい", 8) is False
+
     def test_nagara_exclusion(self):
         assert should_add_comma_after_ga("ながら", 1) is False
 

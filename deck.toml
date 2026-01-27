@@ -1,0 +1,15 @@
+# anki-voiced deck configuration
+name = "My Vocabulary Deck"
+language = "japanese"
+voice = "female"
+template = "double-card"
+output = "my-vocabulary.apkg"
+
+# Uncomment for multi-tier deck:
+# [[tiers]]
+# name = "Tier 1 - Basics"
+# data = "tier1.csv"
+#
+# [[tiers]]
+# name = "Tier 2 - Intermediate"
+# data = "tier2.csv"
