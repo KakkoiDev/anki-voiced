@@ -17,8 +17,9 @@ def test_create_sample_csv_japanese():
         assert path.exists()
         entries = load_csv(path, "double-card")
         assert len(entries) == 3
-        assert "会議" in entries[0].sentence
-        assert "meeting" in entries[0].translation.lower()
+        # First entry is "これは何【なん】ですか?" / "What is this?"
+        assert "これは" in entries[0].sentence
+        assert "what" in entries[0].translation.lower()
 
 
 def test_create_sample_csv_english():
@@ -127,3 +128,67 @@ def test_load_csv_space_separated_tags():
 
         entries = load_csv(path, "double-card")
         assert entries[0].tags == ["noun", "common", "n5"]
+
+
+def test_load_csv_tts_pronunciation_column():
+    """Test loading CSV with tts_pronunciation column."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        path = Path(tmpdir) / "test.csv"
+        path.write_text(
+            "sentence,translation,pronunciation,tts_pronunciation,tags\n"
+            "テスト,Test,てすと,てすと、です,noun\n"
+        )
+
+        entries = load_csv(path, "double-card")
+        assert len(entries) == 1
+        assert entries[0].pronunciation == "てすと"
+        assert entries[0].tts_pronunciation == "てすと、です"
+
+
+def test_load_csv_tts_pronunciation_empty():
+    """Test that empty tts_pronunciation is handled correctly."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        path = Path(tmpdir) / "test.csv"
+        path.write_text(
+            "sentence,translation,pronunciation,tts_pronunciation,tags\n"
+            "テスト,Test,てすと,,noun\n"
+        )
+
+        entries = load_csv(path, "double-card")
+        assert entries[0].tts_pronunciation == ""
+
+
+def test_load_csv_tts_column_alias():
+    """Test that 'tts' column alias works for tts_pronunciation."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        path = Path(tmpdir) / "test.csv"
+        path.write_text(
+            "sentence,translation,pronunciation,tts,tags\n"
+            "テスト,Test,てすと,custom tts text,noun\n"
+        )
+
+        entries = load_csv(path, "double-card")
+        assert entries[0].tts_pronunciation == "custom tts text"
+
+
+def test_load_csv_audio_text_column_alias():
+    """Test that 'audio_text' column alias works for tts_pronunciation."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        path = Path(tmpdir) / "test.csv"
+        path.write_text(
+            "sentence,translation,pronunciation,audio_text,tags\n"
+            "テスト,Test,てすと,audio text here,noun\n"
+        )
+
+        entries = load_csv(path, "double-card")
+        assert entries[0].tts_pronunciation == "audio text here"
+
+
+def test_create_sample_csv_includes_tts_pronunciation_header():
+    """Test that sample CSV includes tts_pronunciation column."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        path = Path(tmpdir) / "test.csv"
+        create_sample_csv(path, "japanese", "double-card")
+
+        content = path.read_text()
+        assert "tts_pronunciation" in content.split("\n")[0]
