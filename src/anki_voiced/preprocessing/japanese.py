@@ -7,6 +7,9 @@ Handles:
 1. Furigana extraction: 昼食【ちゅうしょく】 → ちゅうしょく
 2. English acronyms: API → エーピーアイ
 3. Common IT terms: React → リアクト
+4. Particle pause insertion: を → を、 (for natural TTS rhythm)
+5. Subject marker pauses: が → が、 (context-aware)
+6. Introductory adverb pauses: まず → まず、
 """
 
 import re
@@ -187,6 +190,48 @@ NUMBER_MAP = {
     "9": "ナイン",
 }
 
+# Introductory adverbs/phrases that benefit from comma after
+# These typically appear at the start of sentences or clauses
+ADVERBS = [
+    # Sequence
+    "まず",  # first
+    "次に",  # next
+    "最初に",  # first (formal)
+    "最後に",  # finally
+    "その前に",  # before that
+    "その後",  # after that
+    "そして",  # and then
+    "それから",  # after that
+    # Addition
+    "また",  # also
+    "さらに",  # furthermore
+    "しかも",  # moreover
+    # Contrast
+    "しかし",  # however
+    "ただし",  # however/provided that
+    "ただ",  # just/however
+    # Examples/Specifics
+    "例えば",  # for example
+    "特に",  # especially
+    "具体的には",  # specifically
+    "基本的には",  # basically
+    # Actuality
+    "実は",  # actually
+    "実際には",  # actually/in practice
+    "本当は",  # really/truthfully
+    # Conditions
+    "もし",  # if
+    "仮に",  # supposing
+    # Emphasis
+    "確かに",  # certainly
+    "当然",  # naturally
+    "もちろん",  # of course
+    # Time
+    "今すぐ",  # right now
+    "後で",  # later
+    "先に",  # first/ahead
+]
+
 
 def extract_furigana(text: str) -> str:
     """Extract furigana readings from annotated text.
@@ -259,20 +304,158 @@ def convert_english_terms(text: str) -> str:
     return re.sub(pattern, convert_acronym, text)
 
 
+def insert_particle_pauses(text: str) -> str:
+    """Insert commas after particles for natural TTS pauses.
+
+    Based on Kokoro TTS experiments:
+    - を (object marker): Always insert comma - を is always a particle
+    """
+    # を is always the object marker particle in Japanese
+    # Insert comma after を unless already followed by punctuation
+    text = re.sub(r"を([^、。！？\s])", r"を、\1", text)
+    return text
+
+
+def should_add_comma_after_ga(sentence: str, ga_pos: int) -> bool:
+    """Determine if が at position ga_pos needs a comma after it.
+
+    Returns True if comma should be added.
+    """
+    before = sentence[:ga_pos]
+    after = sentence[ga_pos + 1 :]
+
+    # Skip if already has comma
+    if after.startswith("、"):
+        return False
+
+    # Skip: ありがとう
+    if before.endswith("ありがと") or "ありがとう" in sentence[max(0, ga_pos - 5) : ga_pos + 5]:
+        return False
+
+    # Skip: 方がいい (ほうがいい) - が is part of grammar pattern
+    if before.endswith("方") or before.endswith("ほう"):
+        return False
+
+    # Skip: ながら (while doing)
+    if before.endswith("な") and after.startswith("ら"):
+        return False
+
+    # Skip: が is part of verb stem (e.g., 上がる、下がる、広がる)
+    # These verbs have が as part of the verb, not as particle
+    verb_stem_chars = ["上", "下", "広", "拡", "あ", "さ", "ひろ"]
+    if any(before.endswith(c) for c in verb_stem_chars):
+        if after and after[0] in "りるっれろ":
+            return False
+
+    # Skip: が followed by end of sentence or punctuation immediately
+    if not after or after[0] in "。、！？":
+        return False
+
+    # Add comma: が followed by verb-like patterns (hiragana, kanji, or katakana)
+    # This covers subject marker が followed by predicates
+    verb_patterns = [
+        # Hiragana
+        r"^[あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽっ]",
+        # Kanji (CJK Unified Ideographs)
+        r"^[\u4e00-\u9fff]",
+        # Katakana
+        r"^[\u30a0-\u30ff]",
+    ]
+
+    for pattern in verb_patterns:
+        if re.match(pattern, after):
+            return True
+
+    return False
+
+
+def add_ga_commas(text: str) -> str:
+    """Add commas after が subject markers in text."""
+    result = []
+    i = 0
+
+    while i < len(text):
+        if text[i] == "が":
+            result.append("が")
+            if should_add_comma_after_ga(text, i):
+                result.append("、")
+        else:
+            result.append(text[i])
+        i += 1
+
+    return "".join(result)
+
+
+def adverb_to_furigana_pattern(adverb: str) -> str:
+    """Convert adverb to regex pattern that matches with optional furigana.
+
+    Example: 実は → 実(?:【[^】]+】)?は
+    This allows matching both 実は and 実【じつ】は
+    """
+    parts = []
+    for char in adverb:
+        # Each character can optionally be followed by furigana annotation
+        parts.append(re.escape(char) + r"(?:【[^】]+】)?")
+    return "".join(parts)
+
+
+def add_adverb_commas(text: str) -> str:
+    """Add commas after introductory adverbs in text.
+
+    Handles both plain text (実は) and furigana-annotated text (実【じつ】は).
+    """
+    result = text
+
+    for adverb in ADVERBS:
+        # Create pattern that matches adverb with optional furigana
+        furigana_pattern = adverb_to_furigana_pattern(adverb)
+
+        # At start of sentence: capture adverb (with possible furigana), add comma
+        def add_comma_start(m):
+            return m.group(1) + "、" + m.group(2)
+
+        pattern = f"^({furigana_pattern})([^、。！？])"
+        result = re.sub(pattern, add_comma_start, result)
+
+        # After period (new sentence in same field)
+        def add_comma_after_period(m):
+            return "。" + m.group(1) + "、" + m.group(2)
+
+        pattern = f"。({furigana_pattern})([^、。！？])"
+        result = re.sub(pattern, add_comma_after_period, result)
+
+    return result
+
+
 def preprocess_for_tts(pronunciation_field: str) -> str:
     """Full preprocessing pipeline for TTS input.
 
-    1. Extract furigana readings
-    2. Convert English terms to katakana
-    3. Clean up any remaining issues
+    1. Insert adverb pauses (まず → まず、) - before furigana extraction
+    2. Extract furigana readings
+    3. Convert English terms to katakana
+    4. Insert particle pauses (を → を、)
+    5. Insert が subject marker pauses (context-aware)
+    6. Clean up any remaining issues
     """
-    # Step 1: Extract furigana
-    text = extract_furigana(pronunciation_field)
+    text = pronunciation_field
 
-    # Step 2: Convert English terms
+    # Step 1: Insert adverb pauses at sentence start (before furigana extraction
+    # so patterns like 実【じつ】は can be matched)
+    text = add_adverb_commas(text)
+
+    # Step 2: Extract furigana
+    text = extract_furigana(text)
+
+    # Step 3: Convert English terms
     text = convert_english_terms(text)
 
-    # Step 3: Clean up
+    # Step 4: Insert particle pauses for natural TTS rhythm
+    text = insert_particle_pauses(text)
+
+    # Step 5: Insert が subject marker pauses (context-aware)
+    text = add_ga_commas(text)
+
+    # Step 6: Clean up
     # Remove any remaining brackets that might have been missed
     text = re.sub(r"【[^】]*】", "", text)
 
