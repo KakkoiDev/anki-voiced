@@ -100,6 +100,7 @@ class VocabEntry(BaseModel):
     sentence: str = Field(default="", description="Target language sentence")
     translation: str = Field(default="", description="Translation")
     pronunciation: str = Field(default="", description="Reading/pronunciation guide")
+    tts_pronunciation: str = Field(default="", description="Direct TTS input (skips preprocessing)")
     hint: str = Field(default="", description="Hint for production card")
     tags: list[str] = Field(default_factory=list, description="Tags for categorization")
     audio_file: str | None = Field(default=None, description="Path to audio file")

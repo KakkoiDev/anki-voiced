@@ -16,6 +16,7 @@ COLUMN_MAPPINGS = {
     "sentence": ["sentence", "front", "word", "term", "target", "text"],
     "translation": ["translation", "back", "meaning", "definition", "answer"],
     "pronunciation": ["pronunciation", "reading", "furigana", "phonetic", "ipa"],
+    "tts_pronunciation": ["tts_pronunciation", "tts", "audio_text"],
     "hint": ["hint", "clue"],
     "tags": ["tags", "tag", "category", "categories", "note", "notes"],
     # For cloze template
@@ -118,6 +119,7 @@ def load_csv(
             sentence_col = _find_column(headers, COLUMN_MAPPINGS["sentence"])
             translation_col = _find_column(headers, COLUMN_MAPPINGS["translation"])
             pron_col = _find_column(headers, COLUMN_MAPPINGS["pronunciation"])
+            tts_pron_col = _find_column(headers, COLUMN_MAPPINGS["tts_pronunciation"])
             hint_col = _find_column(headers, COLUMN_MAPPINGS["hint"])
 
         tags_col = _find_column(headers, COLUMN_MAPPINGS["tags"])
@@ -148,6 +150,7 @@ def load_csv(
                     sentence=row[sentence_col],
                     translation=row[translation_col],
                     pronunciation=row.get(pron_col, "") if pron_col else "",
+                    tts_pronunciation=row.get(tts_pron_col, "") if tts_pron_col else "",
                     hint=row.get(hint_col, "") if hint_col else "",
                     tags=tags,
                 )
@@ -191,6 +194,7 @@ def load_csv_from_stdin(template: str = "double-card") -> list[VocabEntry]:
         sentence_col = _find_column(headers, COLUMN_MAPPINGS["sentence"])
         translation_col = _find_column(headers, COLUMN_MAPPINGS["translation"])
         pron_col = _find_column(headers, COLUMN_MAPPINGS["pronunciation"])
+        tts_pron_col = _find_column(headers, COLUMN_MAPPINGS["tts_pronunciation"])
         hint_col = _find_column(headers, COLUMN_MAPPINGS["hint"])
 
     tags_col = _find_column(headers, COLUMN_MAPPINGS["tags"])
@@ -219,6 +223,7 @@ def load_csv_from_stdin(template: str = "double-card") -> list[VocabEntry]:
                 sentence=row[sentence_col],
                 translation=row[translation_col],
                 pronunciation=row.get(pron_col, "") if pron_col else "",
+                tts_pronunciation=row.get(tts_pron_col, "") if tts_pron_col else "",
                 hint=row.get(hint_col, "") if hint_col else "",
                 tags=tags,
             )
@@ -325,6 +330,7 @@ def create_sample_csv(path: Path, language: str = "english", template: str = "do
             for row in content:
                 writer.writerow(row)
         else:  # double-card
-            writer.writerow(["sentence", "translation", "pronunciation", "tags"])
+            writer.writerow(["sentence", "translation", "pronunciation", "tts_pronunciation", "tags"])
             for row in content:
-                writer.writerow(row)
+                # Add empty tts_pronunciation column to existing sample data
+                writer.writerow(list(row[:3]) + [""] + list(row[3:]))

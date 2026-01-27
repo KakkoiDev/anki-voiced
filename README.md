@@ -165,16 +165,21 @@ Goodbye,Au revoir
 
 ### `double-card` - Comprehension + Production
 
-- **Fields**: sentence, translation, pronunciation, tags
+- **Fields**: sentence, translation, pronunciation, tts_pronunciation, tags
 - **Cards**: 2 cards per entry
   - Comprehension: Audio + Sentence -> Translation
   - Production: Translation + Hint -> Sentence + Audio
 - **Use case**: Language learning with active recall
 
 ```csv
-sentence,translation,pronunciation,tags
-The meeting starts at 10 AM.,La réunion commence à 10h.,The meeting starts at 10 AM.,business
+sentence,translation,pronunciation,tts_pronunciation,tags
+The meeting starts at 10 AM.,La réunion commence à 10h.,,,business
+会議【かいぎ】は10時【じ】です。,The meeting is at 10.,かいぎは10じです,,meetings
 ```
+
+**Column notes:**
+- `pronunciation`: Display text with furigana (会議【かいぎ】). Used for TTS after preprocessing.
+- `tts_pronunciation`: Direct TTS input (skips all preprocessing). Use when automatic processing produces incorrect audio.
 
 ### `cloze` - Fill-in-the-blank
 

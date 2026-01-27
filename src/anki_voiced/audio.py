@@ -173,8 +173,16 @@ class AudioGenerator:
                 audio_file = f"{prefix}_{num:04d}.mp3"
                 audio_path = output_dir / audio_file
 
-                # Get text to speak (use pronunciation if available, else sentence)
-                tts_text = entry.pronunciation if entry.pronunciation else entry.sentence
+                # Get text to speak:
+                # 1. Use tts_pronunciation directly if provided (skip preprocessing)
+                # 2. Fall back to pronunciation with preprocessing
+                # 3. Fall back to sentence with preprocessing
+                if entry.tts_pronunciation:
+                    tts_text = entry.tts_pronunciation
+                    use_preprocess = None  # Skip preprocessing for explicit TTS text
+                else:
+                    tts_text = entry.pronunciation if entry.pronunciation else entry.sentence
+                    use_preprocess = preprocess
 
                 # Check if cached
                 cache_path = get_audio_cache_path(
@@ -182,7 +190,7 @@ class AudioGenerator:
                 )
                 was_cached = cache_path.exists() and not self.config.force
 
-                if self.generate_audio(tts_text, audio_path, preprocess):
+                if self.generate_audio(tts_text, audio_path, use_preprocess):
                     entry.audio_file = audio_file
                     if was_cached:
                         cached += 1
@@ -214,8 +222,16 @@ class AudioGenerator:
                     audio_file = f"{prefix}_{num:04d}.mp3"
                     audio_path = output_dir / audio_file
 
-                    # Get text to speak
-                    tts_text = entry.pronunciation if entry.pronunciation else entry.sentence
+                    # Get text to speak:
+                    # 1. Use tts_pronunciation directly if provided (skip preprocessing)
+                    # 2. Fall back to pronunciation with preprocessing
+                    # 3. Fall back to sentence with preprocessing
+                    if entry.tts_pronunciation:
+                        tts_text = entry.tts_pronunciation
+                        use_preprocess = None  # Skip preprocessing for explicit TTS text
+                    else:
+                        tts_text = entry.pronunciation if entry.pronunciation else entry.sentence
+                        use_preprocess = preprocess
 
                     progress.update(task, current=entry.sentence[:30])
 
@@ -225,7 +241,7 @@ class AudioGenerator:
                     )
                     was_cached = cache_path.exists() and not self.config.force
 
-                    if self.generate_audio(tts_text, audio_path, preprocess):
+                    if self.generate_audio(tts_text, audio_path, use_preprocess):
                         entry.audio_file = audio_file
                         if was_cached:
                             cached += 1
