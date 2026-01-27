@@ -1,0 +1,1001 @@
+sentence,translation,pronunciation,tts_pronunciation,tags
+掃除機をかけてもいいですか?,May I vacuum now?,掃除【そうじ】機【き】をかけてもいいですか?,掃除【そうじ】機【き】を、かけてもいいですか?,cleaning
+床を拭かなきゃ。,I need to mop the floor.,床【ゆか】を拭か【ふか】なきゃ。,床【ゆか】を、拭か【ふか】なきゃ。,cleaning
+ほこりがたまっている。,Dust has accumulated.,ほこりがたまっている。,ほこりがたまっている。,cleaning
+窓を拭きましょう。,Let's clean the windows.,窓【まど】を拭き【ふき】ましょう。,窓【まど】を、拭き【ふき】ましょう。,cleaning
+ゴミを出すのを忘れないで。,Don't forget to take out the trash.,ゴミを出す【だす】のを忘れ【わすれ】ないで。,ゴミを、出す【だす】のを、忘れ【わすれ】ないで。,cleaning
+今日は燃えるゴミの日です。,Today is burnable trash day.,今日【きょう】は燃える【もえる】ゴミの日【ひ】です。,今日【きょう】は燃える【もえる】ゴミの日【ひ】です。,cleaning
+資源ゴミはいつ出しますか?,When do we put out recyclables?,資源【しげん】ゴミはいつ出し【だし】ますか?,資源【しげん】ゴミはいつ出し【だし】ますか?,cleaning
+お風呂を掃除しなきゃ。,I need to clean the bath.,お風呂【ふろ】を掃除【そうじ】しなきゃ。,お風呂【ふろ】を、掃除【そうじ】しなきゃ。,cleaning
+トイレ掃除は終わりました。,I finished cleaning the toilet.,トイレ掃除【そうじ】は終わり【おわり】ました。,トイレ掃除【そうじ】は終わり【おわり】ました。,cleaning
+洗剤が切れそうです。,We're almost out of detergent.,洗剤【せんざい】が切れ【きれ】そうです。,洗剤【せんざい】が、切れ【きれ】そうです。,cleaning
+雑巾はどこですか?,Where is the cleaning cloth?,雑巾【ぞうきん】はどこですか?,雑巾【ぞうきん】はどこですか?,cleaning
+カビが生えている。,There's mold growing.,カビが生え【はえ】ている。,カビが、生え【はえ】ている。,cleaning
+換気をしましょう。,Let's ventilate the room.,換気【かんき】をしましょう。,換気【かんき】を、しましょう。,cleaning
+掃除機の紙パックを交換して。,Change the vacuum bag.,掃除【そうじ】機【き】の紙【かみ】パックを交換【こうかん】して。,掃除【そうじ】機【き】の紙【かみ】パックを、交換【こうかん】して。,cleaning
+ベランダを掃除します。,I'll clean the balcony.,ベランダを掃除【そうじ】します。,ベランダを、掃除【そうじ】します。,cleaning
+玄関を掃きましょう。,Let's sweep the entrance.,玄関【げんかん】を掃き【はき】ましょう。,玄関【げんかん】を、掃き【はき】ましょう。,cleaning
+ゴミ袋を買わなきゃ。,I need to buy garbage bags.,ゴミ袋【ごみぶくろ】を買わ【かわ】なきゃ。,ゴミ袋【ごみぶくろ】を、買わ【かわ】なきゃ。,cleaning
+粗大ゴミの申し込みをした?,Did you apply for bulk trash pickup?,粗大【そだい】ゴミの申し込み【もうしこみ】をした?,粗大【そだい】ゴミの申し込み【もうしこみ】を、した?,cleaning
+シンクがピカピカになった。,The sink is sparkling clean.,シンクがピカピカになった。,シンクが、ピカピカになった。,cleaning
+エアコンのフィルターを掃除して。,Clean the air conditioner filter.,エアコンのフィルターを掃除【そうじ】して。,エアコンのフィルターを、掃除【そうじ】して。,cleaning
+洗濯物を干してください。,Please hang the laundry.,洗濯【せんたく】物【ぶつ】を干し【ほし】てください。,洗濯【せんたく】物【ぶつ】を、干し【ほし】てください。,laundry
+洗濯機を回します。,I'll start the washing machine.,洗濯【せんたく】機【き】を回し【まわし】ます。,洗濯【せんたく】機【き】を、回し【まわし】ます。,laundry
+乾燥機を使ってもいい?,Can I use the dryer?,乾燥【かんそう】機【き】を使っ【つかっ】てもいい?,乾燥【かんそう】機【き】を、使っ【つかっ】てもいい?,laundry
+この服は手洗いです。,This clothing is hand-wash only.,この服【ふく】は手洗い【てあらい】です。,この服【ふく】は手洗い【てあらい】です。,laundry
+洗濯物をたたんでくれる?,Can you fold the laundry?,洗濯【せんたく】物【ぶつ】をたたんでくれる?,洗濯【せんたく】物【ぶつ】を、たたんでくれる?,laundry
+アイロンをかけなきゃ。,I need to iron this.,アイロンをかけなきゃ。,アイロンを、かけなきゃ。,laundry
+シミが取れない。,The stain won't come out.,シミが取れ【とれ】ない。,シミが、取れ【とれ】ない。,laundry
+漂白剤を使いましょう。,Let's use bleach.,漂白【ひょうはく】剤【ざい】を使い【つかい】ましょう。,漂白【ひょうはく】剤【ざい】を、使い【つかい】ましょう。,laundry
+柔軟剤を入れて。,Add fabric softener.,柔軟【じゅうなん】剤【ざい】を入れ【いれ】て。,柔軟【じゅうなん】剤【ざい】を、入れ【いれ】て。,laundry
+洗濯ネットに入れてね。,Put it in a laundry net.,洗濯【せんたく】ネットに入れ【いれ】てね。,洗濯【せんたく】ネットに入れ【いれ】てね。,laundry
+雨だから部屋干しにする。,It's raining so I'll dry inside.,雨【あめ】だから部屋干し【へやほし】にする。,雨【あめ】だから部屋干し【へやほし】にする。,laundry
+洗濯物が乾いた。,The laundry is dry.,洗濯【せんたく】物【ぶつ】が乾い【かわい】た。,洗濯【せんたく】物【ぶつ】が、乾い【かわい】た。,laundry
+色物と白い物を分けて。,Separate colors and whites.,色物【いろもの】と白い物【しろいもの】を分け【わけ】て。,色物【いろもの】と白い物【しろいもの】を、分け【わけ】て。,laundry
+ハンガーが足りない。,We don't have enough hangers.,ハンガーが足り【たり】ない。,ハンガーが、足り【たり】ない。,laundry
+洗濯バサミを取って。,Pass me the clothespins.,洗濯【せんたく】バサミを取っ【とっ】て。,洗濯【せんたく】バサミを、取っ【とっ】て。,laundry
+布団を干したい。,I want to air out the futon.,布団【ふとん】を干し【ほし】たい。,布団【ふとん】を、干し【ほし】たい。,laundry
+毛布を洗濯機で洗える?,Can I wash the blanket in the machine?,毛布【もうふ】を洗濯【せんたく】機【き】で洗える【あらえる】?,毛布【もうふ】を、洗濯【せんたく】機【き】で洗える【あらえる】?,laundry
+脱水が終わった。,The spin cycle is done.,脱水【だっすい】が終わっ【おわっ】た。,脱水【だっすい】が、終わっ【おわっ】た。,laundry
+今日は洗濯日和だね。,It's a perfect day for laundry.,今日【きょう】は洗濯【せんたく】日和【びより】だね。,今日【きょう】は洗濯【せんたく】日和【びより】だね。,laundry
+タオルがごわごわになった。,The towels have become stiff.,タオルがごわごわになった。,タオルが、ごわごわになった。,laundry
+夕飯の準備をします。,I'll prepare dinner.,夕飯【ゆうはん】の準備【じゅんび】をします。,夕飯【ゆうはん】の準備【じゅんび】を、します。,cooking
+何が食べたい?,What do you want to eat?,何【なん】が食べ【たべ】たい?,何【なん】が、食べ【たべ】たい?,cooking
+今日は和食にしよう。,Let's have Japanese food today.,今日【きょう】は和食【わしょく】にしよう。,今日【きょう】は和食【わしょく】にしよう。,cooking
+味見してみて。,Try tasting it.,味見【あじみ】してみて。,味見【あじみ】してみて。,cooking
+塩を少し足して。,Add a little salt.,塩【しお】を少し【すこし】足し【たし】て。,塩【しお】を、少し【すこし】足し【たし】て。,cooking
+火を弱めてね。,Turn down the heat.,火【ひ】を弱め【よわめ】てね。,火【ひ】を、弱め【よわめ】てね。,cooking
+沸騰したら教えて。,Tell me when it boils.,沸騰【ふっとう】したら教え【おしえ】て。,沸騰【ふっとう】したら教え【おしえ】て。,cooking
+焦げないように見てて。,Watch it so it doesn't burn.,焦げ【こげ】ないように見【み】てて。,焦げ【こげ】ないように見【み】てて。,cooking
+出汁を取ります。,I'll make the stock.,出汁【だし】を取り【とり】ます。,出汁【だし】を、取り【とり】ます。,cooking
+ご飯を炊いてくれる?,Can you cook the rice?,ご飯【ごはん】を炊い【たい】てくれる?,ご飯【ごはん】を、炊い【たい】てくれる?,cooking
+冷蔵庫に何がある?,What's in the fridge?,冷蔵【れいぞう】庫【こ】に何【なん】がある?,冷蔵【れいぞう】庫【こ】に何【なん】が、ある?,cooking
+作り置きを準備しよう。,Let's prepare make-ahead dishes.,作り置き【つくりおき】を準備【じゅんび】しよう。,作り置き【つくりおき】を、準備【じゅんび】しよう。,cooking
+レシピを検索して。,Search for a recipe.,レシピを検索【けんさく】して。,レシピを、検索【けんさく】して。,cooking
+煮物を作ります。,I'll make simmered dishes.,煮物【にもの】を作り【つくり】ます。,煮物【にもの】を、作り【つくり】ます。,cooking
+炒め物にしようか。,Shall we make a stir-fry?,炒め物【いためもの】にしようか。,炒め物【いためもの】にしようか。,cooking
+揚げ物は面倒だな。,Deep frying is a hassle.,揚げ物【あげもの】は面倒【めんどう】だな。,揚げ物【あげもの】は面倒【めんどう】だな。,cooking
+電子レンジで温めて。,Heat it in the microwave.,電子【でんし】レンジで温め【あたため】て。,電子【でんし】レンジで温め【あたため】て。,cooking
+お弁当を作らなきゃ。,I need to make lunch boxes.,お弁当【べんとう】を作ら【つくら】なきゃ。,お弁当【べんとう】を、作ら【つくら】なきゃ。,cooking
+朝ごはんできたよ。,Breakfast is ready.,朝ごはん【あさごはん】できたよ。,朝ごはん【あさごはん】できたよ。,cooking
+食器を洗ってくれる?,Can you wash the dishes?,食器【しょっき】を洗っ【あらっ】てくれる?,食器【しょっき】を、洗っ【あらっ】てくれる?,cooking
+残り物で何か作ろう。,Let's make something with leftovers.,残り物【のこりもの】で何【なん】か作ろう【つくろう】。,残り物【のこりもの】で何【なん】か作ろう【つくろう】。,cooking
+味が薄いかな?,Is the flavor too weak?,味【あじ】が薄い【うすい】かな?,味【あじ】が、薄い【うすい】かな?,cooking
+もう少し煮込んで。,Simmer it a bit more.,もう少し【すこし】煮込ん【にこん】で。,もう少し【すこし】煮込ん【にこん】で。,cooking
+蒸し器を使います。,I'll use the steamer.,蒸し器【むしき】を使い【つかい】ます。,蒸し器【むしき】を、使い【つかい】ます。,cooking
+包丁を研いでくれる?,Can you sharpen the knife?,包丁【ほうちょう】を研い【とい】でくれる?,包丁【ほうちょう】を、研い【とい】でくれる?,kitchen
+まな板を消毒して。,Disinfect the cutting board.,まな板【まないた】を消毒【しょうどく】して。,まな板【まないた】を、消毒【しょうどく】して。,kitchen
+フライパンを温めて。,Heat up the frying pan.,フライパンを温め【あたため】て。,フライパンを、温め【あたため】て。,kitchen
+鍋が焦げついた。,The pot got burnt.,鍋【なべ】が焦げつい【こげつい】た。,鍋【なべ】が、焦げつい【こげつい】た。,kitchen
+おたまを取って。,Pass me the ladle.,おたまを取っ【とっ】て。,おたまを、取っ【とっ】て。,kitchen
+菜箸はどこ?,Where are the cooking chopsticks?,菜箸【さいばし】はどこ?,菜箸【さいばし】はどこ?,kitchen
+ボウルに入れて。,Put it in the bowl.,ボウルに入れ【いれ】て。,ボウルに入れ【いれ】て。,kitchen
+ざるで水を切って。,Drain the water with a colander.,ざるで水【みず】を切っ【きっ】て。,ざるで水【みず】を、切っ【きっ】て。,kitchen
+計量カップが必要。,I need a measuring cup.,計量【けいりょう】カップが必要【ひつよう】。,計量【けいりょう】カップが、必要【ひつよう】。,kitchen
+タイマーをセットして。,Set the timer.,タイマーをセットして。,タイマーを、セットして。,kitchen
+炊飯器のスイッチを入れて。,Turn on the rice cooker.,炊飯【すいはん】器【き】のスイッチを入れ【いれ】て。,炊飯【すいはん】器【き】のスイッチを、入れ【いれ】て。,kitchen
+オーブンを予熱して。,Preheat the oven.,オーブンを予熱【よねつ】して。,オーブンを、予熱【よねつ】して。,kitchen
+泡立て器で混ぜて。,Mix with a whisk.,泡立て【あわだて】器【き】で混ぜ【まぜ】て。,泡立て【あわだて】器【き】で混ぜ【まぜ】て。,kitchen
+ピーラーで皮をむいて。,Peel it with the peeler.,ピーラーで皮【かわ】をむいて。,ピーラーで皮【かわ】を、むいて。,kitchen
+キッチンペーパーを取って。,Get me some paper towels.,キッチンペーパーを取っ【とっ】て。,キッチンペーパーを、取っ【とっ】て。,kitchen
+ラップをかけて保存して。,Cover with plastic wrap and store.,ラップをかけて保存【ほぞん】して。,ラップを、かけて保存【ほぞん】して。,kitchen
+タッパーに入れて。,Put it in a container.,タッパーに入れ【いれ】て。,タッパーに入れ【いれ】て。,kitchen
+食洗機を回します。,I'll run the dishwasher.,食洗【しょくせん】機【き】を回し【まわし】ます。,食洗【しょくせん】機【き】を、回し【まわし】ます。,kitchen
+コンロが汚れている。,The stove is dirty.,コンロが汚れ【よごれ】ている。,コンロが、汚れ【よごれ】ている。,kitchen
+換気扇を回して。,Turn on the exhaust fan.,換気【かんき】扇【せん】を回し【まわし】て。,換気【かんき】扇【せん】を、回し【まわし】て。,kitchen
+スーパーに行ってくる。,I'm going to the supermarket.,スーパーに行っ【いっ】てくる。,スーパーに行っ【いっ】てくる。,grocery
+特売があるみたい。,There seems to be a sale.,特売【とくばい】があるみたい。,特売【とくばい】が、あるみたい。,grocery
+今日は何が安い?,What's on sale today?,今日【きょう】は何【なん】が安い【やすい】?,今日【きょう】は何【なん】が、安い【やすい】?,grocery
+賞味期限を確認して。,Check the expiration date.,賞味【しょうみ】期限【きげん】を確認【かくにん】して。,賞味【しょうみ】期限【きげん】を、確認【かくにん】して。,grocery
+ポイントカードはお持ちですか?,Do you have a point card?,ポイントカードはお持ち【もち】ですか?,ポイントカードはお持ち【もち】ですか?,grocery
+エコバッグを持ってきた。,I brought my eco bag.,エコバッグを持っ【もっ】てきた。,エコバッグを、持っ【もっ】てきた。,grocery
+レジが混んでいる。,The checkout line is crowded.,レジが混ん【こん】でいる。,レジが、混ん【こん】でいる。,grocery
+カートを取ってきて。,Get a shopping cart.,カートを取っ【とっ】てきて。,カートを、取っ【とっ】てきて。,grocery
+買い物リストを作った。,I made a shopping list.,買い物【かいもの】リストを作っ【つくっ】た。,買い物【かいもの】リストを、作っ【つくっ】た。,grocery
+冷凍食品コーナーはどこ?,Where is the frozen food section?,冷凍【れいとう】食品【しょくひん】コーナーはどこ?,冷凍【れいとう】食品【しょくひん】コーナーはどこ?,grocery
+お惣菜を買おうか。,Shall we buy some prepared food?,お惣菜【そうざい】を買おう【かおう】か。,お惣菜【そうざい】を、買おう【かおう】か。,grocery
+試食できますか?,Can I try a sample?,試食【ししょく】できますか?,試食【ししょく】できますか?,grocery
+これは国産ですか?,Is this domestic?,これは国産【こくさん】ですか?,これは国産【こくさん】ですか?,grocery
+有機野菜を探しています。,I'm looking for organic vegetables.,有機【ゆうき】野菜【やさい】を探し【さがし】ています。,有機【ゆうき】野菜【やさい】を、探し【さがし】ています。,grocery
+会計は現金でお願いします。,I'll pay in cash.,会計【かいけい】は現金【げんきん】でお願い【ねがい】します。,会計【かいけい】は現金【げんきん】でお願い【ねがい】します。,grocery
+クレジットカードは使えますか?,Can I use a credit card?,クレジットカードは使え【つかえ】ますか?,クレジットカードは使え【つかえ】ますか?,grocery
+袋は要りません。,I don't need a bag.,袋【ふくろ】は要り【いり】ません。,袋【ふくろ】は要り【いり】ません。,grocery
+セルフレジを使います。,I'll use the self-checkout.,セルフレジを使い【つかい】ます。,セルフレジを、使い【つかい】ます。,grocery
+玉ねぎが高くなった。,Onions have gotten expensive.,玉ねぎ【たまねぎ】が高く【たかく】なった。,玉ねぎ【たまねぎ】が、高く【たかく】なった。,grocery
+まとめ買いした方がお得です。,Buying in bulk is a better deal.,まとめ買い【まとめがい】した方【ほう】がお得【とく】です。,まとめ買い【まとめがい】した方【ほう】が、お得【とく】です。,grocery
+にんじんを3本ください。,Three carrots please.,にんじんを3本【ぽん】ください。,にんじんを、3本【ぽん】ください。,ingredients
+キャベツを半分に切ってもらえますか?,Can you cut the cabbage in half?,キャベツを半分【はんぶん】に切っ【きっ】てもらえますか?,キャベツを、半分【はんぶん】に切っ【きっ】てもらえますか?,ingredients
+豚肉の薄切りをお願いします。,Thinly sliced pork please.,豚肉【ぶたにく】の薄切り【うすぎり】をお願い【ねがい】します。,豚肉【ぶたにく】の薄切り【うすぎり】を、お願い【ねがい】します。,ingredients
+鶏もも肉を2枚ください。,Two chicken thighs please.,鶏【とり】もも肉【ももにく】を2枚【まい】ください。,鶏【とり】もも肉【ももにく】を、2枚【まい】ください。,ingredients
+ひき肉は何グラム必要?,How many grams of ground meat do we need?,ひき肉【ひきにく】は何【なん】グラム必要【ひつよう】?,ひき肉【ひきにく】は何【なん】グラム必要【ひつよう】?,ingredients
+今日は魚が新鮮だね。,The fish is fresh today.,今日【きょう】は魚【さかな】が新鮮【しんせん】だね。,今日【きょう】は魚【さかな】が、新鮮【しんせん】だね。,ingredients
+刺身用のサーモンはありますか?,Do you have salmon for sashimi?,刺身【さしみ】用【よう】のサーモンはありますか?,刺身【さしみ】用【よう】のサーモンはありますか?,ingredients
+卵を1パック買って。,Buy a pack of eggs.,卵【たまご】を1パック買っ【かっ】て。,卵【たまご】を、1パック買っ【かっ】て。,ingredients
+牛乳がもうすぐ切れる。,We're almost out of milk.,牛乳【ぎゅうにゅう】がもうすぐ切れる【きれる】。,牛乳【ぎゅうにゅう】が、もうすぐ切れる【きれる】。,ingredients
+豆腐は絹ごしにする?,Should we get silken tofu?,豆腐【とうふ】は絹ごし【きぬごし】にする?,豆腐【とうふ】は絹ごし【きぬごし】にする?,ingredients
+油揚げを買い忘れた。,I forgot to buy fried tofu.,油揚げ【あぶらあげ】を買い【かい】忘れ【わすれ】た。,油揚げ【あぶらあげ】を、買い【かい】忘れ【わすれ】た。,ingredients
+しょうゆが足りない。,We don't have enough soy sauce.,しょうゆが足り【たり】ない。,しょうゆが足り【たり】ない。,ingredients
+みりんを入れて。,Add mirin.,みりんを入れ【いれ】て。,みりんを、入れ【いれ】て。,ingredients
+味噌はどれがいい?,Which miso is good?,味噌【みそ】はどれがいい?,味噌【みそ】はどれがいい?,ingredients
+だしの素を使おう。,Let's use instant dashi.,だしの素【そ】を使おう【つかおう】。,だしの素【そ】を、使おう【つかおう】。,ingredients
+ごま油の香りがいいね。,The sesame oil smells good.,ごま油【ゆ】の香り【かおり】がいいね。,ごま油【ゆ】の香り【かおり】が、いいね。,ingredients
+お酢を少し入れて。,Add a little vinegar.,お酢【す】を少し【すこし】入れ【いれ】て。,お酢【す】を、少し【すこし】入れ【いれ】て。,ingredients
+砂糖は控えめにして。,Go easy on the sugar.,砂糖【さとう】は控えめ【ひかえめ】にして。,砂糖【さとう】は控えめ【ひかえめ】にして。,ingredients
+バターが冷蔵庫にある。,There's butter in the fridge.,バターが冷蔵【れいぞう】庫【こ】にある。,バターが、冷蔵【れいぞう】庫【こ】にある。,ingredients
+生姜をすりおろして。,Grate the ginger.,生姜【しょうが】をすりおろして。,生姜【しょうが】を、すりおろして。,ingredients
+にんにくを刻んで。,Chop the garlic.,にんにくを刻ん【きざん】で。,にんにくを、刻ん【きざん】で。,ingredients
+ネギを小口切りにして。,Cut the green onion into small pieces.,ネギを小口【こぐち】切り【ぎり】にして。,ネギを、小口【こぐち】切り【ぎり】にして。,ingredients
+大根おろしを作って。,Make grated daikon.,大根【だいこん】おろしを作っ【つくっ】て。,大根【だいこん】おろしを、作っ【つくっ】て。,ingredients
+きのこは何がある?,What mushrooms do we have?,きのこは何【なん】がある?,きのこは何【なん】が、ある?,ingredients
+今日は肉じゃがを作ろう。,Let's make nikujaga today.,今日【きょう】は肉じゃが【にくじゃが】を作ろう【つくろう】。,今日【きょう】は肉じゃが【にくじゃが】を、作ろう【つくろう】。,japanese-cuisine
+味噌汁の具は何にする?,What should we put in the miso soup?,味噌【みそ】汁【しる】の具【ぐ】は何【なん】にする?,味噌【みそ】汁【しる】の具【ぐ】は何【なん】にする?,japanese-cuisine
+おひたしを作ります。,I'll make ohitashi.,おひたしを作り【つくり】ます。,おひたしを、作り【つくり】ます。,japanese-cuisine
+切り干し大根を戻して。,Rehydrate the dried daikon.,切り干し【きりぼし】大根【だいこん】を戻し【もどし】て。,切り干し【きりぼし】大根【だいこん】を、戻し【もどし】て。,japanese-cuisine
+ぬか漬けを取り出して。,Take out the pickles from the rice bran.,ぬか漬け【ぬかづけ】を取り出し【とりだし】て。,ぬか漬け【ぬかづけ】を、取り出し【とりだし】て。,japanese-cuisine
+炊き込みご飯にしよう。,Let's make mixed rice.,炊き込み【たきこみ】ご飯【ごはん】にしよう。,炊き込み【たきこみ】ご飯【ごはん】にしよう。,japanese-cuisine
+天ぷらの衣を作って。,Make the tempura batter.,天ぷら【てんぷら】の衣【ころも】を作っ【つくっ】て。,天ぷら【てんぷら】の衣【ころも】を、作っ【つくっ】て。,japanese-cuisine
+照り焼きのタレを作る。,I'll make teriyaki sauce.,照り焼き【てりやき】のタレを作る【つくる】。,照り焼き【てりやき】のタレを、作る【つくる】。,japanese-cuisine
+とんかつを揚げます。,I'll fry the tonkatsu.,とんかつを揚げ【あげ】ます。,とんかつを、揚げ【あげ】ます。,japanese-cuisine
+親子丼が食べたい。,I want to eat oyakodon.,親子【おやこ】丼【どん】が食べ【たべ】たい。,親子【おやこ】丼【どん】が、食べ【たべ】たい。,japanese-cuisine
+そばを茹でましょう。,Let's boil the soba.,そばを茹で【ゆで】ましょう。,そばを、茹で【ゆで】ましょう。,japanese-cuisine
+うどんのだしを作って。,Make the udon broth.,うどんのだしを作っ【つくっ】て。,うどんのだしを、作っ【つくっ】て。,japanese-cuisine
+お茶漬けにしようか。,Shall we have ochazuke?,お茶漬け【ちゃづけ】にしようか。,お茶漬け【ちゃづけ】にしようか。,japanese-cuisine
+おにぎりを握ります。,I'll make rice balls.,おにぎりを握り【にぎり】ます。,おにぎりを、握り【にぎり】ます。,japanese-cuisine
+巻き寿司を作ろう。,Let's make sushi rolls.,巻き寿司【まきずし】を作ろう【つくろう】。,巻き寿司【まきずし】を、作ろう【つくろう】。,japanese-cuisine
+今週の献立を考えよう。,Let's plan this week's menu.,今週【こんしゅう】の献立【こんだて】を考えよう【かんがえよう】。,今週【こんしゅう】の献立【こんだて】を、考えよう【かんが、えよう】。,meal-planning
+作り置きを週末に作る。,I'll make batch dishes on the weekend.,作り置き【つくりおき】を週末【しゅうまつ】に作る【つくる】。,作り置き【つくりおき】を、週末【しゅうまつ】に作る【つくる】。,meal-planning
+お弁当の中身は何にする?,What should I put in the lunch box?,お弁当【べんとう】の中身【なかみ】は何【なん】にする?,お弁当【べんとう】の中身【なかみ】は何【なん】にする?,meal-planning
+冷凍できるおかずを作ろう。,Let's make side dishes we can freeze.,冷凍【れいとう】できるおかずを作ろう【つくろう】。,冷凍【れいとう】できるおかずを、作ろう【つくろう】。,meal-planning
+栄養バランスを考えて。,Think about nutritional balance.,栄養【えいよう】バランスを考え【かんがえ】て。,栄養【えいよう】バランスを、考え【かんが、え】て。,meal-planning
+野菜が足りないかも。,We might not have enough vegetables.,野菜【やさい】が足り【たり】ないかも。,野菜【やさい】が、足り【たり】ないかも。,meal-planning
+魚を週2回は食べたい。,I want to eat fish twice a week.,魚【さかな】を週【しゅう】2回【かい】は食べ【たべ】たい。,魚【さかな】を、週【しゅう】2回【かい】は食べ【たべ】たい。,meal-planning
+子供が好きなメニューにしよう。,Let's make a menu the kids like.,子供【こども】が好き【すき】なメニューにしよう。,子供【こども】が、好き【すき】なメニューにしよう。,meal-planning
+連絡帳に書いてあった。,It was written in the communication notebook.,連絡【れんらく】帳【ちょう】に書い【かい】てあった。,連絡【れんらく】帳【ちょう】に書い【かい】てあった。,school
+懇談会は何時からですか?,What time does the parent meeting start?,懇談【こんだん】会【かい】は何時【いつ】からですか?,懇談【こんだん】会【かい】は何時【いつ】からですか?,school
+PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【かいぎ】に出【で】なきゃ。,PTAの会議【かいぎ】に出【で】なきゃ。,school
+運動会はいつですか?,When is the sports day?,運動【うんどう】会【かい】はいつですか?,運動【うんどう】会【かい】はいつですか?,school
+参観日に行きます。,I'll go to the class observation day.,参観【さんかん】日【ひ】に行き【いき】ます。,参観【さんかん】日【ひ】に行き【いき】ます。,school
+給食費を払いましたか?,Did you pay the school lunch fee?,給食【きゅうしょく】費【ひ】を払い【はらい】ましたか?,給食【きゅうしょく】費【ひ】を、払い【はらい】ましたか?,school
+宿題は終わった?,Did you finish your homework?,宿題【しゅくだい】は終わっ【おわっ】た?,宿題【しゅくだい】は終わっ【おわっ】た?,school
+明日の持ち物を確認して。,Check what you need to bring tomorrow.,明日【あす】の持ち物【もちもの】を確認【かくにん】して。,明日【あす】の持ち物【もちもの】を、確認【かくにん】して。,school
+体操服を洗濯に出して。,Put your gym clothes in the laundry.,体操【たいそう】服【ふく】を洗濯【せんたく】に出し【だし】て。,体操【たいそう】服【ふく】を、洗濯【せんたく】に出し【だし】て。,school
+上履きを持って帰ってきて。,Bring your indoor shoes home.,上履き【うわばき】を持っ【もっ】て帰っ【かえっ】てきて。,上履き【うわばき】を、持っ【もっ】て帰っ【かえっ】てきて。,school
+先生に連絡しなきゃ。,I need to contact the teacher.,先生【せんせい】に連絡【れんらく】しなきゃ。,先生【せんせい】に連絡【れんらく】しなきゃ。,school
+学校を休ませます。,I'll keep my child home from school.,学校【がっこう】を休ま【やすま】せます。,学校【がっこう】を、休ま【やすま】せます。,school
+遠足の準備をしよう。,Let's prepare for the field trip.,遠足【えんそく】の準備【じゅんび】をしよう。,遠足【えんそく】の準備【じゅんび】を、しよう。,school
+成績表をもらった?,Did you get your report card?,成績【せいせき】表【ひょう】をもらった?,成績【せいせき】表【ひょう】を、もらった?,school
+塾は何曜日?,What day is cram school?,塾【じゅく】は何曜【なんよう】日【ひ】?,塾【じゅく】は何曜【なんよう】日【ひ】?,activities
+習い事を増やしたいの?,Do you want more lessons?,習い事【ならいごと】を増やし【ふやし】たいの?,習い事【ならいごと】を、増やし【ふやし】たいの?,activities
+ピアノの練習をしなさい。,Practice the piano.,ピアノの練習【れんしゅう】をしなさい。,ピアノの練習【れんしゅう】を、しなさい。,activities
+サッカーの練習に送って行く。,I'll drive you to soccer practice.,サッカーの練習【れんしゅう】に送っ【おくっ】て行く【いく】。,サッカーの練習【れんしゅう】に送っ【おくっ】て行く【いく】。,activities
+水泳教室は何時まで?,Until what time is swimming class?,水泳【すいえい】教室【きょうしつ】は何【なん】時【じ】まで?,水泳【すいえい】教室【きょうしつ】は何【なん】時【じ】まで?,activities
+部活で遅くなる。,I'll be late because of club activities.,部活【ぶかつ】で遅く【おそく】なる。,部活【ぶかつ】で遅く【おそく】なる。,activities
+試合を見に行くね。,I'll come watch your game.,試合【しあい】を見【み】に行く【いく】ね。,試合【しあい】を、見【み】に行く【いく】ね。,activities
+発表会の衣装を準備して。,Prepare the costume for the recital.,発表【はっぴょう】会【かい】の衣装【いしょう】を準備【じゅんび】して。,発表【はっぴょう】会【かい】の衣装【いしょう】を、準備【じゅんび】して。,activities
+熱があるみたい。,It seems like you have a fever.,熱【ねつ】があるみたい。,熱【ねつ】が、あるみたい。,child-health
+体温を測ってみて。,Try taking your temperature.,体温【たいおん】を測っ【はかっ】てみて。,体温【たいおん】を、測っ【はかっ】てみて。,child-health
+病院に連れて行こう。,Let's take you to the doctor.,病院【びょういん】に連れ【つれ】て行こう【いこう】。,病院【びょういん】に連れ【つれ】て行こう【いこう】。,child-health
+薬を飲んでね。,Take your medicine.,薬【くすり】を飲ん【のん】でね。,薬【くすり】を、飲ん【のん】でね。,child-health
+お腹が痛いの?,Does your stomach hurt?,お腹【おなか】が痛い【いたい】の?,お腹【おなか】が、痛い【いたい】の?,child-health
+頭が痛いって言ってる。,They say they have a headache.,頭【あたま】が痛い【いたい】って言っ【いっ】てる。,頭【あたま】が、痛い【いたい】って言っ【いっ】てる。,child-health
+吐き気がする?,Do you feel nauseous?,吐き気【はきけ】がする?,吐き気【はきけ】が、する?,child-health
+よく寝てね。,Get good rest.,よく寝【ね】てね。,よく寝【ね】てね。,child-health
+水分をたくさん取って。,Drink lots of fluids.,水分【すいぶん】をたくさん取っ【とっ】て。,水分【すいぶん】を、たくさん取っ【とっ】て。,child-health
+予防接種の予約を取った。,I made an appointment for vaccination.,予防【よぼう】接種【せっしゅ】の予約【よやく】を取っ【とっ】た。,予防【よぼう】接種【せっしゅ】の予約【よやく】を、取っ【とっ】た。,child-health
+アレルギーがあります。,I have allergies.,アレルギーがあります。,アレルギーが、あります。,child-health
+よくできたね!,You did great!,よくできたね!,よくできたね!,discipline
+頑張ったね。,You worked hard.,頑張っ【がんばっ】たね。,頑張っ【がんばっ】たね。,discipline
+偉いね。,Good job.,偉い【えらい】ね。,偉い【えらい】ね。,discipline
+約束を守ってね。,Keep your promise.,約束【やくそく】を守っ【まもっ】てね。,約束【やくそく】を、守っ【まもっ】てね。,discipline
+ダメって言ったでしょ。,I said no.,ダメって言っ【いっ】たでしょ。,ダメって言っ【いっ】たでしょ。,discipline
+ちゃんと聞いて。,Listen properly.,ちゃんと聞い【きい】て。,ちゃんと聞い【きい】て。,discipline
+喧嘩しないで。,Don't fight.,喧嘩【けんか】しないで。,喧嘩【けんか】しないで。,discipline
+順番を守って。,Wait your turn.,順番【じゅんばん】を守っ【まもっ】て。,順番【じゅんばん】を、守っ【まもっ】て。,discipline
+片付けなさい。,Clean up.,片付け【かたづけ】なさい。,片付け【かたづけ】なさい。,discipline
+ごめんなさいは?,Say sorry.,ごめんなさいは?,ごめんなさいは?,discipline
+町内会の集まりがある。,There's a neighborhood association meeting.,町内【ちょうない】会【かい】の集まり【あつまり】がある。,町内【ちょうない】会【かい】の集まり【あつまり】が、ある。,neighborhood
+回覧板を回してください。,Please pass on the circular notice.,回覧【かいらん】板【ばん】を回し【まわし】てください。,回覧【かいらん】板【ばん】を、回し【まわし】てください。,neighborhood
+今週はゴミ当番です。,It's our turn for trash duty this week.,今週【こんしゅう】はゴミ当番【とうばん】です。,今週【こんしゅう】はゴミ当番【とうばん】です。,neighborhood
+お隣に挨拶してきた。,I went to greet the neighbors.,お隣【となり】に挨拶【あいさつ】してきた。,お隣【となり】に挨拶【あいさつ】してきた。,neighborhood
+引っ越してきたばかりです。,We just moved here.,引っ越し【ひっこし】てきたばかりです。,引っ越し【ひっこし】てきたばかりです。,neighborhood
+この辺りは静かですね。,This area is quiet isn't it.,この辺り【あたり】は静か【しずか】ですね。,この辺り【あたり】は静か【しずか】ですね。,neighborhood
+自治会費を集めに来ました。,I came to collect the residents' association fee.,自治【じち】会費【かいひ】を集め【あつめ】に来【き】ました。,自治【じち】会費【かいひ】を、集め【あつめ】に来【き】ました。,neighborhood
+防災訓練に参加します。,I'll participate in the disaster drill.,防災【ぼうさい】訓練【くんれん】に参加【さんか】します。,防災【ぼうさい】訓練【くんれん】に参加【さんか】します。,neighborhood
+いつもお世話になっております。,Thank you for your continued support.,いつもお世話【せわ】になっております。,いつもお世話【せわ】になっております。,polite
+お忙しいところ申し訳ありません。,I'm sorry to bother you when you're busy.,お忙しい【いそがしい】ところ申し訳【もうしわけ】ありません。,お忙しい【いそがしい】ところ申し訳【もうしわけ】ありません。,polite
+ご迷惑をおかけして申し訳ありません。,I'm sorry for the inconvenience.,ご迷惑【めいわく】をおかけして申し訳【もうしわけ】ありません。,ご迷惑【めいわく】を、おかけして申し訳【もうしわけ】ありません。,polite
+お手数をおかけします。,I apologize for the trouble.,お手数【てすう】をおかけします。,お手数【てすう】を、おかけします。,polite
+よろしくお願いいたします。,Thank you in advance.,よろしくお願い【ねがい】いたします。,よろしくお願い【ねがい】いたします。,polite
+ありがとうございました。,Thank you very much.,ありがとうございました。,ありがとうございました。,polite
+失礼いたします。,Excuse me.,失礼【しつれい】いたします。,失礼【しつれい】いたします。,polite
+少々お待ちください。,Please wait a moment.,少々【しょうしょう】お待ち【まち】ください。,少々【しょうしょう】お待ち【まち】ください。,polite
+かしこまりました。,Understood.,かしこまりました。,かしこまりました。,polite
+恐れ入りますが。,I'm sorry to trouble you but.,恐れ入り【おそれいり】ますが。,恐れ入り【おそれいり】ますが。,polite
+お先に失礼します。,Excuse me for leaving first.,お先【さき】に失礼【しつれい】します。,お先【さき】に失礼【しつれい】します。,polite
+ご無沙汰しております。,It's been a long time.,ご無【む】沙汰【さた】しております。,ご無【む】沙汰【さた】しております。,polite
+お変わりありませんか?,How have you been?,お変わり【かわり】ありませんか?,お変わり【かわり】ありませんか?,polite
+お大事になさってください。,Please take care of yourself.,お大事【だいじ】になさってください。,お大事【だいじ】になさってください。,polite
+お中元を贈ります。,I'll send a mid-year gift.,お中元【ちゅうげん】を贈り【おくり】ます。,お中元【ちゅうげん】を、贈り【おくり】ます。,gifts
+お歳暮は何にしよう?,What should we send for year-end gifts?,お歳暮【せいぼ】は何【なん】にしよう?,お歳暮【せいぼ】は何【なん】にしよう?,gifts
+内祝いを準備しなきゃ。,I need to prepare a thank-you gift.,内祝い【うちいわい】を準備【じゅんび】しなきゃ。,内祝い【うちいわい】を、準備【じゅんび】しなきゃ。,gifts
+香典を用意しなきゃ。,I need to prepare condolence money.,香典【こうでん】を用意【ようい】しなきゃ。,香典【こうでん】を、用意【ようい】しなきゃ。,gifts
+お祝いを贈りたいのですが。,I'd like to send a congratulatory gift.,お祝い【いわい】を贈り【おくり】たいのですが。,お祝い【いわい】を、贈り【おくり】たいのですが。,gifts
+熨斗をつけてください。,Please attach a noshi.,熨斗【のし】をつけてください。,熨斗【のし】を、つけてください。,gifts
+包装をお願いします。,Please wrap it.,包装【ほうそう】をお願い【ねがい】します。,包装【ほうそう】を、お願い【ねがい】します。,gifts
+お返しは何がいいかな?,What should I give in return?,お返し【がえし】は何【なん】がいいかな?,お返し【がえし】は何【なん】が、いいかな?,gifts
+今日は暑いですね。,It's hot today isn't it.,今日【きょう】は暑い【あつい】ですね。,今日【きょう】は暑い【あつい】ですね。,small-talk
+雨が降りそうですね。,It looks like it might rain.,雨【あめ】が降り【ふり】そうですね。,雨【あめ】が、降り【ふり】そうですね。,small-talk
+桜がきれいですね。,The cherry blossoms are beautiful.,桜【さくら】がきれいですね。,桜【さくら】が、きれいですね。,small-talk
+お子さんは何歳ですか?,How old is your child?,お子【こ】さんは何【なん】歳【さい】ですか?,お子【こ】さんは何【なん】歳【さい】ですか?,small-talk
+最近お忙しいですか?,Have you been busy lately?,最近【さいきん】お忙しい【いそがしい】ですか?,最近【さいきん】お忙しい【いそがしい】ですか?,small-talk
+お元気ですか?,How are you?,お元気【げんき】ですか?,お元気【げんき】ですか?,small-talk
+良い天気ですね。,Nice weather isn't it.,良い【よい】天気【てんき】ですね。,良い【よい】天気【てんき】ですね。,small-talk
+寒くなりましたね。,It's gotten cold hasn't it.,寒く【さむく】なりましたね。,寒く【さむく】なりましたね。,small-talk
+家計簿をつけています。,I keep a household budget.,家計【かけい】簿【ぼ】をつけています。,家計【かけい】簿【ぼ】を、つけています。,finances
+今月は節約しなきゃ。,We need to save money this month.,今月【こんげつ】は節約【せつやく】しなきゃ。,今月【こんげつ】は節約【せつやく】しなきゃ。,finances
+光熱費が高い。,The utility bills are high.,光熱【こうねつ】費【ひ】が高い【たかい】。,光熱【こうねつ】費【ひ】が、高い【たかい】。,finances
+電気代を節約しよう。,Let's save on electricity.,電気【でんき】代【だい】を節約【せつやく】しよう。,電気【でんき】代【だい】を、節約【せつやく】しよう。,finances
+口座の残高を確認して。,Check the account balance.,口座【こうざ】の残高【ざんだか】を確認【かくにん】して。,口座【こうざ】の残高【ざんだか】を、確認【かくにん】して。,finances
+クレジットカードの請求が来た。,The credit card bill arrived.,クレジットカードの請求【せいきゅう】が来【き】た。,クレジットカードの請求【せいきゅう】が、来【き】た。,finances
+保険の更新がある。,The insurance renewal is coming up.,保険【ほけん】の更新【こうしん】がある。,保険【ほけん】の更新【こうしん】が、ある。,finances
+税金の支払いを忘れないで。,Don't forget to pay the taxes.,税金【ぜいきん】の支払い【しはらい】を忘れ【わすれ】ないで。,税金【ぜいきん】の支払い【しはらい】を、忘れ【わすれ】ないで。,finances
+予約を取りたいのですが。,I'd like to make a reservation.,予約【よやく】を取り【とり】たいのですが。,予約【よやく】を、取り【とり】たいのですが。,appointments
+予約をキャンセルしたいのですが。,I'd like to cancel my reservation.,予約【よやく】をキャンセルしたいのですが。,予約【よやく】を、キャンセルしたいのですが。,appointments
+予約を変更できますか?,Can I change my reservation?,予約【よやく】を変更【へんこう】できますか?,予約【よやく】を、変更【へんこう】できますか?,appointments
+何時が空いていますか?,What times are available?,何時【いつ】が空い【あい】ていますか?,何時【いつ】が、空い【あい】ていますか?,appointments
+確認のお電話をいただけますか?,Could you call to confirm?,確認【かくにん】のお電話【でんわ】をいただけますか?,確認【かくにん】のお電話【でんわ】を、いただけますか?,appointments
+エアコンが壊れた。,The air conditioner broke.,エアコンが壊れ【こわれ】た。,エアコンが、壊れ【こわれ】た。,repairs
+修理を頼まなきゃ。,I need to call for repairs.,修理【しゅうり】を頼ま【たのま】なきゃ。,修理【しゅうり】を、頼ま【たのま】なきゃ。,repairs
+業者さんに来てもらう。,I'll have a technician come.,業者【ぎょうしゃ】さんに来【き】てもらう。,業者【ぎょうしゃ】さんに来【き】てもらう。,repairs
+見積もりをお願いします。,Please give me an estimate.,見積もり【みつもり】をお願い【ねがい】します。,見積もり【みつもり】を、お願い【ねがい】します。,repairs
+水漏れがしている。,There's a water leak.,水漏れ【みずもれ】がしている。,水漏れ【みずもれ】が、している。,repairs
+ガス点検の人が来ます。,The gas inspector is coming.,ガス点検【てんけん】の人【ひと】が来【き】ます。,ガス点検【てんけん】の人【ひと】が、来【き】ます。,repairs
+衣替えをしなきゃ。,I need to switch out the seasonal clothes.,衣替え【ころもがえ】をしなきゃ。,衣替え【ころもがえ】を、しなきゃ。,seasonal-tasks
+大掃除を始めよう。,Let's start the big cleaning.,大【だい】掃除【そうじ】を始めよう【はじめよう】。,大【だい】掃除【そうじ】を、始めよう【はじめよう】。,seasonal-tasks
+模様替えをしたい。,I want to rearrange the room.,模様【もよう】替え【がえ】をしたい。,模様【もよう】替え【がえ】を、したい。,seasonal-tasks
+冬物を出してきて。,Get out the winter clothes.,冬物【ふゆもの】を出し【だし】てきて。,冬物【ふゆもの】を、出し【だし】てきて。,seasonal-tasks
+夏物をしまおう。,Let's put away the summer things.,夏物【なつもの】をしまおう。,夏物【なつもの】を、しまおう。,seasonal-tasks
+庭の手入れをしなきゃ。,I need to tend to the garden.,庭【にわ】の手入れ【ていれ】をしなきゃ。,庭【にわ】の手入れ【ていれ】を、しなきゃ。,seasonal-tasks
+病院の予約を取りました。,I made a doctor's appointment.,病院【びょういん】の予約【よやく】を取り【とり】ました。,病院【びょういん】の予約【よやく】を、取り【とり】ました。,medical
+保険証を持っていますか?,Do you have your insurance card?,保険【ほけん】証【しょう】を持っ【もっ】ていますか?,保険【ほけん】証【しょう】を、持っ【もっ】ていますか?,medical
+症状を教えてください。,Please tell me your symptoms.,症状【しょうじょう】を教え【おしえ】てください。,症状【しょうじょう】を、教え【おしえ】てください。,medical
+いつから具合が悪いですか?,Since when have you felt unwell?,いつから具合【ぐあい】が悪い【わるい】ですか?,いつから具合【ぐあい】が、悪い【わるい】ですか?,medical
+処方箋をもらいました。,I received a prescription.,処方【しょほう】箋【せん】をもらいました。,処方【しょほう】箋【せん】を、もらいました。,medical
+薬局に行ってくる。,I'll go to the pharmacy.,薬局【やっきょく】に行っ【いっ】てくる。,薬局【やっきょく】に行っ【いっ】てくる。,medical
+この薬は食後に飲んでください。,Please take this medicine after meals.,この薬【くすり】は食後【しょくご】に飲ん【のん】でください。,この薬【くすり】は食後【しょくご】に飲ん【のん】でください。,medical
+副作用はありますか?,Are there any side effects?,副【ふく】作用【さよう】はありますか?,副【ふく】作用【さよう】はありますか?,medical
+アレルギーがあります。,I have allergies.,アレルギーがあります。,アレルギーが、あります。,medical
+検査を受けなきゃ。,I need to get tested.,検査【けんさ】を受け【うけ】なきゃ。,検査【けんさ】を、受け【うけ】なきゃ。,medical
+健康診断の結果が来た。,The health checkup results arrived.,健康【けんこう】診断【しんだん】の結果【けっか】が来【き】た。,健康【けんこう】診断【しんだん】の結果【けっか】が、来【き】た。,medical
+熱が下がらない。,The fever won't go down.,熱【ねつ】が下がら【さがら】ない。,熱【ねつ】が、下が、ら【さがら】ない。,medical
+咳が止まらない。,I can't stop coughing.,咳【せき】が止まら【とまら】ない。,咳【せき】が、止まら【とまら】ない。,medical
+鼻水が出る。,I have a runny nose.,鼻水【はなみず】が出る【でる】。,鼻水【はなみず】が、出る【でる】。,medical
+喉が痛い。,My throat hurts.,喉【のど】が痛い【いたい】。,喉【のど】が、痛い【いたい】。,medical
+頭痛がひどい。,I have a terrible headache.,頭痛【ずつう】がひどい。,頭痛【ずつう】が、ひどい。,medical
+めまいがする。,I feel dizzy.,めまいがする。,めまいがする。,medical
+美容院の予約を取った。,I made a hair salon appointment.,美容【びよう】院【いん】の予約【よやく】を取っ【とっ】た。,美容【びよう】院【いん】の予約【よやく】を、取っ【とっ】た。,self-care
+髪を切りたい。,I want to get a haircut.,髪【かみ】を切り【きり】たい。,髪【かみ】を、切り【きり】たい。,self-care
+カラーをお願いします。,I'd like to get my hair colored.,カラーをお願い【ねがい】します。,カラーを、お願い【ねがい】します。,self-care
+化粧品を買わなきゃ。,I need to buy cosmetics.,化粧【けしょう】品【ひん】を買わ【かわ】なきゃ。,化粧【けしょう】品【ひん】を、買わ【かわ】なきゃ。,self-care
+マッサージに行きたい。,I want to go for a massage.,マッサージに行き【いき】たい。,マッサージに行き【いき】たい。,self-care
+ネイルをしてもらった。,I got my nails done.,ネイルをしてもらった。,ネイルを、してもらった。,self-care
+自転車で行く。,I'll go by bicycle.,自転【じてん】車【しゃ】で行く【いく】。,自転【じてん】車【しゃ】で行く【いく】。,transportation
+バスに乗り遅れた。,I missed the bus.,バスに乗り【のり】遅れ【おくれ】た。,バスに乗り【のり】遅れ【おくれ】た。,transportation
+駐車場はどこですか?,Where is the parking lot?,駐車【ちゅうしゃ】場【じょう】はどこですか?,駐車【ちゅうしゃ】場【じょう】はどこですか?,transportation
+駐輪場に止めてきた。,I parked at the bicycle parking.,駐輪【ちゅうりん】場【じょう】に止め【とめ】てきた。,駐輪【ちゅうりん】場【じょう】に止め【とめ】てきた。,transportation
+次のバスは何時ですか?,What time is the next bus?,次【つぎ】のバスは何時【いつ】ですか?,次【つぎ】のバスは何時【いつ】ですか?,transportation
+電車が遅れている。,The train is delayed.,電車【でんしゃ】が遅れ【おくれ】ている。,電車【でんしゃ】が、遅れ【おくれ】ている。,transportation
+切符を買ってくる。,I'll buy a ticket.,切符【きっぷ】を買っ【かっ】てくる。,切符【きっぷ】を、買っ【かっ】てくる。,transportation
+ICカードをチャージして。,Charge the IC card.,ICカードをチャージして。,ICカードを、チャージして。,transportation
+郵便局に行ってくる。,I'll go to the post office.,郵便【ゆうびん】局【きょく】に行っ【いっ】てくる。,郵便【ゆうびん】局【きょく】に行っ【いっ】てくる。,errands
+この手紙を出してきて。,Please mail this letter.,この手紙【てがみ】を出し【だし】てきて。,この手紙【てがみ】を、出し【だし】てきて。,errands
+荷物を送りたいのですが。,I'd like to send a package.,荷物【にもつ】を送り【おくり】たいのですが。,荷物【にもつ】を、送り【おくり】たいのですが。,errands
+書留でお願いします。,Registered mail please.,書留【かきとめ】でお願い【ねがい】します。,書留【かきとめ】でお願い【ねがい】します。,errands
+銀行で振り込みをした。,I made a bank transfer.,銀行【ぎんこう】で振り込み【ふりこみ】をした。,銀行【ぎんこう】で振り込み【ふりこみ】を、した。,errands
+届け出を出しに行く。,I'll go submit the notification.,届け出【とどけで】を出し【だし】に行く【いく】。,届け出【とどけで】を、出し【だし】に行く【いく】。,errands
+手続きに必要な書類は何ですか?,What documents do I need for the procedure?,手続き【てつづき】に必要【ひつよう】な書類【しょるい】は何【なん】ですか?,手続き【てつづき】に必要【ひつよう】な書類【しょるい】は何【なん】ですか?,errands
+ATMでお金を下ろしてくる。,I'll withdraw money from the ATM.,ATMでお金【かね】を下ろし【おろし】てくる。,ATMでお金【かね】を、下ろし【おろし】てくる。,errands
+予約したいのですが。,I'd like to make a reservation.,予約【よやく】したいのですが。,予約【よやく】したいのですが。,restaurant
+何名様ですか?,How many people?,何【なん】名【めい】様【さま】ですか?,何【なん】名【めい】様【さま】ですか?,restaurant
+2名です。,Two people.,2名【めい】です。,2名【めい】です。,restaurant
+禁煙席をお願いします。,Non-smoking section please.,禁煙【きんえん】席【せき】をお願い【ねがい】します。,禁煙【きんえん】席【せき】を、お願い【ねがい】します。,restaurant
+メニューをください。,Menu please.,メニューをください。,メニューを、ください。,restaurant
+注文をお願いします。,I'd like to order.,注文【ちゅうもん】をお願い【ねがい】します。,注文【ちゅうもん】を、お願い【ねがい】します。,restaurant
+おすすめは何ですか?,What do you recommend?,おすすめは何【なん】ですか?,おすすめは何【なん】ですか?,restaurant
+これは何が入っていますか?,What's in this?,これは何【なん】が入っ【はいっ】ていますか?,これは何【なん】が、入っ【はいっ】ていますか?,restaurant
+アレルギーがあるのですが。,I have allergies.,アレルギーがあるのですが。,アレルギーが、あるのですが。,restaurant
+子供用の椅子はありますか?,Do you have a high chair?,子供【こども】用【よう】の椅子【いす】はありますか?,子供【こども】用【よう】の椅子【いす】はありますか?,restaurant
+お水をください。,Water please.,お水【みず】をください。,お水【みず】を、ください。,restaurant
+お会計をお願いします。,Check please.,お会計【かいけい】をお願い【ねがい】します。,お会計【かいけい】を、お願い【ねがい】します。,restaurant
+別々に払えますか?,Can we pay separately?,別々【べつべつ】に払え【はらえ】ますか?,別々【べつべつ】に払え【はらえ】ますか?,restaurant
+持ち帰りできますか?,Can I take this to go?,持ち帰り【もちかえり】できますか?,持ち帰り【もちかえり】できますか?,restaurant
+ごちそうさまでした。,Thank you for the meal.,ごちそうさまでした。,ごちそうさまでした。,restaurant
+映画を見に行こう。,Let's go see a movie.,映画【えいが】を見【み】に行こう【いこう】。,映画【えいが】を、見【み】に行こう【いこう】。,cinema
+上映時間は何時ですか?,What time does it start?,上映【じょうえい】時間【じかん】は何時【いつ】ですか?,上映【じょうえい】時間【じかん】は何時【いつ】ですか?,cinema
+チケットを2枚ください。,Two tickets please.,チケットを2枚【まい】ください。,チケットを、2枚【まい】ください。,cinema
+席は選べますか?,Can I choose my seats?,席【せき】は選べ【えらべ】ますか?,席【せき】は選べ【えらべ】ますか?,cinema
+ポップコーンを買おう。,Let's buy popcorn.,ポップコーンを買おう【かおう】。,ポップコーンを、買おう【かおう】。,cinema
+字幕版と吹き替え版どっち?,Subtitled or dubbed?,字幕【じまく】版【ばん】と吹き替え【ふきかえ】版【ばん】どっち?,字幕【じまく】版【ばん】と吹き替え【ふきかえ】版【ばん】どっち?,cinema
+カフェでお茶しよう。,Let's have tea at a cafe.,カフェでお茶【ちゃ】しよう。,カフェでお茶【ちゃ】しよう。,cafe
+コーヒーをください。,Coffee please.,コーヒーをください。,コーヒーを、ください。,cafe
+ケーキセットをお願いします。,Cake set please.,ケーキセットをお願い【ねがい】します。,ケーキセットを、お願い【ねがい】します。,cafe
+テイクアウトできますか?,Can I get this to go?,テイクアウトできますか?,テイクアウトできますか?,cafe
+ここで食べます。,I'll eat here.,ここで食べ【たべ】ます。,ここで食べ【たべ】ます。,cafe
+Wi-Fiはありますか?,Do you have Wi-Fi?,Wi-Fiはありますか?,Wi-Fiはありますか?,cafe
+公園に行こう。,Let's go to the park.,公園【こうえん】に行こう【いこう】。,公園【こうえん】に行こう【いこう】。,parks
+遊園地に連れて行って。,Take me to the amusement park.,遊園【ゆうえん】地【ち】に連れ【つれ】て行っ【いっ】て。,遊園【ゆうえん】地【ち】に連れ【つれ】て行っ【いっ】て。,parks
+動物園は何時まで?,Until what time is the zoo open?,動物【どうぶつ】園【えん】は何【なん】時【じ】まで?,動物【どうぶつ】園【えん】は何【なん】時【じ】まで?,parks
+ピクニックをしよう。,Let's have a picnic.,ピクニックをしよう。,ピクニックを、しよう。,parks
+お弁当を持って行こう。,Let's bring lunch boxes.,お弁当【べんとう】を持っ【もっ】て行こう【いこう】。,お弁当【べんとう】を、持っ【もっ】て行こう【いこう】。,parks
+滑り台で遊ぼう。,Let's play on the slide.,滑り台【すべりだい】で遊ぼう【あそぼう】。,滑り台【すべりだい】で遊ぼう【あそぼう】。,parks
+ブランコに乗りたい。,I want to ride the swing.,ブランコに乗り【のり】たい。,ブランコに乗り【のり】たい。,parks
+趣味は何ですか?,What are your hobbies?,趣味【しゅみ】は何【なん】ですか?,趣味【しゅみ】は何【なん】ですか?,hobbies
+手芸を始めました。,I started doing handicrafts.,手芸【しゅげい】を始め【はじめ】ました。,手芸【しゅげい】を、始め【はじめ】ました。,hobbies
+ガーデニングが好きです。,I like gardening.,ガーデニングが好き【すき】です。,ガーデニングが、好き【すき】です。,hobbies
+読書が趣味です。,Reading is my hobby.,読書【どくしょ】が趣味【しゅみ】です。,読書【どくしょ】が、趣味【しゅみ】です。,hobbies
+料理教室に通っています。,I'm taking cooking classes.,料理【りょうり】教室【きょうしつ】に通っ【かよっ】ています。,料理【りょうり】教室【きょうしつ】に通っ【かよっ】ています。,hobbies
+ヨガを始めたい。,I want to start yoga.,ヨガを始め【はじめ】たい。,ヨガを、始め【はじめ】たい。,hobbies
+今日のドラマ見た?,Did you watch today's drama?,今日【きょう】のドラマ見【み】た?,今日【きょう】のドラマ見【み】た?,tv
+この番組を録画して。,Record this program.,この番組【ばんぐみ】を録画【ろくが】して。,この番組【ばんぐみ】を、録画【ろくが】して。,tv
+ニュースを見よう。,Let's watch the news.,ニュースを見よう【みよう】。,ニュースを、見よう【みよう】。,tv
+チャンネルを変えて。,Change the channel.,チャンネルを変え【かえ】て。,チャンネルを、変え【かえ】て。,tv
+110番に電話して!,Call 110!,110番【ばん】に電話【でんわ】して!,110番【ばん】に電話【でんわ】して!,emergency
+事故がありました。,There was an accident.,事故【じこ】がありました。,事故【じこ】が、ありました。,emergency
+住所は〇〇です。,The address is...,住所【じゅうしょ】は〇〇です。,住所【じゅうしょ】は〇〇です。,emergency
+助けてください!,Help!,助け【たすけ】てください!,助け【たすけ】てください!,emergency
+警察を呼んでください。,Please call the police.,警察【けいさつ】を呼ん【よん】でください。,警察【けいさつ】を、呼ん【よん】でください。,emergency
+119番に電話して!,Call 119!,119番【ばん】に電話【でんわ】して!,119番【ばん】に電話【でんわ】して!,emergency
+救急車をお願いします。,I need an ambulance.,救急【きゅうきゅう】車【しゃ】をお願い【ねがい】します。,救急【きゅうきゅう】車【しゃ】を、お願い【ねがい】します。,emergency
+火事です!,Fire!,火事【かじ】です!,火事【かじ】です!,emergency
+交番はどこですか?,Where is the police box?,交番【こうばん】はどこですか?,交番【こうばん】はどこですか?,police
+届け出をしたいのですが。,I'd like to file a report.,届け出【とどけで】をしたいのですが。,届け出【とどけで】を、したいのですが。,police
+財布を盗まれました。,My wallet was stolen.,財布【さいふ】を盗ま【ぬすま】れました。,財布【さいふ】を、盗ま【ぬすま】れました。,police
+被害届を出したいです。,I want to file a damage report.,被害【ひがい】届【とどけ】を出し【だし】たいです。,被害【ひがい】届【とどけ】を、出し【だし】たいです。,police
+事故を目撃しました。,I witnessed an accident.,事故【じこ】を目撃【もくげき】しました。,事故【じこ】を、目撃【もくげき】しました。,police
+パスポートをなくしました。,I lost my passport.,パスポートをなくしました。,パスポートを、なくしました。,police
+不審者を見ました。,I saw a suspicious person.,不審【ふしん】者【しゃ】を見【み】ました。,不審【ふしん】者【しゃ】を、見【み】ました。,police
+ひったくりに遭いました。,I was mugged.,ひったくりに遭い【あい】ました。,ひったくりに遭い【あい】ました。,police
+火事だ!逃げて!,Fire! Run!,火事【かじ】だ!逃げ【にげ】て!,火事【かじ】だ!逃げ【にげ】て!,fire
+消火器はどこですか?,Where is the fire extinguisher?,消火【しょうか】器【き】はどこですか?,消火【しょうか】器【き】はどこですか?,fire
+煙が出ている!,There's smoke!,煙【けむり】が出【で】ている!,煙【けむり】が、出【で】ている!,fire
+非常口はどこですか?,Where is the emergency exit?,非常【ひじょう】口【くち】はどこですか?,非常【ひじょう】口【くち】はどこですか?,fire
+避難してください。,Please evacuate.,避難【ひなん】してください。,避難【ひなん】してください。,fire
+火を消して!,Put out the fire!,火【ひ】を消し【けし】て!,火【ひ】を、消し【けし】て!,fire
+意識がありません。,They're unconscious.,意識【いしき】がありません。,意識【いしき】が、ありません。,ambulance
+呼吸をしていません。,They're not breathing.,呼吸【こきゅう】をしていません。,呼吸【こきゅう】を、していません。,ambulance
+出血がひどいです。,There's severe bleeding.,出血【しゅっけつ】がひどいです。,出血【しゅっけつ】が、ひどいです。,ambulance
+心臓マッサージをしています。,I'm doing chest compressions.,心臓【しんぞう】マッサージをしています。,心臓【しんぞう】マッサージを、しています。,ambulance
+AEDはどこですか?,Where is the AED?,AEDはどこですか?,AEDはどこですか?,ambulance
+応急処置をしてください。,Please give first aid.,応急【おうきゅう】処置【しょち】をしてください。,応急【おうきゅう】処置【しょち】を、してください。,ambulance
+地震だ!,Earthquake!,地震【じしん】だ!,地震【じしん】だ!,disaster
+机の下に隠れて!,Get under the desk!,机【つくえ】の下【した】に隠れ【かくれ】て!,机【つくえ】の下【した】に隠れ【かくれ】て!,disaster
+津波警報が出ました。,A tsunami warning was issued.,津波【つなみ】警報【けいほう】が出【で】ました。,津波【つなみ】警報【けいほう】が、出【で】ました。,disaster
+高台に逃げてください。,Evacuate to higher ground.,高台【たかだい】に逃げ【にげ】てください。,高台【たかだい】に逃げ【にげ】てください。,disaster
+台風が近づいています。,A typhoon is approaching.,台風【たいふう】が近づい【ちかづい】ています。,台風【たいふう】が、近づい【ちかづい】ています。,disaster
+洪水の危険があります。,There's a risk of flooding.,洪水【こうずい】の危険【きけん】があります。,洪水【こうずい】の危険【きけん】が、あります。,disaster
+余震に気をつけて。,Be careful of aftershocks.,余震【よしん】に気【き】をつけて。,余震【よしん】に気【き】を、つけて。,disaster
+ガスの元栓を閉めて。,Turn off the gas main valve.,ガスの元栓【もとせん】を閉め【しめ】て。,ガスの元栓【もとせん】を、閉め【しめ】て。,disaster
+ブレーカーを落として。,Turn off the breaker.,ブレーカーを落とし【おとし】て。,ブレーカーを、落とし【おとし】て。,disaster
+安否確認をしなきゃ。,I need to check if everyone is safe.,安否【あんぴ】確認【かくにん】をしなきゃ。,安否【あんぴ】確認【かくにん】を、しなきゃ。,disaster
+家族と連絡が取れない。,I can't reach my family.,家族【かぞく】と連絡【れんらく】が取れ【とれ】ない。,家族【かぞく】と連絡【れんらく】が、取れ【とれ】ない。,disaster
+避難所はどこですか?,Where is the evacuation shelter?,避難【ひなん】所【しょ】はどこですか?,避難【ひなん】所【しょ】はどこですか?,evacuation
+防災グッズを準備しよう。,Let's prepare emergency supplies.,防災【ぼうさい】グッズを準備【じゅんび】しよう。,防災【ぼうさい】グッズを、準備【じゅんび】しよう。,evacuation
+非常食を買っておこう。,Let's buy emergency food.,非【ひ】常食【じょうしょく】を買っ【かっ】ておこう。,非【ひ】常食【じょうしょく】を、買っ【かっ】ておこう。,evacuation
+懐中電灯はどこ?,Where is the flashlight?,懐中【かいちゅう】電灯【でんとう】はどこ?,懐中【かいちゅう】電灯【でんとう】はどこ?,evacuation
+水を備蓄しておこう。,Let's stock up on water.,水【みず】を備蓄【びちく】しておこう。,水【みず】を、備蓄【びちく】しておこう。,evacuation
+避難経路を確認して。,Check the evacuation route.,避難【ひなん】経路【けいろ】を確認【かくにん】して。,避難【ひなん】経路【けいろ】を、確認【かくにん】して。,evacuation
+携帯の充電をしておいて。,Charge your phone.,携帯【けいたい】の充電【じゅうでん】をしておいて。,携帯【けいたい】の充電【じゅうでん】を、しておいて。,evacuation
+不審者がいます。,There's a suspicious person.,不審【ふしん】者【しゃ】がいます。,不審【ふしん】者【しゃ】が、います。,crime
+泥棒に入られた。,We were robbed.,泥棒【どろぼう】に入ら【はいら】れた。,泥棒【どろぼう】に入ら【はいら】れた。,crime
+ストーカー被害に遭っています。,I'm being stalked.,ストーカー被害【ひがい】に遭っ【あっ】ています。,ストーカー被害【ひがい】に遭っ【あっ】ています。,crime
+変な電話がかかってきた。,I got a strange phone call.,変【へん】な電話【でんわ】がかかってきた。,変【へん】な電話【でんわ】が、かかってきた。,crime
+詐欺に遭いました。,I was scammed.,詐欺【さぎ】に遭い【あい】ました。,詐欺【さぎ】に遭い【あい】ました。,crime
+温めますか?,Would you like this heated?,温め【あたため】ますか?,温め【あたため】ますか?,convenience
+お箸をつけますか?,Would you like chopsticks?,お箸【はし】をつけますか?,お箸【はし】を、つけますか?,convenience
+袋は要りますか?,Do you need a bag?,袋【ふくろ】は要り【いり】ますか?,袋【ふくろ】は要り【いり】ますか?,convenience
+ポイントカードはお持ちですか?,Do you have a point card?,ポイントカードはお持ち【もち】ですか?,ポイントカードはお持ち【もち】ですか?,convenience
+お弁当を温めてください。,Please heat up the bento.,お弁当【べんとう】を温め【あたため】てください。,お弁当【べんとう】を、温め【あたため】てください。,convenience
+肉まんを1つください。,One nikuman please.,肉まん【にくまん】を1つください。,肉まん【にくまん】を、1つください。,convenience
+おでんをください。,Oden please.,おでんをください。,おでんを、ください。,convenience
+おにぎりを2つください。,Two rice balls please.,おにぎりを2つください。,おにぎりを、2つください。,convenience
+からあげクンをください。,Karaage-kun please.,からあげクンをください。,からあげクンを、ください。,convenience
+ATMはどこですか?,Where is the ATM?,ATMはどこですか?,ATMはどこですか?,convenience
+コピー機を使いたいのですが。,I'd like to use the copy machine.,コピー機【き】を使い【つかい】たいのですが。,コピー機【き】を、使い【つかい】たいのですが。,convenience
+荷物を送りたいのですが。,I'd like to send a package.,荷物【にもつ】を送り【おくり】たいのですが。,荷物【にもつ】を、送り【おくり】たいのですが。,convenience
+チケットを発券したいです。,I'd like to pick up my tickets.,チケットを発券【はっけん】したいです。,チケットを、発券【はっけん】したいです。,convenience
+公共料金を払いたいです。,I'd like to pay my utility bills.,公共【こうきょう】料金【りょうきん】を払い【はらい】たいです。,公共【こうきょう】料金【りょうきん】を、払い【はらい】たいです。,convenience
+カートに入れる。,Add to cart.,カートに入れる【いれる】。,カートに入れる【いれる】。,online-shopping
+注文を確定する。,Confirm order.,注文【ちゅうもん】を確定【かくてい】する。,注文【ちゅうもん】を、確定【かくてい】する。,online-shopping
+送料はいくらですか?,How much is shipping?,送料【そうりょう】はいくらですか?,送料【そうりょう】はいくらですか?,online-shopping
+届け先を変更したい。,I want to change the delivery address.,届け先【とどけさき】を変更【へんこう】したい。,届け先【とどけさき】を、変更【へんこう】したい。,online-shopping
+配達日を指定できますか?,Can I specify the delivery date?,配達【はいたつ】日【ひ】を指定【してい】できますか?,配達【はいたつ】日【ひ】を、指定【してい】できますか?,online-shopping
+時間指定をお願いします。,Please specify a delivery time.,時間【じかん】指定【してい】をお願い【ねがい】します。,時間【じかん】指定【してい】を、お願い【ねがい】します。,online-shopping
+置き配でお願いします。,Please leave it at the door.,置き【おき】配【はい】でお願い【ねがい】します。,置き【おき】配【はい】でお願い【ねがい】します。,online-shopping
+再配達をお願いします。,Please redeliver.,再【さい】配達【はいたつ】をお願い【ねがい】します。,再【さい】配達【はいたつ】を、お願い【ねがい】します。,online-shopping
+荷物が届かない。,The package hasn't arrived.,荷物【にもつ】が届か【とどか】ない。,荷物【にもつ】が、届か【とどか】ない。,online-shopping
+追跡番号を教えてください。,Please tell me the tracking number.,追跡【ついせき】番号【ばんごう】を教え【おしえ】てください。,追跡【ついせき】番号【ばんごう】を、教え【おしえ】てください。,online-shopping
+返品したいのですが。,I'd like to return this.,返品【へんぴん】したいのですが。,返品【へんぴん】したいのですが。,online-shopping
+交換してもらえますか?,Can I exchange this?,交換【こうかん】してもらえますか?,交換【こうかん】してもらえますか?,online-shopping
+キャンセルしたいです。,I want to cancel.,キャンセルしたいです。,キャンセルしたいです。,online-shopping
+返金されますか?,Will I get a refund?,返金【へんきん】されますか?,返金【へんきん】されますか?,online-shopping
+パスワードを忘れました。,I forgot my password.,パスワードを忘れ【わすれ】ました。,パスワードを、忘れ【わすれ】ました。,online-shopping
+会員登録をしたい。,I want to register.,会員【かいいん】登録【とうろく】をしたい。,会員【かいいん】登録【とうろく】を、したい。,online-shopping
+電気代が高すぎる。,The electricity bill is too high.,電気【でんき】代【だい】が高【たか】すぎる。,電気【でんき】代【だい】が、高【たか】すぎる。,utilities
+ガスの契約を変更したい。,I want to change the gas contract.,ガスの契約【けいやく】を変更【へんこう】したい。,ガスの契約【けいやく】を、変更【へんこう】したい。,utilities
+水道の検針日はいつですか?,When is the water meter reading day?,水道【すいどう】の検針【けんしん】日【ひ】はいつですか?,水道【すいどう】の検針【けんしん】日【ひ】はいつですか?,utilities
+インターネットが繋がらない。,The internet isn't connecting.,インターネットが繋がら【つながら】ない。,インターネットが、繋が、ら【つながら】ない。,utilities
+契約を解約したいのですが。,I'd like to cancel my contract.,契約【けいやく】を解約【かいやく】したいのですが。,契約【けいやく】を、解約【かいやく】したいのですが。,utilities
+料金プランを変えたい。,I want to change my rate plan.,料金【りょうきん】プランを変え【かえ】たい。,料金【りょうきん】プランを、変え【かえ】たい。,utilities
+引っ越しの手続きをしたい。,I want to do the moving procedures.,引っ越し【ひっこし】の手続き【てつづき】をしたい。,引っ越し【ひっこし】の手続き【てつづき】を、したい。,utilities
+賃貸物件を探しています。,I'm looking for a rental property.,賃貸【ちんたい】物件【ぶっけん】を探し【さがし】ています。,賃貸【ちんたい】物件【ぶっけん】を、探し【さがし】ています。,housing
+不動産屋に行ってくる。,I'll go to the real estate agent.,不【ふ】動産【どうさん】屋【や】に行っ【いっ】てくる。,不【ふ】動産【どうさん】屋【や】に行っ【いっ】てくる。,housing
+家賃はいくらですか?,How much is the rent?,家賃【やちん】はいくらですか?,家賃【やちん】はいくらですか?,housing
+敷金と礼金は必要ですか?,Are deposit and key money required?,敷金【しききん】と礼金【れいきん】は必要【ひつよう】ですか?,敷金【しききん】と礼金【れいきん】は必要【ひつよう】ですか?,housing
+大家さんに連絡しなきゃ。,I need to contact the landlord.,大家【おおや】さんに連絡【れんらく】しなきゃ。,大家【おおや】さんに連絡【れんらく】しなきゃ。,housing
+管理組合の会議がある。,There's a condo association meeting.,管理【かんり】組合【くみあい】の会議【かいぎ】がある。,管理【かんり】組合【くみあい】の会議【かいぎ】が、ある。,housing
+引っ越しの準備をしなきゃ。,I need to prepare for the move.,引っ越し【ひっこし】の準備【じゅんび】をしなきゃ。,引っ越し【ひっこし】の準備【じゅんび】を、しなきゃ。,housing
+犬の散歩に行ってくる。,I'll take the dog for a walk.,犬【いぬ】の散歩【さんぽ】に行っ【いっ】てくる。,犬【いぬ】の散歩【さんぽ】に行っ【いっ】てくる。,pets
+猫のご飯をあげて。,Feed the cat.,猫【ねこ】のご飯【ごはん】をあげて。,猫【ねこ】のご飯【ごはん】を、あげて。,pets
+動物病院に連れて行く。,I'll take them to the vet.,動物【どうぶつ】病院【びょういん】に連れ【つれ】て行く【いく】。,動物【どうぶつ】病院【びょういん】に連れ【つれ】て行く【いく】。,pets
+ペットフードを買わなきゃ。,I need to buy pet food.,ペットフードを買わ【かわ】なきゃ。,ペットフードを、買わ【かわ】なきゃ。,pets
+予防接種の時期だ。,It's time for vaccinations.,予防【よぼう】接種【せっしゅ】の時期【じき】だ。,予防【よぼう】接種【せっしゅ】の時期【じき】だ。,pets
+お正月の準備をしよう。,Let's prepare for New Year.,お正月【しょうがつ】の準備【じゅんび】をしよう。,お正月【しょうがつ】の準備【じゅんび】を、しよう。,seasonal-events
+おせち料理を作る。,I'll make New Year dishes.,おせち料理【りょうり】を作る【つくる】。,おせち料理【りょうり】を、作る【つくる】。,seasonal-events
+年賀状を書かなきゃ。,I need to write New Year cards.,年賀【ねんが】状【じょう】を書か【かか】なきゃ。,年賀【ねんが】状【じょう】を、書か【かか】なきゃ。,seasonal-events
+ひな人形を飾ろう。,Let's display the hina dolls.,ひな人形【にんぎょう】を飾ろう【かざろう】。,ひな人形【にんぎょう】を、飾ろう【かざろう】。,seasonal-events
+こどもの日にはこいのぼりを出そう。,Let's put out the carp streamers for Children's Day.,こどもの日【ひ】にはこいのぼりを出そう【だそう】。,こどもの日【ひ】にはこいのぼりを、出そう【だそう】。,seasonal-events
+お盆に帰省する。,I'll go home for Obon.,お盆【ぼん】に帰省【きせい】する。,お盆【ぼん】に帰省【きせい】する。,seasonal-events
+七五三の写真を撮ろう。,Let's take photos for Shichi-Go-San.,七五三【しちごさん】の写真【しゃしん】を撮ろう【とろう】。,七五三【しちごさん】の写真【しゃしん】を、撮ろう【とろう】。,seasonal-events
+クリスマスの飾りつけをしよう。,Let's put up Christmas decorations.,クリスマスの飾りつけ【かざりつけ】をしよう。,クリスマスの飾りつけ【かざりつけ】を、しよう。,seasonal-events
+美容院を予約した。,I made a hair salon appointment.,美容【びよう】院【いん】を予約【よやく】した。,美容【びよう】院【いん】を、予約【よやく】した。,beauty
+3センチ切ってください。,Please cut 3 centimeters.,3センチ切っ【きっ】てください。,3センチ切っ【きっ】てください。,beauty
+前髪を揃えてください。,Please trim my bangs.,前髪【まえがみ】を揃え【そろえ】てください。,前髪【まえがみ】を、揃え【そろえ】てください。,beauty
+カラーリングをお願いします。,I'd like to get my hair colored.,カラーリングをお願い【ねがい】します。,カラーリングを、お願い【ねがい】します。,beauty
+パーマをかけたいです。,I'd like to get a perm.,パーマをかけたいです。,パーマを、かけたいです。,beauty
+このサイズはありますか?,Do you have this size?,このサイズはありますか?,このサイズはありますか?,beauty
+試着してもいいですか?,May I try this on?,試着【しちゃく】してもいいですか?,試着【しちゃく】してもいいですか?,beauty
+お直しをお願いできますか?,Can you alter this?,お直し【なおし】をお願い【ねがい】できますか?,お直し【なおし】を、お願い【ねがい】できますか?,beauty
+ガソリンを満タンにしてください。,Fill it up please.,ガソリンを満タン【まんたん】にしてください。,ガソリンを、満タン【まんたん】にしてください。,car
+車検の時期です。,It's time for vehicle inspection.,車検【しゃけん】の時期【じき】です。,車検【しゃけん】の時期【じき】です。,car
+駐車場を探しています。,I'm looking for parking.,駐車【ちゅうしゃ】場【じょう】を探し【さがし】ています。,駐車【ちゅうしゃ】場【じょう】を、探し【さがし】ています。,car
+運転免許の更新に行く。,I'm going to renew my driver's license.,運転【うんてん】免許【めんきょ】の更新【こうしん】に行く【いく】。,運転【うんてん】免許【めんきょ】の更新【こうしん】に行く【いく】。,car
+タイヤを交換しなきゃ。,I need to change the tires.,タイヤを交換【こうかん】しなきゃ。,タイヤを、交換【こうかん】しなきゃ。,car
+オイル交換をお願いします。,Oil change please.,オイル交換【こうかん】をお願い【ねがい】します。,オイル交換【こうかん】を、お願い【ねがい】します。,car
+教会に行きます。,I'm going to church.,教会【きょうかい】に行き【いき】ます。,教会【きょうかい】に行き【いき】ます。,church
+日曜礼拝は何時からですか?,What time does Sunday service start?,日曜【にちよう】礼拝【れいはい】は何時【いつ】からですか?,日曜【にちよう】礼拝【れいはい】は何時【いつ】からですか?,church
+賛美歌を歌いましょう。,Let's sing hymns.,賛美【さんび】歌【か】を歌い【うたい】ましょう。,賛美【さんび】歌【か】を、歌い【うたい】ましょう。,church
+聖書を読みましょう。,Let's read the Bible.,聖書【せいしょ】を読み【よみ】ましょう。,聖書【せいしょ】を、読み【よみ】ましょう。,church
+お祈りしましょう。,Let's pray.,お祈り【いのり】しましょう。,お祈り【いのり】しましょう。,church
+牧師さんにお話を聞きたい。,I'd like to talk to the pastor.,牧師【ぼくし】さんにお話【はなし】を聞き【きき】たい。,牧師【ぼくし】さんにお話【はなし】を、聞き【きき】たい。,church
+洗礼を受けたいです。,I'd like to be baptized.,洗礼【せんれい】を受け【うけ】たいです。,洗礼【せんれい】を、受け【うけ】たいです。,church
+聖書勉強会に参加します。,I'll attend Bible study.,聖書【せいしょ】勉強【べんきょう】会【かい】に参加【さんか】します。,聖書【せいしょ】勉強【べんきょう】会【かい】に参加【さんか】します。,church
+日曜学校に子供を連れて行く。,I'll take the children to Sunday school.,日曜【にちよう】学校【がっこう】に子供【こども】を連れ【つれ】て行く【いく】。,日曜【にちよう】学校【がっこう】に子供【こども】を、連れ【つれ】て行く【いく】。,church
+イースターのお祝いをしよう。,Let's celebrate Easter.,イースターのお祝い【いわい】をしよう。,イースターのお祝い【いわい】を、しよう。,church
+クリスマス礼拝に行きましょう。,Let's go to the Christmas service.,クリスマス礼拝【れいはい】に行き【いき】ましょう。,クリスマス礼拝【れいはい】に行き【いき】ましょう。,church
+薬局はどこですか?,Where is the pharmacy?,薬局【やっきょく】はどこですか?,薬局【やっきょく】はどこですか?,pharmacy
+この処方箋をお願いします。,I'd like to fill this prescription.,この処方【しょほう】箋【せん】をお願い【ねがい】します。,この処方【しょほう】箋【せん】を、お願い【ねがい】します。,pharmacy
+市販の風邪薬をください。,I'd like over-the-counter cold medicine.,市販【しはん】の風邪薬【かぜぐすり】をください。,市販【しはん】の風邪薬【かぜぐすり】を、ください。,pharmacy
+頭痛薬はありますか?,Do you have headache medicine?,頭痛【ずつう】薬【やく】はありますか?,頭痛【ずつう】薬【やく】はありますか?,pharmacy
+胃薬をください。,Stomach medicine please.,胃薬【いぐすり】をください。,胃薬【いぐすり】を、ください。,pharmacy
+この薬に副作用はありますか?,Does this medicine have side effects?,この薬【くすり】に副【ふく】作用【さよう】はありますか?,この薬【くすり】に副【ふく】作用【さよう】はありますか?,pharmacy
+1日に何回飲みますか?,How many times a day do I take it?,1日【ついたち】に何【なん】回【かい】飲み【のみ】ますか?,1日【ついたち】に何【なん】回【かい】飲み【のみ】ますか?,pharmacy
+食前ですか?食後ですか?,Before or after meals?,食前【しょくぜん】ですか?食後【しょくご】ですか?,食前【しょくぜん】ですか?食後【しょくご】ですか?,pharmacy
+歯医者の予約を取った。,I made a dentist appointment.,歯【は】医者【いしゃ】の予約【よやく】を取っ【とっ】た。,歯【は】医者【いしゃ】の予約【よやく】を、取っ【とっ】た。,dentist
+虫歯があるみたい。,I think I have a cavity.,虫歯【むしば】があるみたい。,虫歯【むしば】が、あるみたい。,dentist
+歯が痛い。,My tooth hurts.,歯【は】が痛い【いたい】。,歯【は】が、痛い【いたい】。,dentist
+歯磨きをちゃんとしてね。,Brush your teeth properly.,歯磨き【はみがき】をちゃんとしてね。,歯磨き【はみがき】を、ちゃんとしてね。,dentist
+定期検診に行かなきゃ。,I need to go for a regular checkup.,定期【ていき】検診【けんしん】に行か【いか】なきゃ。,定期【ていき】検診【けんしん】に行か【いか】なきゃ。,dentist
+クリーニングをお願いします。,Cleaning please.,クリーニングをお願い【ねがい】します。,クリーニングを、お願い【ねがい】します。,dentist
+散髪に連れて行く。,I'll take them for a haircut.,散髪【さんぱつ】に連れ【つれ】て行く【いく】。,散髪【さんぱつ】に連れ【つれ】て行く【いく】。,hair-salon
+短めにしてください。,Please cut it short.,短め【みじかめ】にしてください。,短め【みじかめ】にしてください。,hair-salon
+子供料金はありますか?,Is there a children's rate?,子供【こども】料金【りょうきん】はありますか?,子供【こども】料金【りょうきん】はありますか?,hair-salon
+前髪だけ切ってください。,Just trim the bangs please.,前髪【まえがみ】だけ切っ【きっ】てください。,前髪【まえがみ】だけ切っ【きっ】てください。,hair-salon
+クリーニングに出してくる。,I'll take this to the dry cleaner.,クリーニングに出し【だし】てくる。,クリーニングに出し【だし】てくる。,dry-cleaning
+シミ抜きをお願いします。,Please remove the stain.,シミ抜き【しみぬき】をお願い【ねがい】します。,シミ抜き【しみぬき】を、お願い【ねがい】します。,dry-cleaning
+仕上がりはいつですか?,When will it be ready?,仕上がり【しあがり】はいつですか?,仕上がり【しあがり】はいつですか?,dry-cleaning
+受け取りに来ました。,I came to pick it up.,受け取り【うけとり】に来【き】ました。,受け取り【うけとり】に来【き】ました。,dry-cleaning
+百均で買い物しよう。,Let's shop at the 100 yen store.,百均【ひゃっきん】で買い物【かいもの】しよう。,百均【ひゃっきん】で買い物【かいもの】しよう。,hundred-yen
+ホームセンターに行く。,I'm going to the home center.,ホームセンターに行く【いく】。,ホームセンターに行く【いく】。,hundred-yen
+収納グッズを探している。,I'm looking for storage items.,収納【しゅうのう】グッズを探し【さがし】ている。,収納【しゅうのう】グッズを、探し【さがし】ている。,hundred-yen
+DIYの材料を買いたい。,I want to buy DIY materials.,DIYの材料【ざいりょう】を買い【かい】たい。,DIYの材料【ざいりょう】を、買い【かい】たい。,hundred-yen
+苦情を言いたいのですが。,I'd like to make a complaint.,苦情【くじょう】を言い【いい】たいのですが。,苦情【くじょう】を、言い【いい】たいのですが。,complaints
+不良品でした。,It was defective.,不良【ふりょう】品【ひん】でした。,不良【ふりょう】品【ひん】でした。,complaints
+返品したいのですが。,I'd like to return this.,返品【へんぴん】したいのですが。,返品【へんぴん】したいのですが。,complaints
+交換してください。,Please exchange this.,交換【こうかん】してください。,交換【こうかん】してください。,complaints
+責任者を呼んでください。,Please call the manager.,責任【せきにん】者【しゃ】を呼ん【よん】でください。,責任【せきにん】者【しゃ】を、呼ん【よん】でください。,complaints
+どう対応してもらえますか?,How will you handle this?,どう対応【たいおう】してもらえますか?,どう対応【たいおう】してもらえますか?,complaints
+もしもし。,Hello (on phone).,もしもし。,もしもし。,phone
+〇〇ですが。,This is...,〇〇ですが。,〇〇ですが。,phone
+少々お待ちください。,Please wait a moment.,少々【しょうしょう】お待ち【まち】ください。,少々【しょうしょう】お待ち【まち】ください。,phone
+伝言をお願いできますか?,Can I leave a message?,伝言【でんごん】をお願い【ねがい】できますか?,伝言【でんごん】を、お願い【ねがい】できますか?,phone
+折り返しお電話いただけますか?,Could you call me back?,折り返し【おりかえし】お電話【でんわ】いただけますか?,折り返し【おりかえし】お電話【でんわ】いただけますか?,phone
+留守番電話にメッセージを残しました。,I left a message on the answering machine.,留守【るす】番【ばん】電話【でんわ】にメッセージを残し【のこし】ました。,留守【るす】番【ばん】電話【でんわ】にメッセージを、残し【のこし】ました。,phone
+電話が切れた。,The call dropped.,電話【でんわ】が切れ【きれ】た。,電話【でんわ】が、切れ【きれ】た。,phone
+今日は晴れです。,It's sunny today.,今日【きょう】は晴れ【はれ】です。,今日【きょう】は晴れ【はれ】です。,weather
+明日は雨らしい。,It seems like rain tomorrow.,明日【あす】は雨【あめ】らしい。,明日【あす】は雨【あめ】らしい。,weather
+台風が近づいている。,A typhoon is approaching.,台風【たいふう】が近づい【ちかづい】ている。,台風【たいふう】が、近づい【ちかづい】ている。,weather
+梅雨入りしたね。,The rainy season has started.,梅雨入り【つゆいり】したね。,梅雨入り【つゆいり】したね。,weather
+猛暑日が続いている。,The extreme heat continues.,猛暑【もうしょ】日【じつ】が続い【つづい】ている。,猛暑【もうしょ】日【じつ】が、続い【つづい】ている。,weather
+花粉症がひどい。,My hay fever is bad.,花粉【かふん】症【しょう】がひどい。,花粉【かふん】症【しょう】が、ひどい。,weather
+天気予報を見て。,Check the weather forecast.,天気【てんき】予報【よほう】を見【み】て。,天気【てんき】予報【よほう】を、見【み】て。,weather
+傘を持って行ってね。,Take an umbrella.,傘【かさ】を持っ【もっ】て行っ【いっ】てね。,傘【かさ】を、持っ【もっ】て行っ【いっ】てね。,weather
+今日は何曜日?,What day is it today?,今日【きょう】は何曜【なんよう】日【ひ】?,今日【きょう】は何曜【なんよう】日【ひ】?,time
+来週の火曜日はどう?,How about next Tuesday?,来週【らいしゅう】の火曜【かよう】日【ひ】はどう?,来週【らいしゅう】の火曜【かよう】日【ひ】はどう?,time
+再来週に予定がある。,I have plans the week after next.,再来【さらい】週【しゅう】に予定【よてい】がある。,再来【さらい】週【しゅう】に予定【よてい】が、ある。,time
+先日はありがとうございました。,Thank you for the other day.,先日【せんじつ】はありがとうございました。,先日【せんじつ】はありがとうございました。,time
+月末までに終わらせて。,Finish it by the end of the month.,月末【げつまつ】までに終わら【おわら】せて。,月末【げつまつ】までに終わら【おわら】せて。,time
+来月の予定を確認しよう。,Let's check next month's schedule.,来月【らいげつ】の予定【よてい】を確認【かくにん】しよう。,来月【らいげつ】の予定【よてい】を、確認【かくにん】しよう。,time
+朝の9時に集合です。,We meet at 9 AM.,朝【あさ】の9時【じ】に集合【しゅうごう】です。,朝【あさ】の9時【じ】に集合【しゅうごう】です。,time
+夕方6時に帰ります。,I'll be back at 6 PM.,夕方【ゆうがた】6時【じ】に帰り【かえり】ます。,夕方【ゆうがた】6時【じ】に帰り【かえり】ます。,time
+起きる時間だよ。,It's time to wake up.,起きる【おきる】時間【じかん】だよ。,起きる【おきる】時間【じかん】だよ。,daily-routine
+朝ごはんを食べなさい。,Eat your breakfast.,朝ごはん【あさごはん】を食べ【たべ】なさい。,朝ごはん【あさごはん】を、食べ【たべ】なさい。,daily-routine
+歯を磨いた?,Did you brush your teeth?,歯【は】を磨い【みがい】た?,歯【は】を、磨い【みがい】た?,daily-routine
+顔を洗ってきて。,Go wash your face.,顔【かお】を洗っ【あらっ】てきて。,顔【かお】を、洗っ【あらっ】てきて。,daily-routine
+着替えなさい。,Get changed.,着替え【きがえ】なさい。,着替え【きがえ】なさい。,daily-routine
+忘れ物ない?,Do you have everything?,忘れ物【わすれもの】ない?,忘れ物【わすれもの】ない?,daily-routine
+いってらっしゃい。,Have a good day.,いってらっしゃい。,いってらっしゃい。,daily-routine
+おかえりなさい。,Welcome home.,おかえりなさい。,おかえりなさい。,daily-routine
+手を洗ってね。,Wash your hands.,手【て】を洗っ【あらっ】てね。,手【て】を、洗っ【あらっ】てね。,daily-routine
+うがいをしてね。,Gargle please.,うがいをしてね。,うがいを、してね。,daily-routine
+宿題やった?,Did you do your homework?,宿題【しゅくだい】やった?,宿題【しゅくだい】やった?,daily-routine
+おやつを食べていいよ。,You can have a snack.,おやつを食べ【たべ】ていいよ。,おやつを、食べ【たべ】ていいよ。,daily-routine
+テレビは宿題の後でね。,TV after homework.,テレビは宿題【しゅくだい】の後【あと】でね。,テレビは宿題【しゅくだい】の後【あと】でね。,daily-routine
+お風呂に入りなさい。,Take a bath.,お風呂【ふろ】に入り【はいり】なさい。,お風呂【ふろ】に入り【はいり】なさい。,daily-routine
+もう寝る時間だよ。,It's bedtime.,もう寝る【ねる】時間【じかん】だよ。,もう寝る【ねる】時間【じかん】だよ。,daily-routine
+おやすみなさい。,Good night.,おやすみなさい。,おやすみなさい。,daily-routine
+電気を消して。,Turn off the light.,電気【でんき】を消し【けし】て。,電気【でんき】を、消し【けし】て。,daily-routine
+早く起きなさい。,Wake up early.,早く【はやく】起き【おき】なさい。,早く【はやく】起き【おき】なさい。,daily-routine
+遅刻するよ。,You'll be late.,遅刻【ちこく】するよ。,遅刻【ちこく】するよ。,daily-routine
+急いで!,Hurry up!,急い【いそい】で!,急い【いそい】で!,daily-routine
+ゆっくり食べて。,Eat slowly.,ゆっくり食べ【たべ】て。,ゆっくり食べ【たべ】て。,daily-routine
+よく噛んでね。,Chew well.,よく噛ん【かん】でね。,よく噛ん【かん】でね。,daily-routine
+野菜も食べなさい。,Eat your vegetables.,野菜【やさい】も食べ【たべ】なさい。,野菜【やさい】も食べ【たべ】なさい。,daily-routine
+残さないでね。,Don't leave any.,残さ【のこさ】ないでね。,残さ【のこさ】ないでね。,daily-routine
+おかわりする?,Do you want seconds?,おかわりする?,おかわりする?,daily-routine
+お茶を入れようか?,Shall I make tea?,お茶【ちゃ】を入れよう【いれよう】か?,お茶【ちゃ】を、入れよう【いれよう】か?,daily-routine
+コーヒーを淹れて。,Make coffee.,コーヒーを淹れ【いれ】て。,コーヒーを、淹れ【いれ】て。,daily-routine
+牛乳を飲んでね。,Drink your milk.,牛乳【ぎゅうにゅう】を飲ん【のん】でね。,牛乳【ぎゅうにゅう】を、飲ん【のん】でね。,daily-routine
+果物を食べる?,Do you want fruit?,果物【くだもの】を食べる【たべる】?,果物【くだもの】を、食べる【たべる】?,daily-routine
+アイスは夕飯の後でね。,Ice cream after dinner.,アイスは夕飯【ゆうはん】の後【あと】でね。,アイスは夕飯【ゆうはん】の後【あと】でね。,daily-routine
+喉が渇いた。,I'm thirsty.,喉【のど】が渇い【かわい】た。,喉【のど】が、渇い【かわい】た。,daily-routine
+お腹すいた。,I'm hungry.,お腹【おなか】すいた。,お腹【おなか】すいた。,daily-routine
+疲れた。,I'm tired.,疲れ【つかれ】た。,疲れ【つかれ】た。,daily-routine
+眠い。,I'm sleepy.,眠い【ねむい】。,眠い【ねむい】。,daily-routine
+暑いね。,It's hot isn't it.,暑い【あつい】ね。,暑い【あつい】ね。,daily-routine
+寒いね。,It's cold isn't it.,寒い【さむい】ね。,寒い【さむい】ね。,daily-routine
+エアコンをつけて。,Turn on the air conditioner.,エアコンをつけて。,エアコンを、つけて。,daily-routine
+窓を開けて。,Open the window.,窓【まど】を開け【あけ】て。,窓【まど】を、開け【あけ】て。,daily-routine
+窓を閉めて。,Close the window.,窓【まど】を閉め【しめ】て。,窓【まど】を、閉め【しめ】て。,daily-routine
+カーテンを開けて。,Open the curtains.,カーテンを開け【あけ】て。,カーテンを、開け【あけ】て。,daily-routine
+カーテンを閉めて。,Close the curtains.,カーテンを閉め【しめ】て。,カーテンを、閉め【しめ】て。,daily-routine
+ドアを閉めてね。,Close the door.,ドアを閉め【しめ】てね。,ドアを、閉め【しめ】てね。,daily-routine
+鍵をかけた?,Did you lock it?,鍵【かぎ】をかけた?,鍵【かぎ】を、かけた?,daily-routine
+電話が鳴ってる。,The phone is ringing.,電話【でんわ】が鳴っ【なっ】てる。,電話【でんわ】が、鳴っ【なっ】てる。,daily-routine
+誰か来たみたい。,Someone's here.,誰【だれ】か来【き】たみたい。,誰【だれ】か来【き】たみたい。,daily-routine
+玄関に出てくる。,I'll get the door.,玄関【げんかん】に出【で】てくる。,玄関【げんかん】に出【で】てくる。,daily-routine
+ちょっと待ってて。,Wait a moment.,ちょっと待っ【まっ】てて。,ちょっと待っ【まっ】てて。,daily-routine
+すぐ戻るから。,I'll be right back.,すぐ戻る【もどる】から。,すぐ戻る【もどる】から。,daily-routine
+何してるの?,What are you doing?,何【なん】してるの?,何【なん】してるの?,daily-routine
+どこに行くの?,Where are you going?,どこに行く【いく】の?,どこに行く【いく】の?,daily-routine
+いつ帰ってくる?,When will you be back?,いつ帰っ【かえっ】てくる?,いつ帰っ【かえっ】てくる?,daily-routine
+ご飯の支度ができたよ。,Dinner is ready.,ご飯【ごはん】の支度【したく】ができたよ。,ご飯【ごはん】の支度【したく】が、できたよ。,daily-routine
+食べ終わったら片付けて。,Clean up when you're done eating.,食べ【たべ】終わっ【おわっ】たら片付け【かたづけ】て。,食べ【たべ】終わっ【おわっ】たら片付け【かたづけ】て。,daily-routine
+お皿を下げて。,Clear the dishes.,お皿【さら】を下げ【さげ】て。,お皿【さら】を、下げ【さげ】て。,daily-routine
+テーブルを拭いて。,Wipe the table.,テーブルを拭い【ふい】て。,テーブルを、拭い【ふい】て。,daily-routine
+食器を洗ってくれる?,Can you wash the dishes?,食器【しょっき】を洗っ【あらっ】てくれる?,食器【しょっき】を、洗っ【あらっ】てくれる?,daily-routine
+お風呂が沸いたよ。,The bath is ready.,お風呂【ふろ】が沸い【わい】たよ。,お風呂【ふろ】が、沸い【わい】たよ。,daily-routine
+お風呂のお湯を足して。,Add more water to the bath.,お風呂【ふろ】のお湯【ゆ】を足し【たし】て。,お風呂【ふろ】のお湯【ゆ】を、足し【たし】て。,daily-routine
+シャンプーが切れそう。,We're almost out of shampoo.,シャンプーが切れ【きれ】そう。,シャンプーが、切れ【きれ】そう。,daily-routine
+タオルを持ってきて。,Bring a towel.,タオルを持っ【もっ】てきて。,タオルを、持っ【もっ】てきて。,daily-routine
+髪を乾かして。,Dry your hair.,髪【かみ】を乾かし【かわかし】て。,髪【かみ】を、乾かし【かわかし】て。,daily-routine
+パジャマに着替えて。,Change into pajamas.,パジャマに着替え【きがえ】て。,パジャマに着替え【きがえ】て。,daily-routine
+布団を敷いて。,Lay out the futon.,布団【ふとん】を敷い【しい】て。,布団【ふとん】を、敷い【しい】て。,daily-routine
+枕が高い。,The pillow is too high.,枕【まくら】が高い【たかい】。,枕【まくら】が、高い【たかい】。,daily-routine
+毛布をかけて。,Put on a blanket.,毛布【もうふ】をかけて。,毛布【もうふ】を、かけて。,daily-routine
+目覚まし時計をセットして。,Set the alarm clock.,目覚まし【めざまし】時計【とけい】をセットして。,目覚まし【めざまし】時計【とけい】を、セットして。,daily-routine
+何時に起きる?,What time will you wake up?,何【なん】時【じ】に起きる【おきる】?,何【なん】時【じ】に起きる【おきる】?,daily-routine
+いいお天気ですね。,It's nice weather.,いいお天気【てんき】ですね。,いいお天気【てんき】ですね。,small-talk
+蒸し暑いですね。,It's humid.,蒸し暑い【むしあつい】ですね。,蒸し暑い【むしあつい】ですね。,small-talk
+涼しくなりましたね。,It's gotten cool.,涼しく【すずしく】なりましたね。,涼しく【すずしく】なりましたね。,small-talk
+春らしくなってきましたね。,It's starting to feel like spring.,春【はる】らしくなってきましたね。,春【はる】らしくなってきましたね。,small-talk
+紅葉がきれいですね。,The autumn leaves are beautiful.,紅葉【こうよう】がきれいですね。,紅葉【こうよう】が、きれいですね。,small-talk
+雪が降りそうですね。,It looks like it might snow.,雪【ゆき】が降り【ふり】そうですね。,雪【ゆき】が、降り【ふり】そうですね。,small-talk
+風が強いですね。,The wind is strong.,風【かぜ】が強い【つよい】ですね。,風【かぜ】が、強い【つよい】ですね。,small-talk
+お子さん大きくなりましたね。,Your child has grown.,お子【こ】さん大きく【おおきく】なりましたね。,お子【こ】さん大きく【おおきく】なりましたね。,small-talk
+お元気そうで何よりです。,I'm glad you look well.,お元気【げんき】そうで何【なん】よりです。,お元気【げんき】そうで何【なん】よりです。,small-talk
+最近どうですか?,How have you been?,最近【さいきん】どうですか?,最近【さいきん】どうですか?,small-talk
+お久しぶりです。,Long time no see.,お久し【ひさし】ぶりです。,お久し【ひさし】ぶりです。,small-talk
+またお会いできて嬉しいです。,Nice to see you again.,またお会い【あい】できて嬉しい【うれしい】です。,また、お会い【あい】できて嬉しい【うれしい】です。,small-talk
+今度ゆっくりお話ししましょう。,Let's chat properly sometime.,今度【こんど】ゆっくりお話し【はなし】しましょう。,今度【こんど】ゆっくりお話し【はなし】しましょう。,small-talk
+お体に気をつけてください。,Please take care of yourself.,お体【からだ】に気【き】をつけてください。,お体【からだ】に気【き】を、つけてください。,small-talk
+風邪をひかないでくださいね。,Don't catch a cold.,風邪【かぜ】をひかないでくださいね。,風邪【かぜ】を、ひかないでくださいね。,small-talk
+お気をつけてお帰りください。,Get home safely.,お気【き】をつけてお帰り【かえり】ください。,お気【き】を、つけてお帰り【かえり】ください。,small-talk
+素敵なお洋服ですね。,What lovely clothes.,素敵【すてき】なお洋服【ようふく】ですね。,素敵【すてき】なお洋服【ようふく】ですね。,small-talk
+髪型変えましたか?,Did you change your hairstyle?,髪型【かみがた】変え【かえ】ましたか?,髪型【かみがた】変え【かえ】ましたか?,small-talk
+その鞄素敵ですね。,That bag is lovely.,その鞄【かばん】素敵【すてき】ですね。,その鞄【かばん】素敵【すてき】ですね。,small-talk
+どちらで買われたんですか?,Where did you buy it?,どちらで買わ【かわ】れたんですか?,どちらで買わ【かわ】れたんですか?,small-talk
+人参を薄切りにして。,Slice the carrots thin.,人参【にんじん】を薄切り【うすぎり】にして。,人参【にんじん】を、薄切り【うすぎり】にして。,cooking
+玉ねぎをみじん切りにして。,Dice the onion.,玉ねぎ【たまねぎ】をみじん切り【ぎり】にして。,玉ねぎ【たまねぎ】を、みじん切り【ぎり】にして。,cooking
+キャベツを千切りにして。,Shred the cabbage.,キャベツを千切り【ちぎり】にして。,キャベツを、千切り【ちぎり】にして。,cooking
+肉を一口大に切って。,Cut the meat into bite-size pieces.,肉【にく】を一口【ひとくち】大【だい】に切っ【きっ】て。,肉【にく】を、一口【ひとくち】大【だい】に切っ【きっ】て。,cooking
+野菜を乱切りにする。,Cut the vegetables into chunks.,野菜【やさい】を乱切り【らんぎり】にする。,野菜【やさい】を、乱切り【らんぎり】にする。,cooking
+お湯を沸かして。,Boil water.,お湯【ゆ】を沸かし【わかし】て。,お湯【ゆ】を、沸かし【わかし】て。,cooking
+パスタを茹でます。,I'll boil the pasta.,パスタを茹で【ゆで】ます。,パスタを、茹で【ゆで】ます。,cooking
+卵を溶いて。,Beat the eggs.,卵【たまご】を溶い【とい】て。,卵【たまご】を、溶い【とい】て。,cooking
+小麦粉をふるって。,Sift the flour.,小【こ】麦粉【むぎこ】をふるって。,小【こ】麦粉【むぎこ】を、ふるって。,cooking
+生地を寝かせて。,Let the dough rest.,生地【きじ】を寝かせ【ねかせ】て。,生地【きじ】を、寝かせ【ねかせ】て。,cooking
+オーブンで焼きます。,I'll bake it in the oven.,オーブンで焼き【やき】ます。,オーブンで焼き【やき】ます。,cooking
+グリルで焼いて。,Grill it.,グリルで焼い【やい】て。,グリルで焼い【やい】て。,cooking
+フライパンで炒めて。,Stir-fry in the pan.,フライパンで炒め【いため】て。,フライパンで炒め【いため】て。,cooking
+弱火で煮込んで。,Simmer on low heat.,弱火【よわび】で煮込ん【にこん】で。,弱火【よわび】で煮込ん【にこん】で。,cooking
+強火で一気に。,High heat quickly.,強火【つよび】で一気【いっき】に。,強火【つよび】で一気【いっき】に。,cooking
+中火にして。,Set to medium heat.,中火【ちゅうび】にして。,中火【ちゅうび】にして。,cooking
+蓋をして。,Put the lid on.,蓋【ふた】をして。,蓋【ふた】を、して。,cooking
+灰汁を取って。,Skim off the scum.,灰汁【あく】を取っ【とっ】て。,灰汁【あく】を、取っ【とっ】て。,cooking
+味を見てみて。,Taste it.,味【あじ】を見【み】てみて。,味【あじ】を、見【み】てみて。,cooking
+塩コショウで味を整えて。,Season with salt and pepper.,塩【しお】コショウで味【あじ】を整え【ととのえ】て。,塩【しお】コショウで味【あじ】を、整え【ととのえ】て。,cooking
+お皿に盛り付けて。,Plate it.,お皿【さら】に盛り付け【もりつけ】て。,お皿【さら】に盛り付け【もりつけ】て。,cooking
+熱いうちに食べてね。,Eat while it's hot.,熱い【あつい】うちに食べ【たべ】てね。,熱い【あつい】うちに食べ【たべ】てね。,cooking
+冷めないうちにどうぞ。,Please eat before it gets cold.,冷め【さめ】ないうちにどうぞ。,冷め【さめ】ないうちにどうぞ。,cooking
+レンジで3分温めて。,Microwave for 3 minutes.,レンジで3分【ぷん】温め【あたため】て。,レンジで3分【ぷん】温め【あたため】て。,cooking
+解凍してから使って。,Defrost before using.,解凍【かいとう】してから使っ【つかっ】て。,解凍【かいとう】してから使っ【つかっ】て。,cooking
+冷凍庫に入れておいて。,Put it in the freezer.,冷凍【れいとう】庫【こ】に入れ【いれ】ておいて。,冷凍【れいとう】庫【こ】に入れ【いれ】ておいて。,cooking
+常温に戻してから。,Let it come to room temperature first.,常温【じょうおん】に戻し【もどし】てから。,常温【じょうおん】に戻し【もどし】てから。,cooking
+賞味期限が切れてる。,It's past the expiration date.,賞味【しょうみ】期限【きげん】が切れ【きれ】てる。,賞味【しょうみ】期限【きげん】が、切れ【きれ】てる。,cooking
+まだ食べられるかな。,Can we still eat this?,まだ食べ【たべ】られるかな。,まだ食べ【たべ】られるかな。,cooking
+匂いを嗅いでみて。,Smell it.,匂い【におい】を嗅い【かい】でみて。,匂い【におい】を、嗅い【かい】でみて。,cooking
+傷んでるみたい。,It seems spoiled.,傷ん【いたん】でるみたい。,傷ん【いたん】でるみたい。,cooking
+もったいないけど捨てよう。,It's wasteful but let's throw it away.,もったいないけど捨てよう【すてよう】。,もったいないけど捨てよう【すてよう】。,cooking
+残り物を使い切ろう。,Let's use up the leftovers.,残り物【のこりもの】を使い【つかい】切ろう【きろう】。,残り物【のこりもの】を、使い【つかい】切ろう【きろう】。,cooking
+入学式の準備をしよう。,Let's prepare for the entrance ceremony.,入学【にゅうがく】式【しき】の準備【じゅんび】をしよう。,入学【にゅうがく】式【しき】の準備【じゅんび】を、しよう。,school
+卒業式に出席します。,I'll attend the graduation ceremony.,卒業【そつぎょう】式【しき】に出席【しゅっせき】します。,卒業【そつぎょう】式【しき】に出席【しゅっせき】します。,school
+授業参観があります。,There's a class observation.,授業【じゅぎょう】参観【さんかん】があります。,授業【じゅぎょう】参観【さんかん】が、あります。,school
+個人面談の予約を取った。,I made an appointment for a parent-teacher meeting.,個人【こじん】面談【めんだん】の予約【よやく】を取っ【とっ】た。,個人【こじん】面談【めんだん】の予約【よやく】を、取っ【とっ】た。,school
+三者面談に行かなきゃ。,I have to go to the three-way conference.,三【さん】者【しゃ】面談【めんだん】に行か【いか】なきゃ。,三【さん】者【しゃ】面談【めんだん】に行か【いか】なきゃ。,school
+通知表をもらってきた?,Did you bring your report card?,通知【つうち】表【ひょう】をもらってきた?,通知【つうち】表【ひょう】を、もらってきた?,school
+テストはどうだった?,How was the test?,テストはどうだった?,テストはどうだった?,school
+もっと勉強しなさい。,Study more.,もっと勉強【べんきょう】しなさい。,もっと勉強【べんきょう】しなさい。,school
+予習をしておいてね。,Do the preview study.,予習【よしゅう】をしておいてね。,予習【よしゅう】を、しておいてね。,school
+復習が大事だよ。,Review is important.,復習【ふくしゅう】が大事【だいじ】だよ。,復習【ふくしゅう】が、大事【だいじ】だよ。,school
+この問題わかる?,Do you understand this problem?,この問題【もんだい】わかる?,この問題【もんだい】わかる?,school
+教えてあげようか?,Shall I help you?,教え【おしえ】てあげようか?,教え【おしえ】てあげようか?,school
+自分で考えてみて。,Try thinking for yourself.,自分【じぶん】で考え【かんがえ】てみて。,自分【じぶん】で考え【かんが、え】てみて。,school
+字をきれいに書いて。,Write neatly.,字【じ】をきれいに書い【かい】て。,字【じ】を、きれいに書い【かい】て。,school
+消しゴムを使って。,Use the eraser.,消し【けし】ゴムを使っ【つかっ】て。,消し【けし】ゴムを、使っ【つかっ】て。,school
+鉛筆を削ってね。,Sharpen your pencil.,鉛筆【えんぴつ】を削っ【けずっ】てね。,鉛筆【えんぴつ】を、削っ【けずっ】てね。,school
+ノートに書いて。,Write it in your notebook.,ノートに書い【かい】て。,ノートに書い【かい】て。,school
+教科書を開いて。,Open your textbook.,教科【きょうか】書【しょ】を開い【ひらい】て。,教科【きょうか】書【しょ】を、開い【ひらい】て。,school
+プリントを忘れないで。,Don't forget the handout.,プリントを忘れ【わすれ】ないで。,プリントを、忘れ【わすれ】ないで。,school
+ランドセルに入れた?,Did you put it in your school bag?,ランドセルに入れ【いれ】た?,ランドセルに入れ【いれ】た?,school
+友達と仲良くしてね。,Get along with your friends.,友達【ともだち】と仲良く【なかよく】してね。,友達【ともだち】と仲良く【なかよく】してね。,school
+いじめはダメだよ。,Bullying is not okay.,いじめはダメだよ。,いじめはダメだよ。,school
+困ったら先生に相談して。,If you have trouble talk to your teacher.,困っ【こまっ】たら先生【せんせい】に相談【そうだん】して。,困っ【こまっ】たら先生【せんせい】に相談【そうだん】して。,school
+今日は学校どうだった?,How was school today?,今日【きょう】は学校【がっこう】どうだった?,今日【きょう】は学校【がっこう】どうだった?,school
+楽しかった?,Did you have fun?,楽しかっ【たのしかっ】た?,楽しかっ【たのしかっ】た?,school
+クラスメイトを呼んでいい?,Can I invite my classmates over?,クラスメイトを呼ん【よん】でいい?,クラスメイトを、呼ん【よん】でいい?,child-health
+おもちゃを貸してあげて。,Share your toys.,おもちゃを貸し【かし】てあげて。,おもちゃを、貸し【かし】てあげて。,child-health
+順番に遊んでね。,Take turns playing.,順番【じゅんばん】に遊ん【あそん】でね。,順番【じゅんばん】に遊ん【あそん】でね。,child-health
+仲間はずれにしないで。,Don't leave anyone out.,仲間【なかま】はずれにしないで。,仲間【なかま】はずれにしないで。,child-health
+ケンカしないで。,Don't fight.,ケンカしないで。,ケンカしないで。,child-health
+仲直りしなさい。,Make up with each other.,仲直り【なかなおり】しなさい。,仲直り【なかなおり】しなさい。,child-health
+謝りなさい。,Apologize.,謝り【あやまり】なさい。,謝り【あやまり】なさい。,child-health
+許してあげて。,Forgive them.,許し【ゆるし】てあげて。,許し【ゆるし】てあげて。,child-health
+優しくしてね。,Be kind.,優しく【やさしく】してね。,優しく【やさしく】してね。,child-health
+思いやりを持って。,Be considerate.,思いやり【おもいやり】を持っ【もっ】て。,思いやり【おもいやり】を、持っ【もっ】て。,child-health
+危ないことはしないで。,Don't do dangerous things.,危ない【あぶない】ことはしないで。,危ない【あぶない】ことはしないで。,child-health
+気をつけてね。,Be careful.,気【き】をつけてね。,気【き】を、つけてね。,child-health
+転ばないでね。,Don't fall.,転ば【ころば】ないでね。,転ば【ころば】ないでね。,child-health
+走らないで。,Don't run.,走ら【はしら】ないで。,走ら【はしら】ないで。,child-health
+静かにしなさい。,Be quiet.,静か【しずか】にしなさい。,静か【しずか】にしなさい。,child-health
+うるさいよ。,You're being loud.,うるさいよ。,うるさいよ。,child-health
+大きな声を出さないで。,Don't shout.,大きな【おおきな】声【こえ】を出さ【ださ】ないで。,大きな【おおきな】声【こえ】を、出さ【ださ】ないで。,child-health
+行儀よくしなさい。,Behave yourself.,行儀【ぎょうぎ】よくしなさい。,行儀【ぎょうぎ】よくしなさい。,child-health
+姿勢を良くして。,Sit up straight.,姿勢【しせい】を良く【よく】して。,姿勢【しせい】を、良く【よく】して。,child-health
+肘をつかないで。,Don't put your elbows on the table.,肘【ひじ】をつかないで。,肘【ひじ】を、つかないで。,child-health
+口を閉じて食べなさい。,Eat with your mouth closed.,口【くち】を閉じ【とじ】て食べ【たべ】なさい。,口【くち】を、閉じ【とじ】て食べ【たべ】なさい。,child-health
+お箸の持ち方が違うよ。,That's not how you hold chopsticks.,お箸【はし】の持ち【もち】方【かた】が違う【ちがう】よ。,お箸【はし】の持ち【もち】方【かた】が、違う【ちがう】よ。,child-health
+お皿を持って食べて。,Hold your plate while eating.,お皿【さら】を持っ【もっ】て食べ【たべ】て。,お皿【さら】を、持っ【もっ】て食べ【たべ】て。,child-health
+好き嫌いしないで。,Don't be picky.,好き嫌い【すききらい】しないで。,好き嫌い【すききらい】しないで。,child-health
+食べ物を粗末にしないで。,Don't waste food.,食べ物【たべもの】を粗末【そまつ】にしないで。,食べ物【たべもの】を、粗末【そまつ】にしないで。,child-health
+感謝して食べなさい。,Eat with gratitude.,感謝【かんしゃ】して食べ【たべ】なさい。,感謝【かんしゃ】して食べ【たべ】なさい。,child-health
+いただきますを言った?,Did you say itadakimasu?,いただきますを言っ【いっ】た?,いただきますを、言っ【いっ】た?,child-health
+ごちそうさまは?,Say gochisousama.,ごちそうさまは?,ごちそうさまは?,child-health
+ありがとうを言いなさい。,Say thank you.,ありがとうを言い【いい】なさい。,ありがとうを、言い【いい】なさい。,child-health
+すみませんを言えた?,Did you say sorry?,すみませんを言え【いえ】た?,すみませんを、言え【いえ】た?,child-health
+挨拶をちゃんとしてね。,Greet people properly.,挨拶【あいさつ】をちゃんとしてね。,挨拶【あいさつ】を、ちゃんとしてね。,child-health
+大人の人には敬語を使って。,Use polite language with adults.,大人【おとな】の人【ひと】には敬語【けいご】を使っ【つかっ】て。,大人【おとな】の人【ひと】には敬語【けいご】を、使っ【つかっ】て。,child-health
+靴を揃えて。,Line up your shoes.,靴【くつ】を揃え【そろえ】て。,靴【くつ】を、揃え【そろえ】て。,child-health
+脱いだ服をたたんで。,Fold the clothes you took off.,脱い【ぬい】だ服【ふく】をたたんで。,脱い【ぬい】だ服【ふく】を、たたんで。,child-health
+使ったものは元に戻して。,Put things back where you found them.,使っ【つかっ】たものは元【もと】に戻し【もどし】て。,使っ【つかっ】たものは元【もと】に戻し【もどし】て。,child-health
+自分のことは自分でやって。,Do your own things yourself.,自分【じぶん】のことは自分【じぶん】でやって。,自分【じぶん】のことは自分【じぶん】でやって。,child-health
+お手伝いしてくれる?,Can you help me?,お手伝い【てつだい】してくれる?,お手伝い【てつだい】してくれる?,child-health
+ありがとう助かるよ。,Thank you that helps.,ありがとう助かる【たすかる】よ。,ありがとう助かる【たすかる】よ。,child-health
+よくできました。,Well done.,よくできました。,よくできました。,child-health
+その調子。,Keep it up.,その調子【ちょうし】。,その調子【ちょうし】。,child-health
+すごいね。,That's amazing.,すごいね。,すごいね。,child-health
+上手になったね。,You've gotten better.,上手【じょうず】になったね。,上手【じょうず】になったね。,child-health
+頑張ってるね。,You're working hard.,頑張っ【がんばっ】てるね。,頑張っ【がんばっ】てるね。,child-health
+諦めないで。,Don't give up.,諦め【あきらめ】ないで。,諦め【あきらめ】ないで。,child-health
+もう少しだよ。,Just a little more.,もう少し【すこし】だよ。,もう少し【すこし】だよ。,child-health
+自信を持って。,Have confidence.,自信【じしん】を持っ【もっ】て。,自信【じしん】を、持っ【もっ】て。,child-health
+失敗しても大丈夫。,It's okay to fail.,失敗【しっぱい】しても大丈夫【だいじょうぶ】。,失敗【しっぱい】しても大丈夫【だいじょうぶ】。,child-health
+次があるよ。,There's always next time.,次【つぎ】があるよ。,次【つぎ】が、あるよ。,child-health
+一緒にやろう。,Let's do it together.,一緒【いっしょ】にやろう。,一緒【いっしょ】にやろう。,child-health
+分からないことは聞いてね。,Ask if you don't understand.,分から【わから】ないことは聞い【きい】てね。,分から【わから】ないことは聞い【きい】てね。,child-health
+クレジットカードでお願いします。,Credit card please.,クレジットカードでお願い【ねがい】します。,クレジットカードでお願い【ねがい】します。,shopping
+電子マネーは使えますか?,Can I use electronic money?,電子【でんし】マネーは使え【つかえ】ますか?,電子【でんし】マネーは使え【つかえ】ますか?,shopping
+PayPayで払えますか?,Can I pay with PayPay?,PayPayで払え【はらえ】ますか?,PayPayで払え【はらえ】ますか?,shopping
+現金のみですか?,Cash only?,現金【げんきん】のみですか?,現金【げんきん】のみですか?,shopping
+お釣りはいりません。,Keep the change.,お釣り【つり】はいりません。,お釣り【つり】はいりません。,shopping
+レシートをください。,Receipt please.,レシートをください。,レシートを、ください。,shopping
+領収書をお願いします。,I need a receipt.,領収【りょうしゅう】書【しょ】をお願い【ねがい】します。,領収【りょうしゅう】書【しょ】を、お願い【ねがい】します。,shopping
+割引はありますか?,Is there a discount?,割引【わりびき】はありますか?,割引【わりびき】はありますか?,shopping
+セール中ですか?,Is it on sale?,セール中【ちゅう】ですか?,セール中【ちゅう】ですか?,shopping
+まとめ買いで安くなりますか?,Is there a bulk discount?,まとめ買い【まとめがい】で安く【やすく】なりますか?,まとめ買い【まとめがい】で安く【やすく】なりますか?,shopping
+他の色はありますか?,Do you have other colors?,他【ほか】の色【いろ】はありますか?,他【ほか】の色【いろ】はありますか?,shopping
+在庫はありますか?,Do you have it in stock?,在庫【ざいこ】はありますか?,在庫【ざいこ】はありますか?,shopping
+取り寄せできますか?,Can you order it?,取り寄せ【とりよせ】できますか?,取り寄せ【とりよせ】できますか?,shopping
+いつ届きますか?,When will it arrive?,いつ届き【とどき】ますか?,いつ届き【とどき】ますか?,shopping
+ギフト用に包んでもらえますか?,Can you gift wrap it?,ギフト用【よう】に包ん【つつん】でもらえますか?,ギフト用【よう】に包ん【つつん】でもらえますか?,shopping
+別々に包んでください。,Please wrap them separately.,別々【べつべつ】に包ん【つつん】でください。,別々【べつべつ】に包ん【つつん】でください。,shopping
+紙袋をもう一枚もらえますか?,Can I have another paper bag?,紙袋【かみぶくろ】をもう一【いっ】枚【まい】もらえますか?,紙袋【かみぶくろ】を、もう一【いっ】枚【まい】もらえますか?,shopping
+これは壊れやすいです。,This is fragile.,これは壊れ【こわれ】やすいです。,これは壊れ【こわれ】やすいです。,shopping
+重いので配送をお願いします。,It's heavy so please deliver it.,重い【おもい】ので配送【はいそう】をお願い【ねがい】します。,重い【おもい】ので配送【はいそう】を、お願い【ねがい】します。,shopping
+今日届きますか?,Will it arrive today?,今日【きょう】届き【とどき】ますか?,今日【きょう】届き【とどき】ますか?,shopping
+午前中に届けてください。,Please deliver in the morning.,午前【ごぜん】中【ちゅう】に届け【とどけ】てください。,午前【ごぜん】中【ちゅう】に届け【とどけ】てください。,shopping
+不在の場合は置いといてください。,If I'm not home please leave it.,不在【ふざい】の場合【ばあい】は置い【おい】といてください。,不在【ふざい】の場合【ばあい】は置い【おい】といてください。,shopping
+定期購入を申し込みたい。,I'd like to sign up for regular delivery.,定期【ていき】購入【こうにゅう】を申し込み【もうしこみ】たい。,定期【ていき】購入【こうにゅう】を、申し込み【もうしこみ】たい。,shopping
+解約したいのですが。,I'd like to cancel.,解約【かいやく】したいのですが。,解約【かいやく】したいのですが。,shopping
+返品期限はいつまでですか?,What is the return deadline?,返品【へんぴん】期限【きげん】はいつまでですか?,返品【へんぴん】期限【きげん】はいつまでですか?,shopping
+交換の手続きを教えてください。,Please tell me the exchange procedure.,交換【こうかん】の手続き【てつづき】を教え【おしえ】てください。,交換【こうかん】の手続き【てつづき】を、教え【おしえ】てください。,shopping
+不良品だったので返金してください。,It was defective so please refund.,不良【ふりょう】品【ひん】だったので返金【へんきん】してください。,不良【ふりょう】品【ひん】だったので返金【へんきん】してください。,shopping
+サイズが合わなかった。,The size didn't fit.,サイズが合わ【あわ】なかった。,サイズが、合わ【あわ】なかった。,shopping
+思っていたのと違った。,It was different from what I expected.,思っ【おもっ】ていたのと違っ【ちがっ】た。,思っ【おもっ】ていたのと違っ【ちがっ】た。,shopping
+写真と違う商品が届いた。,A different product from the photo arrived.,写真【しゃしん】と違う【ちがう】商品【しょうひん】が届い【とどい】た。,写真【しゃしん】と違う【ちがう】商品【しょうひん】が、届い【とどい】た。,shopping
+商品が届かない。,The product hasn't arrived.,商品【しょうひん】が届か【とどか】ない。,商品【しょうひん】が、届か【とどか】ない。,shopping
+配送状況を確認したい。,I want to check the delivery status.,配送【はいそう】状況【じょうきょう】を確認【かくにん】したい。,配送【はいそう】状況【じょうきょう】を、確認【かくにん】したい。,shopping
+カスタマーサービスに連絡したい。,I want to contact customer service.,カスタマーサービスに連絡【れんらく】したい。,カスタマーサービスに連絡【れんらく】したい。,shopping
+問い合わせ番号を教えてください。,Please tell me the inquiry number.,問い合わせ【といあわせ】番号【ばんごう】を教え【おしえ】てください。,問い合わせ【といあわせ】番号【ばんごう】を、教え【おしえ】てください。,shopping
+口コミを見て買った。,I bought it after reading reviews.,口コミ【くちこみ】を見【み】て買っ【かっ】た。,口コミ【くちこみ】を、見【み】て買っ【かっ】た。,shopping
+評価が高かったので。,Because it had high ratings.,評価【ひょうか】が高かっ【たかかっ】たので。,評価【ひょうか】が、高かっ【たかかっ】たので。,shopping
+お気に入りに登録した。,I added it to my favorites.,お気【き】に入り【はいり】に登録【とうろく】した。,お気【き】に入り【はいり】に登録【とうろく】した。,shopping
+カートに入れたままだった。,I left it in my cart.,カートに入れ【いれ】たままだった。,カートに入れ【いれ】たままだった。,shopping
+売り切れになってた。,It was sold out.,売り切れ【うりきれ】になってた。,売り切れ【うりきれ】になってた。,shopping
+再入荷通知を設定した。,I set up a restock notification.,再【さい】入荷【にゅうか】通知【つうち】を設定【せってい】した。,再【さい】入荷【にゅうか】通知【つうち】を、設定【せってい】した。,shopping
+クーポンを使いたい。,I want to use a coupon.,クーポンを使い【つかい】たい。,クーポンを、使い【つかい】たい。,shopping
+ポイントを使って払います。,I'll pay with points.,ポイントを使っ【つかっ】て払い【はらい】ます。,ポイントを、使っ【つかっ】て払い【はらい】ます。,shopping
+送料無料になるまであと少し。,Just a little more for free shipping.,送料【そうりょう】無料【むりょう】になるまであと少し【すこし】。,送料【そうりょう】無料【むりょう】になるまであと少し【すこし】。,shopping
+お買い物マラソン中だね。,It's a shopping marathon.,お買い物【かいもの】マラソン中【ちゅう】だね。,お買い物【かいもの】マラソン中【ちゅう】だね。,shopping
+タイムセールを狙おう。,Let's aim for the time sale.,タイムセールを狙おう【ねらおう】。,タイムセールを、狙おう【ねらおう】。,shopping
+ポイント還元率がいい。,The point return rate is good.,ポイント還元【かんげん】率【りつ】がいい。,ポイント還元【かんげん】率【りつ】が、いい。,shopping
+比較してから買おう。,Let's compare before buying.,比較【ひかく】してから買おう【かおう】。,比較【ひかく】してから買おう【かおう】。,shopping
+最安値を探して。,Find the lowest price.,最【さい】安値【やすね】を探し【さがし】て。,最【さい】安値【やすね】を、探し【さがし】て。,shopping
+偽物に気をつけて。,Be careful of fakes.,偽物【にせもの】に気【き】をつけて。,偽物【にせもの】に気【き】を、つけて。,shopping
+公式サイトで買った方がいい。,It's better to buy from the official site.,公式【こうしき】サイトで買っ【かっ】た方【ほう】がいい。,公式【こうしき】サイトで買っ【かっ】た方【ほう】が、いい。,shopping
+診察券をお持ちですか?,Do you have your patient card?,診察【しんさつ】券【けん】をお持ち【もち】ですか?,診察【しんさつ】券【けん】を、お持ち【もち】ですか?,medical
+初診ですか?,Is this your first visit?,初診【しょしん】ですか?,初診【しょしん】ですか?,medical
+問診票に記入してください。,Please fill out the questionnaire.,問診【もんしん】票【ひょう】に記入【きにゅう】してください。,問診【もんしん】票【ひょう】に記入【きにゅう】してください。,medical
+待合室でお待ちください。,Please wait in the waiting room.,待合【まちあい】室【しつ】でお待ち【まち】ください。,待合【まちあい】室【しつ】でお待ち【まち】ください。,medical
+お名前が呼ばれましたら。,When your name is called.,お名前【なまえ】が呼ば【よば】れましたら。,お名前【なまえ】が、呼ば【よば】れましたら。,medical
+血圧を測りますね。,I'll take your blood pressure.,血圧【けつあつ】を測り【はかり】ますね。,血圧【けつあつ】を、測り【はかり】ますね。,medical
+体温を測ってください。,Please take your temperature.,体温【たいおん】を測っ【はかっ】てください。,体温【たいおん】を、測っ【はかっ】てください。,medical
+深呼吸してください。,Please take a deep breath.,深【しん】呼吸【こきゅう】してください。,深【しん】呼吸【こきゅう】してください。,medical
+お腹を見せてください。,Please show me your stomach.,お腹【おなか】を見せ【みせ】てください。,お腹【おなか】を、見せ【みせ】てください。,medical
+どこが痛いですか?,Where does it hurt?,どこが痛い【いたい】ですか?,どこが痛い【いたい】ですか?,medical
+いつからですか?,Since when?,いつからですか?,いつからですか?,medical
+熱はありますか?,Do you have a fever?,熱【ねつ】はありますか?,熱【ねつ】はありますか?,medical
+食欲はありますか?,Do you have an appetite?,食欲【しょくよく】はありますか?,食欲【しょくよく】はありますか?,medical
+眠れていますか?,Are you sleeping well?,眠れ【ねむれ】ていますか?,眠れ【ねむれ】ていますか?,medical
+お薬は何か飲んでいますか?,Are you taking any medication?,お薬【くすり】は何【なん】か飲ん【のん】でいますか?,お薬【くすり】は何【なん】か飲ん【のん】でいますか?,medical
+アレルギーはありますか?,Do you have any allergies?,アレルギーはありますか?,アレルギーはありますか?,medical
+妊娠の可能性はありますか?,Is there a possibility of pregnancy?,妊娠【にんしん】の可能【かのう】性【せい】はありますか?,妊娠【にんしん】の可能【かのう】性【せい】はありますか?,medical
+授乳中ですか?,Are you breastfeeding?,授乳【じゅにゅう】中【ちゅう】ですか?,授乳【じゅにゅう】中【ちゅう】ですか?,medical
+検査結果が出ました。,The test results are in.,検査【けんさ】結果【けっか】が出【で】ました。,検査【けんさ】結果【けっか】が、出【で】ました。,medical
+特に問題ありません。,There are no problems.,特に【とくに】問題【もんだい】ありません。,特に、【とくに】問題【もんだい】ありません。,medical
+精密検査が必要です。,You need a detailed examination.,精密【せいみつ】検査【けんさ】が必要【ひつよう】です。,精密【せいみつ】検査【けんさ】が、必要【ひつよう】です。,medical
+紹介状を書きます。,I'll write a referral letter.,紹介【しょうかい】状【じょう】を書き【かき】ます。,紹介【しょうかい】状【じょう】を、書き【かき】ます。,medical
+大きい病院に行ってください。,Please go to a larger hospital.,大きい【おおきい】病院【びょういん】に行っ【いっ】てください。,大きい【おおきい】病院【びょういん】に行っ【いっ】てください。,medical
+お薬を出しておきます。,I'll prescribe some medicine.,お薬【くすり】を出し【だし】ておきます。,お薬【くすり】を、出し【だし】ておきます。,medical
+1日3回食後に飲んでください。,Take it three times a day after meals.,1日【ついたち】3回【かい】食後【しょくご】に飲ん【のん】でください。,1日【ついたち】3回【かい】食後【しょくご】に飲ん【のん】でください。,medical
+眠くなることがあります。,It may make you drowsy.,眠く【ねむく】なることがあります。,眠く【ねむく】なることがあります。,medical
+お酒は控えてください。,Please avoid alcohol.,お酒【さけ】は控え【ひかえ】てください。,お酒【さけ】は控え【ひかえ】てください。,medical
+安静にしてください。,Please rest.,安静【あんせい】にしてください。,安静【あんせい】にしてください。,medical
+お風呂は控えてください。,Please avoid bathing.,お風呂【ふろ】は控え【ひかえ】てください。,お風呂【ふろ】は控え【ひかえ】てください。,medical
+様子を見てください。,Please monitor your condition.,様子【ようす】を見【み】てください。,様子【ようす】を、見【み】てください。,medical
+良くならなかったら来てください。,Come back if it doesn't improve.,良く【よく】ならなかったら来【き】てください。,良く【よく】ならなかったら来【き】てください。,medical
+お大事にしてください。,Please take care.,お大事【だいじ】にしてください。,お大事【だいじ】にしてください。,medical
+次回の予約を取りますか?,Shall we schedule your next appointment?,次回【じかい】の予約【よやく】を取り【とり】ますか?,次回【じかい】の予約【よやく】を、取り【とり】ますか?,medical
+保険は効きますか?,Is this covered by insurance?,保険【ほけん】は効き【きき】ますか?,保険【ほけん】は効き【きき】ますか?,medical
+自費になります。,This will be out of pocket.,自費【じひ】になります。,自費【じひ】になります。,medical
+診断書が必要です。,I need a medical certificate.,診断【しんだん】書【しょ】が必要【ひつよう】です。,診断【しんだん】書【しょ】が、必要【ひつよう】です。,medical
+インフルエンザの予防接種をしたい。,I'd like to get a flu shot.,インフルエンザの予防【よぼう】接種【せっしゅ】をしたい。,インフルエンザの予防【よぼう】接種【せっしゅ】を、したい。,medical
+健康診断を受けたい。,I'd like to have a health checkup.,健康【けんこう】診断【しんだん】を受け【うけ】たい。,健康【けんこう】診断【しんだん】を、受け【うけ】たい。,medical
+人間ドックの予約を取りたい。,I'd like to schedule a complete checkup.,人間【にんげん】ドックの予約【よやく】を取り【とり】たい。,人間【にんげん】ドックの予約【よやく】を、取り【とり】たい。,medical
+おうちでゆっくり休んでね。,Rest well at home.,おうちでゆっくり休ん【やすん】でね。,おうちでゆっくり休ん【やすん】でね。,medical
+無理しないでね。,Don't overdo it.,無理【むり】しないでね。,無理【むり】しないでね。,medical
+早く良くなってね。,Get well soon.,早く【はやく】良く【よく】なってね。,早く【はやく】良く【よく】なってね。,medical
+心配しないで大丈夫だよ。,Don't worry it'll be fine.,心配【しんぱい】しないで大丈夫【だいじょうぶ】だよ。,心配【しんぱい】しないで大丈夫【だいじょうぶ】だよ。,medical
+何かあったらすぐ電話して。,Call right away if something happens.,何【なん】かあったらすぐ電話【でんわ】して。,何【なん】かあったらすぐ電話【でんわ】して。,medical
+具合どう?,How are you feeling?,具合【ぐあい】どう?,具合【ぐあい】どう?,medical
+少し良くなった?,Do you feel a little better?,少し【すこし】良く【よく】なった?,少し【すこし】良く【よく】なった?,medical
+まだ熱がある?,Do you still have a fever?,まだ熱【ねつ】がある?,まだ熱【ねつ】が、ある?,medical
+ご飯食べられそう?,Do you think you can eat?,ご飯【ごはん】食べ【たべ】られそう?,ご飯【ごはん】食べ【たべ】られそう?,medical
+何か食べたいものある?,Is there anything you want to eat?,何【なん】か食べ【たべ】たいものある?,何【なん】か食べ【たべ】たいものある?,medical
+おかゆを作ろうか?,Shall I make rice porridge?,おかゆを作ろう【つくろう】か?,おかゆを、作ろう【つくろう】か?,medical
+氷枕を持ってくるね。,I'll bring an ice pillow.,氷枕【こおりまくら】を持っ【もっ】てくるね。,氷枕【こおりまくら】を、持っ【もっ】てくるね。,medical
+熱冷ましシートを貼ろう。,Let's put on a cooling sheet.,熱冷まし【ねつさまし】シートを貼ろう【はろう】。,熱冷まし【ねつさまし】シートを、貼ろう【はろう】。,medical
+水分を取ってね。,Stay hydrated.,水分【すいぶん】を取っ【とっ】てね。,水分【すいぶん】を、取っ【とっ】てね。,medical
+スポーツドリンクを飲んで。,Drink sports drinks.,スポーツドリンクを飲ん【のん】で。,スポーツドリンクを、飲ん【のん】で。,medical
+トイレに行きたい時は呼んでね。,Call me when you need to go to the bathroom.,トイレに行き【いき】たい時【とき】は呼ん【よん】でね。,トイレに行き【いき】たい時【とき】は呼ん【よん】でね。,medical
+寒かったら言ってね。,Tell me if you're cold.,寒かっ【さむかっ】たら言っ【いっ】てね。,寒かっ【さむかっ】たら言っ【いっ】てね。,medical
+汗をかいたら着替えようね。,Let's change if you sweat.,汗【あせ】をかいたら着替えよう【きがえよう】ね。,汗【あせ】を、かいたら着替えよう【きがえよう】ね。,medical
+今夜は外食しよう。,Let's eat out tonight.,今夜【こんや】は外食【がいしょく】しよう。,今夜【こんや】は外食【がいしょく】しよう。,restaurant
+何が食べたい気分?,What are you in the mood for?,何【なん】が食べ【たべ】たい気分【きぶん】?,何【なん】が、食べ【たべ】たい気分【きぶん】?,restaurant
+和食と洋食どっちがいい?,Japanese or Western food?,和食【わしょく】と洋食【ようしょく】どっちがいい?,和食【わしょく】と洋食【ようしょく】どっちがいい?,restaurant
+新しいお店を試してみよう。,Let's try a new place.,新しい【あたらしい】お店【みせ】を試し【ためし】てみよう。,新しい【あたらしい】お店【みせ】を、試し【ためし】てみよう。,restaurant
+口コミで評判がいいお店。,A restaurant with good reviews.,口コミ【くちこみ】で評判【ひょうばん】がいいお店【みせ】。,口コミ【くちこみ】で評判【ひょうばん】が、いいお店【みせ】。,restaurant
+駐車場があるお店がいいな。,I'd like a place with parking.,駐車【ちゅうしゃ】場【じょう】があるお店【みせ】がいいな。,駐車【ちゅうしゃ】場【じょう】が、あるお店【みせ】が、いいな。,restaurant
+子連れでも大丈夫ですか?,Is it okay to bring children?,子連れ【こづれ】でも大丈夫【だいじょうぶ】ですか?,子連れ【こづれ】でも大丈夫【だいじょうぶ】ですか?,restaurant
+個室はありますか?,Do you have private rooms?,個室【こしつ】はありますか?,個室【こしつ】はありますか?,restaurant
+座敷席をお願いします。,Tatami seating please.,座敷【ざしき】席【せき】をお願い【ねがい】します。,座敷【ざしき】席【せき】を、お願い【ねがい】します。,restaurant
+テーブル席でお願いします。,Table seating please.,テーブル席【せき】でお願い【ねがい】します。,テーブル席【せき】でお願い【ねがい】します。,restaurant
+ベビーカーでも入れますか?,Can I bring a stroller?,ベビーカーでも入れ【いれ】ますか?,ベビーカーでも入れ【いれ】ますか?,restaurant
+お子様メニューはありますか?,Do you have a kids menu?,お子【こ】様【さま】メニューはありますか?,お子【こ】様【さま】メニューはありますか?,restaurant
+量を少なめにできますか?,Can you make the portion smaller?,量【りょう】を少なめ【すくなめ】にできますか?,量【りょう】を、少なめ【すくなめ】にできますか?,restaurant
+辛くしないでください。,Please don't make it spicy.,辛く【つらく】しないでください。,辛く【つらく】しないでください。,restaurant
+ネギ抜きでお願いします。,Without green onions please.,ネギ抜き【ぬき】でお願い【ねがい】します。,ネギ抜き【ぬき】でお願い【ねがい】します。,restaurant
+アレルギーがあるのですが。,I have allergies.,アレルギーがあるのですが。,アレルギーが、あるのですが。,restaurant
+卵を使っていますか?,Does this contain eggs?,卵【たまご】を使っ【つかっ】ていますか?,卵【たまご】を、使っ【つかっ】ていますか?,restaurant
+おすすめは何ですか?,What do you recommend?,おすすめは何【なん】ですか?,おすすめは何【なん】ですか?,restaurant
+本日のランチは何ですか?,What's today's lunch special?,本日【ほんじつ】のランチは何【なん】ですか?,本日【ほんじつ】のランチは何【なん】ですか?,restaurant
+セットにできますか?,Can I make it a set?,セットにできますか?,セットにできますか?,restaurant
+ドリンクバーはありますか?,Do you have a drink bar?,ドリンクバーはありますか?,ドリンクバーはありますか?,restaurant
+食べ放題はいくらですか?,How much is all-you-can-eat?,食べ【たべ】放題【ほうだい】はいくらですか?,食べ【たべ】放題【ほうだい】はいくらですか?,restaurant
+飲み放題をつけますか?,Would you like all-you-can-drink?,飲み【のみ】放題【ほうだい】をつけますか?,飲み【のみ】放題【ほうだい】を、つけますか?,restaurant
+まだ注文していいですか?,Can I still order?,まだ注文【ちゅうもん】していいですか?,まだ注文【ちゅうもん】していいですか?,restaurant
+追加注文をお願いします。,I'd like to order more.,追加【ついか】注文【ちゅうもん】をお願い【ねがい】します。,追加【ついか】注文【ちゅうもん】を、お願い【ねがい】します。,restaurant
+もう少し待ってください。,Please wait a little longer.,もう少し【すこし】待っ【まっ】てください。,もう少し【すこし】待っ【まっ】てください。,restaurant
+すみません注文いいですか?,Excuse me may I order?,すみません注文【ちゅうもん】いいですか?,すみません注文【ちゅうもん】いいですか?,restaurant
+お水のおかわりをください。,More water please.,お水【みず】のおかわりをください。,お水【みず】のおかわりを、ください。,restaurant
+取り皿をいただけますか?,Could I have a small plate?,取り皿【とりざら】をいただけますか?,取り皿【とりざら】を、いただけますか?,restaurant
+ナプキンをもらえますか?,Could I have a napkin?,ナプキンをもらえますか?,ナプキンを、もらえますか?,restaurant
+おしぼりをください。,Wet towel please.,おしぼりをください。,おしぼりを、ください。,restaurant
+お冷やをください。,Cold water please.,お冷や【ひや】をください。,お冷や【ひや】を、ください。,restaurant
+熱いお茶をください。,Hot tea please.,熱い【あつい】お茶【ちゃ】をください。,熱い【あつい】お茶【ちゃ】を、ください。,restaurant
+お会計は別々でお願いします。,Separate checks please.,お会計【かいけい】は別々【べつべつ】でお願い【ねがい】します。,お会計【かいけい】は別々【べつべつ】でお願い【ねがい】します。,restaurant
+割り勘にしましょう。,Let's split the bill.,割り勘【わりかん】にしましょう。,割り勘【わりかん】にしましょう。,restaurant
+今日は私がご馳走します。,It's my treat today.,今日【きょう】は私【わたくし】がご馳走【ちそう】します。,今日【きょう】は私【わたくし】が、ご馳走【ちそう】します。,restaurant
+ご馳走になります。,Thank you for the meal.,ご馳走【ちそう】になります。,ご馳走【ちそう】になります。,restaurant
+とても美味しかったです。,It was very delicious.,とても美味しかっ【おいしかっ】たです。,とても美味しかっ【おいしかっ】たです。,restaurant
+また来たいです。,I'd like to come again.,また来【き】たいです。,また、来【き】たいです。,restaurant
+雰囲気がいいお店ですね。,This place has nice atmosphere.,雰囲気【ふんいき】がいいお店【みせ】ですね。,雰囲気【ふんいき】が、いいお店【みせ】ですね。,restaurant
+サービスが良かった。,The service was good.,サービスが良かっ【よかっ】た。,サービスが、良かっ【よかっ】た。,restaurant
+デザートは別腹だよね。,There's always room for dessert.,デザートは別腹【べつばら】だよね。,デザートは別腹【べつばら】だよね。,restaurant
+コーヒーで締めよう。,Let's finish with coffee.,コーヒーで締めよう【しめよう】。,コーヒーで締めよう【しめよう】。,restaurant
+長居してしまった。,We stayed too long.,長居【ながい】してしまった。,長居【ながい】してしまった。,restaurant
+そろそろ帰ろうか。,Shall we head home?,そろそろ帰ろう【かえろう】か。,そろそろ帰ろう【かえろう】か。,restaurant
+お腹いっぱいになった。,I'm full.,お腹【おなか】いっぱいになった。,お腹【おなか】いっぱいになった。,restaurant
+食べ過ぎちゃった。,I ate too much.,食べ【たべ】過ぎ【すぎ】ちゃった。,食べ【たべ】過ぎ【すぎ】ちゃった。,restaurant
+美味しかったね。,It was delicious wasn't it.,美味しかっ【おいしかっ】たね。,美味しかっ【おいしかっ】たね。,restaurant
+今度は別のお店に行こう。,Let's go to a different place next time.,今度【こんど】は別【べつ】のお店【みせ】に行こう【いこう】。,今度【こんど】は別【べつ】のお店【みせ】に行こう【いこう】。,restaurant
+クリスマスのプレゼントを買わなきゃ。,I need to buy Christmas presents.,クリスマスのプレゼントを買わ【かわ】なきゃ。,クリスマスのプレゼントを、買わ【かわ】なきゃ。,seasonal-events
+クリスマスツリーを飾ろう。,Let's decorate the Christmas tree.,クリスマスツリーを飾ろう【かざろう】。,クリスマスツリーを、飾ろう【かざろう】。,seasonal-events
+サンタさんが来るよ。,Santa is coming.,サンタさんが来る【くる】よ。,サンタさんが、来る【くる】よ。,seasonal-events
+クリスマスケーキを予約した。,I reserved a Christmas cake.,クリスマスケーキを予約【よやく】した。,クリスマスケーキを、予約【よやく】した。,seasonal-events
+チキンを焼こう。,Let's roast chicken.,チキンを焼こう【やこう】。,チキンを、焼こう【やこう】。,seasonal-events
+除夜の鐘を聞きに行こう。,Let's go listen to the New Year bells.,除夜【じょや】の鐘【かね】を聞き【きき】に行こう【いこう】。,除夜【じょや】の鐘【かね】を、聞き【きき】に行こう【いこう】。,seasonal-events
+初詣に行く?,Are you going for the first shrine visit?,初詣【はつもうで】に行く【いく】?,初詣【はつもうで】に行く【いく】?,seasonal-events
+お年玉を準備しなきゃ。,I need to prepare New Year money.,お年玉【としだま】を準備【じゅんび】しなきゃ。,お年玉【としだま】を、準備【じゅんび】しなきゃ。,seasonal-events
+年越しそばを食べよう。,Let's eat New Year's Eve soba.,年越し【としこし】そばを食べよう【たべよう】。,年越し【としこし】そばを、食べよう【たべよう】。,seasonal-events
+お雑煮を作ります。,I'll make ozoni.,お雑煮【ぞうに】を作り【つくり】ます。,お雑煮【ぞうに】を、作り【つくり】ます。,seasonal-events
+凧揚げをしよう。,Let's fly kites.,凧揚げ【たこあげ】をしよう。,凧揚げ【たこあげ】を、しよう。,seasonal-events
+羽子板で遊ぼう。,Let's play hanetsuki.,羽子板【はごいた】で遊ぼう【あそぼう】。,羽子板【はごいた】で遊ぼう【あそぼう】。,seasonal-events
+福袋を買いに行こう。,Let's go buy lucky bags.,福袋【ふくぶくろ】を買い【かい】に行こう【いこう】。,福袋【ふくぶくろ】を、買い【かい】に行こう【いこう】。,seasonal-events
+バレンタインのチョコを作ろう。,Let's make Valentine's chocolates.,バレンタインのチョコを作ろう【つくろう】。,バレンタインのチョコを、作ろう【つくろう】。,seasonal-events
+ホワイトデーのお返しを買わなきゃ。,I need to buy White Day gifts.,ホワイトデーのお返し【がえし】を買わ【かわ】なきゃ。,ホワイトデーのお返し【がえし】を、買わ【かわ】なきゃ。,seasonal-events
+お花見に行こう。,Let's go cherry blossom viewing.,お花見【はなみ】に行こう【いこう】。,お花見【はなみ】に行こう【いこう】。,seasonal-events
+桜が満開だね。,The cherry blossoms are in full bloom.,桜【さくら】が満開【まんかい】だね。,桜【さくら】が、満開【まんかい】だね。,seasonal-events
+ゴールデンウィークの予定は?,What are your Golden Week plans?,ゴールデンウィークの予定【よてい】は?,ゴールデンウィークの予定【よてい】は?,seasonal-events
+母の日に何をあげよう。,What should I give for Mother's Day.,母【はは】の日【ひ】に何【なん】をあげよう。,母【はは】の日【ひ】に何【なん】を、あげよう。,seasonal-events
+父の日のプレゼントは?,What about the Father's Day present?,父【ちち】の日【ひ】のプレゼントは?,父【ちち】の日【ひ】のプレゼントは?,seasonal-events
+夏休みの計画を立てよう。,Let's plan summer vacation.,夏休み【なつやすみ】の計画【けいかく】を立てよう【たてよう】。,夏休み【なつやすみ】の計画【けいかく】を、立てよう【たてよう】。,seasonal-events
+プール開きだね。,The pool is opening.,プール開き【びらき】だね。,プール開き【びらき】だね。,seasonal-events
+花火大会に行こう。,Let's go to the fireworks festival.,花火【はなび】大会【たいかい】に行こう【いこう】。,花火【はなび】大会【たいかい】に行こう【いこう】。,seasonal-events
+浴衣を着よう。,Let's wear yukata.,浴衣【ゆかた】を着よう【きよう】。,浴衣【ゆかた】を、着よう【きよう】。,seasonal-events
+スイカ割りをしよう。,Let's play watermelon splitting.,スイカ割り【すいかわり】をしよう。,スイカ割り【すいかわり】を、しよう。,seasonal-events
+虫取りに行く?,Do you want to go bug catching?,虫取り【むしとり】に行く【いく】?,虫取り【むしとり】に行く【いく】?,seasonal-events
+宿題を早く終わらせてね。,Finish your homework early.,宿題【しゅくだい】を早く【はやく】終わら【おわら】せてね。,宿題【しゅくだい】を、早く【はやく】終わら【おわら】せてね。,seasonal-events
+自由研究は何にする?,What will you do for your independent study?,自由【じゆう】研究【けんきゅう】は何【なん】にする?,自由【じゆう】研究【けんきゅう】は何【なん】にする?,seasonal-events
+読書感想文を書かなきゃ。,I have to write a book report.,読書【どくしょ】感想【かんそう】文【ぶん】を書か【かか】なきゃ。,読書【どくしょ】感想【かんそう】文【ぶん】を、書か【かか】なきゃ。,seasonal-events
+敬老の日におじいちゃんに電話しよう。,Let's call grandpa on Respect for the Aged Day.,敬老【けいろう】の日【ひ】におじいちゃんに電話【でんわ】しよう。,敬老【けいろう】の日【ひ】におじいちゃんに電話【でんわ】しよう。,seasonal-events
+ハロウィンの仮装をしよう。,Let's dress up for Halloween.,ハロウィンの仮装【かそう】をしよう。,ハロウィンの仮装【かそう】を、しよう。,seasonal-events
+お菓子を用意しておこう。,Let's prepare candy.,お菓子【かし】を用意【ようい】しておこう。,お菓子【かし】を、用意【ようい】しておこう。,seasonal-events
+トリックオアトリート!,Trick or treat!,トリックオアトリート!,トリックオアトリート!,seasonal-events
+ママ友とランチに行ってくる。,I'm going to lunch with mom friends.,ママ友【とも】とランチに行っ【いっ】てくる。,ママ友【とも】とランチに行っ【いっ】てくる。,social
+公園で会おう。,Let's meet at the park.,公園【こうえん】で会おう【あおう】。,公園【こうえん】で会おう【あおう】。,social
+子供を預かってもらえる?,Can you watch my child?,子供【こども】を預かっ【あずかっ】てもらえる?,子供【こども】を、預かっ【あずかっ】てもらえる?,social
+お互い様だよ。,We help each other.,お互い【たがい】様【さま】だよ。,お互い【たがい】様【さま】だよ。,social
+いつもありがとう。,Thank you as always.,いつもありがとう。,いつもありがとう。,social
+お返しに何か持っていくね。,I'll bring something in return.,お返し【がえし】に何【なん】か持っ【もっ】ていくね。,お返し【がえし】に何【なん】か持っ【もっ】ていくね。,social
+手作りのお菓子を焼いたの。,I baked homemade sweets.,手作り【てづくり】のお菓子【かし】を焼い【やい】たの。,手作り【てづくり】のお菓子【かし】を、焼い【やい】たの。,social
+よかったら食べてね。,Please have some if you'd like.,よかったら食べ【たべ】てね。,よかったら食べ【たべ】てね。,social
+お口に合うといいけど。,I hope it suits your taste.,お口【くち】に合う【あう】といいけど。,お口【くち】に合う【あう】といいけど。,social
+レシピを教えてもらえる?,Can you teach me the recipe?,レシピを教え【おしえ】てもらえる?,レシピを、教え【おしえ】てもらえる?,social
+どうやって作るの?,How do you make it?,どうやって作る【つくる】の?,どうやって作る【つくる】の?,social
+コツはなに?,What's the trick?,コツはなに?,コツはなに?,social
+すごく美味しい!,It's so delicious!,すごく美味しい【おいしい】!,すごく美味しい【おいしい】!,social
+また作ってね。,Make it again.,また作っ【つくっ】てね。,また、作っ【つくっ】てね。,social
+今度一緒に作ろう。,Let's make it together next time.,今度【こんど】一緒【いっしょ】に作ろう【つくろう】。,今度【こんど】一緒【いっしょ】に作ろう【つくろう】。,social
+習い事の情報を教えて。,Tell me about lessons.,習い事【ならいごと】の情報【じょうほう】を教え【おしえ】て。,習い事【ならいごと】の情報【じょうほう】を、教え【おしえ】て。,social
+いい先生がいるって聞いた。,I heard there's a good teacher.,いい先生【せんせい】がいるって聞い【きい】た。,いい先生【せんせい】が、いるって聞い【きい】た。,social
+月謝はいくら?,How much is the monthly fee?,月謝【げっしゃ】はいくら?,月謝【げっしゃ】はいくら?,social
+送り迎えは大変?,Is driving back and forth hard?,送り迎え【おくりむかえ】は大変【たいへん】?,送り迎え【おくりむかえ】は大変【たいへん】?,social
+発表会はいつ?,When is the recital?,発表【はっぴょう】会【かい】はいつ?,発表【はっぴょう】会【かい】はいつ?,social
+見に行ってもいい?,Can I come watch?,見【み】に行っ【いっ】てもいい?,見【み】に行っ【いっ】てもいい?,social
+応援に行くね。,I'll come cheer.,応援【おうえん】に行く【いく】ね。,応援【おうえん】に行く【いく】ね。,social
+写真を撮ってもいい?,Can I take a photo?,写真【しゃしん】を撮っ【とっ】てもいい?,写真【しゃしん】を、撮っ【とっ】てもいい?,social
+動画を送るね。,I'll send the video.,動画【どうが】を送る【おくる】ね。,動画【どうが】を、送る【おくる】ね。,social
+LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで送っ【おくっ】て。,social
+グループに入れてもらえる?,Can you add me to the group?,グループに入れ【いれ】てもらえる?,グループに入れ【いれ】てもらえる?,social
+返事が遅くなってごめんね。,Sorry for the late reply.,返事【へんじ】が遅く【おそく】なってごめんね。,返事【へんじ】が、遅く【おそく】なってごめんね。,social
+既読スルーしてた。,I read it but forgot to reply.,既読【きどく】スルーしてた。,既読【きどく】スルーしてた。,social
+また今度ゆっくり話そう。,Let's talk properly next time.,また今度【こんど】ゆっくり話そう【はなそう】。,また、今度【こんど】ゆっくり話そう【はなそう】。,social
+飲み会はちょっと。,I'll pass on the drinking party.,飲み会【のみかい】はちょっと。,飲み会【のみかい】はちょっと。,social
+子供がいるから難しいな。,It's difficult with kids.,子供【こども】がいるから難しい【むずかしい】な。,子供【こども】が、いるから難しい【むずかしい】な。,social
+預けられたら行けるんだけど。,I could go if I could find childcare.,預け【あずけ】られたら行ける【いける】んだけど。,預け【あずけ】られたら行ける【いける】んだけど。,social
+旦那に聞いてみるね。,I'll ask my husband.,旦那【だんな】に聞い【きい】てみるね。,旦那【だんな】に聞い【きい】てみるね。,social
+土日なら大丈夫かも。,Weekends might work.,土日【どにち】なら大丈夫【だいじょうぶ】かも。,土日【どにち】なら大丈夫【だいじょうぶ】かも。,social
+平日は忙しいんだ。,Weekdays are busy.,平日【へいじつ】は忙しい【いそがしい】んだ。,平日【へいじつ】は忙しい【いそがしい】んだ。,social
+また誘ってね。,Invite me again.,また誘っ【さそっ】てね。,また、誘っ【さそっ】てね。,social
+楽しかったね。,It was fun.,楽しかっ【たのしかっ】たね。,楽しかっ【たのしかっ】たね。,social
+久しぶりに息抜きできた。,I was able to relax for the first time in a while.,久し【ひさし】ぶりに息抜き【いきぬき】できた。,久し【ひさし】ぶりに息抜き【いきぬき】できた。,social
+ストレス発散になった。,It was stress relief.,ストレス発散【はっさん】になった。,ストレス発散【はっさん】になった。,social
+また行こうね。,Let's go again.,また行こう【いこう】ね。,また、行こう【いこう】ね。,social
+子育ての相談していい?,Can I ask for parenting advice?,子育て【こそだて】の相談【そうだん】していい?,子育て【こそだて】の相談【そうだん】していい?,social
+うちの子もそうだった。,My kid was the same.,うちの子【こ】もそうだった。,うちの子【こ】もそうだった。,social
+そのうち落ち着くよ。,They'll settle down eventually.,そのうち落ち着く【おちつく】よ。,そのうち落ち着く【おちつく】よ。,social
+大変だよね、分かる。,It's hard I understand.,大変【たいへん】だよね、分かる【わかる】。,大変【たいへん】だよね、分かる【わかる】。,social
+無理しないでね。,Don't push yourself.,無理【むり】しないでね。,無理【むり】しないでね。,social
+いつでも連絡してね。,Contact me anytime.,いつでも連絡【れんらく】してね。,いつでも連絡【れんらく】してね。,social
+話を聞くだけでもできるよ。,I can at least listen.,話【はなし】を聞く【きく】だけでもできるよ。,話【はなし】を、聞く【きく】だけでもできるよ。,social
+一人で抱え込まないで。,Don't keep it all to yourself.,一人【ひとり】で抱え込ま【かかえこま】ないで。,一人【ひとり】で抱え込ま【かかえこま】ないで。,social
+市の子育て支援センターに行ってみたら?,Why not try the city's parenting support center?,市【し】の子育て【こそだて】支援【しえん】センターに行っ【いっ】てみたら?,市【し】の子育て【こそだて】支援【しえん】センターに行っ【いっ】てみたら?,social
+保健師さんに相談できるよ。,You can consult with a public health nurse.,保健【ほけん】師【し】さんに相談【そうだん】できるよ。,保健【ほけん】師【し】さんに相談【そうだん】できるよ。,social
+同じ悩みの人がいると思う。,I think there are others with the same worries.,同じ【おなじ】悩み【なやみ】の人【ひと】がいると思う【おもう】。,同じ【おなじ】悩み【なやみ】の人【ひと】が、いると思う【おもう】。,social
+泣きたい時は泣いていいよ。,It's okay to cry when you need to.,泣き【なき】たい時【とき】は泣い【ない】ていいよ。,泣き【なき】たい時【とき】は泣い【ない】ていいよ。,social
+完璧じゃなくていいんだよ。,You don't have to be perfect.,完璧【かんぺき】じゃなくていいんだよ。,完璧【かんぺき】じゃなくていいんだよ。,social
+十分頑張ってるよ。,You're doing great.,十分【じゅうぶん】頑張っ【がんばっ】てるよ。,十分【じゅうぶん】頑張っ【がんばっ】てるよ。,social
+自分を褒めてあげて。,Give yourself credit.,自分【じぶん】を褒め【ほめ】てあげて。,自分【じぶん】を、褒め【ほめ】てあげて。,social
+たまには休んでね。,Take a break sometimes.,たまには休ん【やすん】でね。,たまには休ん【やすん】でね。,social
+リフレッシュも大事だよ。,Refreshing is important too.,リフレッシュも大事【だいじ】だよ。,リフレッシュも大事【だいじ】だよ。,social
+自分の時間も作ってね。,Make time for yourself.,自分【じぶん】の時間【じかん】も作っ【つくっ】てね。,自分【じぶん】の時間【じかん】も作っ【つくっ】てね。,social
+趣味を持つといいよ。,It's good to have hobbies.,趣味【しゅみ】を持つ【もつ】といいよ。,趣味【しゅみ】を、持つ【もつ】といいよ。,social
+運動するとスッキリするよ。,Exercise helps clear your mind.,運動【うんどう】するとスッキリするよ。,運動【うんどう】するとスッキリするよ。,social
+散歩でも気分転換になるよ。,Even a walk can be a change of pace.,散歩【さんぽ】でも気分【きぶん】転換【てんかん】になるよ。,散歩【さんぽ】でも気分【きぶん】転換【てんかん】になるよ。,social
+今日も1日お疲れ様。,Good work today.,今日【きょう】も1日【ついたち】お疲れ【つかれ】様【さま】。,今日【きょう】も1日【ついたち】お疲れ【つかれ】様【さま】。,social
+明日も頑張ろうね。,Let's do our best tomorrow too.,明日【あす】も頑張ろう【がんばろう】ね。,明日【あす】も頑張ろう【がんばろう】ね。,social
+おやすみ、良い夢を。,Good night sweet dreams.,おやすみ、良い【よい】夢【ゆめ】を。,おやすみ、良い【よい】夢【ゆめ】を。,social
+今日もいい1日になりますように。,May today be a good day.,今日【きょう】もいい1日【いちにち】になりますように。,今日【きょう】もいい1日【いちにち】になりますように。,social
+神様に祈ります。,I pray to God.,神【かみ】様【さま】に祈り【いのり】ます。,神【かみ】様【さま】に祈り【いのり】ます。,church
+主に感謝します。,I thank the Lord.,主【しゅ】に感謝【かんしゃ】します。,主【しゅ】に感謝【かんしゃ】します。,church
+恵みに感謝します。,I'm grateful for the blessings.,恵み【めぐみ】に感謝【かんしゃ】します。,恵み【めぐみ】に感謝【かんしゃ】します。,church
+食前のお祈りをしよう。,Let's pray before the meal.,食前【しょくぜん】のお祈り【いのり】をしよう。,食前【しょくぜん】のお祈り【いのり】を、しよう。,church
+寝る前にお祈りしようね。,Let's pray before bed.,寝る【ねる】前【まえ】にお祈り【いのり】しようね。,寝る【ねる】前【まえ】にお祈り【いのり】しようね。,church
+教会の人たちは親切だね。,The church people are kind.,教会【きょうかい】の人【ひと】たちは親切【しんせつ】だね。,教会【きょうかい】の人【ひと】たちは親切【しんせつ】だね。,church
+奉仕活動に参加したい。,I want to join volunteer activities.,奉仕【ほうし】活動【かつどう】に参加【さんか】したい。,奉仕【ほうし】活動【かつどう】に参加【さんか】したい。,church
+クリスマスキャロルを歌おう。,Let's sing Christmas carols.,クリスマスキャロルを歌おう【うたおう】。,クリスマスキャロルを、歌おう【うたおう】。,church
+聖歌隊に入りたい。,I want to join the choir.,聖歌【せいか】隊【たい】に入り【はいり】たい。,聖歌【せいか】隊【たい】に入り【はいり】たい。,church
+信仰を大切にしたい。,I want to cherish my faith.,信仰【しんこう】を大切【たいせつ】にしたい。,信仰【しんこう】を、大切【たいせつ】にしたい。,church
+お導きください。,Please guide me.,お導き【みちびき】ください。,お導き【みちびき】ください。,church
+平和のために祈ります。,I pray for peace.,平和【へいわ】のために祈り【いのり】ます。,平和【へいわ】のために祈り【いのり】ます。,church
+家族の健康を祈ります。,I pray for my family's health.,家族【かぞく】の健康【けんこう】を祈り【いのり】ます。,家族【かぞく】の健康【けんこう】を、祈り【いのり】ます。,church
+感謝の気持ちを忘れずに。,Don't forget to be grateful.,感謝【かんしゃ】の気持ち【きもち】を忘れ【わすれ】ずに。,感謝【かんしゃ】の気持ち【きもち】を、忘れ【わすれ】ずに。,church
+隣人を愛しましょう。,Let us love our neighbors.,隣人【りんじん】を愛し【あいし】ましょう。,隣人【りんじん】を、愛し【あいし】ましょう。,church
+許すことが大切です。,Forgiveness is important.,許す【ゆるす】ことが大切【たいせつ】です。,許す【ゆるす】ことが大切【たいせつ】です。,church
+困っている人を助けよう。,Let's help those in need.,困っ【こまっ】ている人【ひと】を助けよう【たすけよう】。,困っ【こまっ】ている人【ひと】を、助けよう【たすけよう】。,church
+思いやりの心を持とう。,Let's have compassion.,思いやり【おもいやり】の心【こころ】を持とう【もとう】。,思いやり【おもいやり】の心【こころ】を、持とう【もとう】。,church
+正直に生きよう。,Let's live honestly.,正直【しょうじき】に生きよう【いきよう】。,正直【しょうじき】に生きよう【いきよう】。,church
+希望を持って生きよう。,Let's live with hope.,希望【きぼう】を持っ【もっ】て生きよう【いきよう】。,希望【きぼう】を、持っ【もっ】て生きよう【いきよう】。,church
+今日という日に感謝。,Grateful for today.,今日【きょう】という日【ひ】に感謝【かんしゃ】。,今日【きょう】という日【ひ】に感謝【かんしゃ】。,daily-routine
+家族がいて幸せ。,I'm happy to have family.,家族【かぞく】がいて幸せ【しあわせ】。,家族【かぞく】が、いて幸せ【しあわせ】。,daily-routine
+毎日を大切に生きよう。,Let's cherish each day.,毎日【まいにち】を大切【たいせつ】に生きよう【いきよう】。,毎日【まいにち】を、大切【たいせつ】に生きよう【いきよう】。,daily-routine
