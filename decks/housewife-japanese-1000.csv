@@ -12,7 +12,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 お水をください。,Water please.,お水【みず】をください。,お水【みず】を、ください。,restaurant,お水,water
 お会計をお願いします。,Check please.,お会計【かいけい】をお願い【ねがい】します。,お会計【かいけい】を、お願い【ねがい】します。,restaurant,お会計,check/bill
 別々に払えますか?,Can we pay separately?,別々【べつべつ】に払え【はらえ】ますか?,別々【べつべつ】に払え【はらえ】ますか?,restaurant,別々,separately
-持ち帰りできますか?,Can I take this to go?,持ち帰り【もちかえり】できますか?,持ち帰り【もちかえり】できますか?,restaurant,持ち帰り,takeout
+持ち帰りできますか?,Can we get this to go?,持ち帰り【もちかえり】できますか?,持ち帰り【もちかえり】できますか?,restaurant,持ち帰り,takeout
 ごちそうさまでした。,Thank you for the meal.,ごちそうさまでした。,ごちそうさまでした。,restaurant,ごちそうさま,thanks for meal
 今夜は外食しよう。,Let's eat out tonight.,今夜【こんや】は外食【がいしょく】しよう。,今夜【こんや】は外食【がいしょく】しよう。,restaurant,外食,eating out
 何が食べたい気分?,What are you in the mood for?,何【なん】が食べ【たべ】たい気分【きぶん】?,何【なん】が、食べ【たべ】たい気分【きぶん】?,restaurant,気分,mood
@@ -47,8 +47,8 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 おしぼりをください。,Wet towel please.,おしぼりをください。,おしぼりを、ください。,restaurant,おしぼり,wet
 お冷やをください。,Cold water please.,お冷や【ひや】をください。,お冷や【ひや】を、ください。,restaurant,お冷や,cold
 熱いお茶をください。,Hot tea please.,熱い【あつい】お茶【ちゃ】をください。,熱い【あつい】お茶【ちゃ】を、ください。,restaurant,お茶,tea
-お会計は別々でお願いします。,Separate checks please.,お会計【かいけい】は別々【べつべつ】でお願い【ねがい】します。,お会計【かいけい】は別々【べつべつ】でお願い【ねがい】します。,restaurant,別々,separately
-割り勘にしましょう。,Let's split the bill.,割り勘【わりかん】にしましょう。,割り勘【わりかん】にしましょう。,restaurant,割り勘,split bill
+お会計は別々でお願いします。,We'd like separate checks please.,お会計【かいけい】は別々【べつべつ】でお願い【ねがい】します。,お会計【かいけい】は別々【べつべつ】でお願い【ねがい】します。,restaurant,別々,separately
+割り勘にしましょう。,Let's split the bill between us.,割り勘【わりかん】にしましょう。,割り勘【わりかん】にしましょう。,restaurant,割り勘,split bill
 今日は私がご馳走します。,It's my treat today.,今日【きょう】は私【わたくし】がご馳走【ちそう】します。,今日【きょう】は私【わたくし】が、ご馳走【ちそう】します。,restaurant,ご馳走,treat
 ご馳走になります。,Thank you for the meal.,ご馳走【ちそう】になります。,ご馳走【ちそう】になります。,restaurant,ご馳走,treat
 とても美味しかったです。,It was very delicious.,とても美味しかっ【おいしかっ】たです。,とても美味しかっ【おいしかっ】たです。,restaurant,美味しい,delicious

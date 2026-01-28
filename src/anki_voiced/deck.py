@@ -80,6 +80,74 @@ class DeckBuilder:
 
         return output_path
 
+    def build_grouped_by_tag(
+        self,
+        entries: list[VocabEntry],
+        audio_dir: Path | None = None,
+    ) -> Path:
+        """Build an Anki deck with subdecks grouped by tag.
+
+        Entries are grouped by their first tag. Each group becomes a subdeck
+        named DeckName::TagName.
+
+        Args:
+            entries: List of vocabulary entries
+            audio_dir: Directory containing audio files
+
+        Returns:
+            Path to the generated .apkg file
+        """
+        from collections import defaultdict
+
+        # Group entries by first tag
+        groups: dict[str, list[VocabEntry]] = defaultdict(list)
+        for entry in entries:
+            tag = entry.tags[0] if entry.tags else "Untagged"
+            groups[tag].append(entry)
+
+        # Get template handler
+        template_class = get_template(self.config.template)
+        if not template_class:
+            raise ValueError(f"Unknown template: {self.config.template}")
+
+        all_decks = []
+        media_files = []
+
+        for tag_name, tag_entries in groups.items():
+            deck_id = random.randint(1000000000, 9999999999)
+            full_name = f"{self.config.name}::{tag_name.replace(' ', '_').title()}"
+            deck = genanki.Deck(deck_id, full_name)
+
+            for entry in tag_entries:
+                if entry.audio_file and audio_dir:
+                    audio_ref = f"[sound:{entry.audio_file}]"
+                    audio_path = audio_dir / entry.audio_file
+                    if audio_path.exists():
+                        media_files.append(str(audio_path))
+                else:
+                    audio_ref = ""
+
+                note = template_class.create_note(entry, audio_ref)
+                deck.add_note(note)
+
+            all_decks.append(deck)
+
+        # Determine output path
+        if self.config.output.suffix == ".apkg":
+            output_path = self.config.output
+        else:
+            safe_name = self.config.name.replace(" ", "-").lower()
+            output_path = self.config.output / f"{safe_name}.apkg"
+
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Write all decks as one package
+        package = genanki.Package(all_decks)
+        package.media_files = media_files
+        package.write_to_file(str(output_path))
+
+        return output_path
+
     def get_card_count(self, entries: list[VocabEntry]) -> int:
         """Get the number of cards that will be generated."""
         if self.config.template == "double-card":

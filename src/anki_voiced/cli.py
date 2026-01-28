@@ -186,6 +186,13 @@ def create(
             help="Machine-readable JSON output",
         ),
     ] = False,
+    group_by_tag: Annotated[
+        bool,
+        typer.Option(
+            "--group-by-tag",
+            help="Create subdecks from tags column (DeckName::Tag)",
+        ),
+    ] = False,
 ) -> None:
     """Generate an Anki deck with AI-voiced audio from a CSV file.
 
@@ -354,7 +361,10 @@ def create(
             console.print("Building deck...")
 
         builder = DeckBuilder(deck_config)
-        actual_output = builder.build(entries, audio_dir)
+        if group_by_tag:
+            actual_output = builder.build_grouped_by_tag(entries, audio_dir)
+        else:
+            actual_output = builder.build(entries, audio_dir)
 
     # Output result
     result = create_generation_result(

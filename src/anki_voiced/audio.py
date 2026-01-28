@@ -5,6 +5,8 @@ import sys
 from pathlib import Path
 from typing import Callable
 
+from .preprocessing.japanese import extract_furigana
+
 import lameenc
 import numpy as np
 from kokoro import KPipeline
@@ -178,7 +180,7 @@ class AudioGenerator:
                 # 2. Fall back to pronunciation with preprocessing
                 # 3. Fall back to sentence with preprocessing
                 if entry.tts_pronunciation:
-                    tts_text = entry.tts_pronunciation
+                    tts_text = extract_furigana(entry.tts_pronunciation)
                     use_preprocess = None  # Skip preprocessing for explicit TTS text
                 else:
                     tts_text = entry.pronunciation if entry.pronunciation else entry.sentence

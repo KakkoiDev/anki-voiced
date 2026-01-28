@@ -165,7 +165,7 @@ class DoubleCardTemplate:
             hint = entry.sentence[:2] + "..." if len(entry.sentence) > 2 else entry.sentence
 
         # Convert bracket furigana to ruby HTML for display
-        sentence_html = to_ruby_html(entry.sentence)
+        sentence_html = to_ruby_html(entry.pronunciation if entry.pronunciation else entry.sentence)
 
         return genanki.Note(
             model=cls.get_model(),
