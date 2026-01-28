@@ -19,7 +19,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 和食と洋食どっちがいい?,Japanese or Western food?,和食【わしょく】と洋食【ようしょく】どっちがいい?,和食【わしょく】と洋食【ようしょく】どっちがいい?,restaurant,和食と洋食,Japanese and Western
 新しいお店を試してみよう。,Let's try a new place.,新しい【あたらしい】お店【みせ】を試し【ためし】てみよう。,新しい【あたらしい】お店【みせ】を、試し【ためし】てみよう。,restaurant,お店,restaurant
 口コミで評判がいいお店。,A restaurant with good reviews.,口コミ【くちこみ】で評判【ひょうばん】がいいお店【みせ】。,口コミ【くちこみ】で評判【ひょうばん】が、いいお店【みせ】。,restaurant,評判,reputation
-駐車場があるお店がいいな。,I'd like a place with parking.,駐車【ちゅうしゃ】場【じょう】があるお店【みせ】がいいな。,駐車【ちゅうしゃ】場【じょう】が、あるお店【みせ】が、いいな。,restaurant,評判,reputation
+駐車場があるお店がいいな。,I'd like a place with parking.,駐車【ちゅうしゃ】場【じょう】があるお店【みせ】がいいな。,駐車【ちゅうしゃ】場【じょう】が、あるお店【みせ】が、いいな。,restaurant,駐車場,parking
 子連れでも大丈夫ですか?,Is it okay to bring children?,子連れ【こづれ】でも大丈夫【だいじょうぶ】ですか?,子連れ【こづれ】でも大丈夫【だいじょうぶ】ですか?,restaurant,子連れ,with children
 個室はありますか?,Do you have private rooms?,個室【こしつ】はありますか?,個室【こしつ】はありますか?,restaurant,個室,private room
 座敷席をお願いします。,Tatami seating please.,座敷【ざしき】席【せき】をお願い【ねがい】します。,座敷【ざしき】席【せき】を、お願い【ねがい】します。,restaurant,座敷席,tatami seating
@@ -54,9 +54,9 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 とても美味しかったです。,It was very delicious.,とても美味しかっ【おいしかっ】たです。,とても美味しかっ【おいしかっ】たです。,restaurant,美味しい,delicious
 また来たいです。,I'd like to come again.,また来【き】たいです。,また、来【き】たいです。,restaurant,美味しい,delicious
 雰囲気がいいお店ですね。,This place has nice atmosphere.,雰囲気【ふんいき】がいいお店【みせ】ですね。,雰囲気【ふんいき】が、いいお店【みせ】ですね。,restaurant,雰囲気,atmosphere
-サービスが良かった。,The service was good.,サービスが良かっ【よかっ】た。,サービスが、良かっ【よかっ】た。,restaurant,雰囲気,atmosphere
+サービスが良かった。,The service was good.,サービスが良かっ【よかっ】た。,サービスが、良かっ【よかっ】た。,restaurant,サービス,service
 デザートは別腹だよね。,There's always room for dessert.,デザートは別腹【べつばら】だよね。,デザートは別腹【べつばら】だよね。,restaurant,別腹,dessert stomach
-コーヒーで締めよう。,Let's finish with coffee.,コーヒーで締めよう【しめよう】。,コーヒーで締めよう【しめよう】。,restaurant,別腹,dessert stomach
+コーヒーで締めよう。,Let's finish with coffee.,コーヒーで締めよう【しめよう】。,コーヒーで締めよう【しめよう】。,restaurant,締める,finish/wrap up
 長居してしまった。,We stayed too long.,長居【ながい】してしまった。,長居【ながい】してしまった。,restaurant,長居,staying long
 そろそろ帰ろうか。,Shall we head home?,そろそろ帰ろう【かえろう】か。,そろそろ帰ろう【かえろう】か。,restaurant,帰る,go home
 お腹いっぱいになった。,I'm full.,お腹【おなか】いっぱいになった。,お腹【おなか】いっぱいになった。,restaurant,お腹いっぱい,full
