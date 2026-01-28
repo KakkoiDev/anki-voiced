@@ -29,7 +29,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 量を少なめにできますか?,Can you make the portion smaller?,量【りょう】を少なめ【すくなめ】にできますか?,量【りょう】を、少なめ【すくなめ】にできますか?,restaurant,量,portion
 辛くしないでください。,Please don't make it spicy.,辛く【つらく】しないでください。,辛く【つらく】しないでください。,restaurant,辛,spicy
 ネギ抜きでお願いします。,Without green onions please.,ネギ抜き【ぬき】でお願い【ねがい】します。,ネギ抜き【ぬき】でお願い【ねがい】します。,restaurant,ネギ,green onion
-アレルギーがあるのですが。,I have allergies.,アレルギーがあるのですが。,アレルギーが、あるのですが。,restaurant,アレルギー,allergy
+卵アレルギーがあります。,I have an egg allergy.,卵【たまご】アレルギーがあります。,卵【たまご】アレルギーが、あります。,restaurant,卵アレルギー,egg allergy
 卵を使っていますか?,Does this contain eggs?,卵【たまご】を使っ【つかっ】ていますか?,卵【たまご】を、使っ【つかっ】ていますか?,restaurant,卵,egg
 おすすめは何ですか?,What do you recommend?,おすすめは何【なん】ですか?,おすすめは何【なん】ですか?,restaurant,おすすめ,recommendation
 本日のランチは何ですか?,What's today's lunch special?,本日【ほんじつ】のランチは何【なん】ですか?,本日【ほんじつ】のランチは何【なん】ですか?,restaurant,本日のランチ,today's lunch
@@ -37,7 +37,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 ドリンクバーはありますか?,Do you have a drink bar?,ドリンクバーはありますか?,ドリンクバーはありますか?,restaurant,ドリンクバー,drink
 食べ放題はいくらですか?,How much is all-you-can-eat?,食べ【たべ】放題【ほうだい】はいくらですか?,食べ【たべ】放題【ほうだい】はいくらですか?,restaurant,食べ放題,all-you-can-eat
 飲み放題をつけますか?,Would you like all-you-can-drink?,飲み【のみ】放題【ほうだい】をつけますか?,飲み【のみ】放題【ほうだい】を、つけますか?,restaurant,飲み放題,all-you-can-drink
-まだ注文していいですか?,Can I still order?,まだ注文【ちゅうもん】していいですか?,まだ注文【ちゅうもん】していいですか?,restaurant,注文,order
+まだ注文していいですか?,Can I still order?,まだ注文【ちゅうもん】していいですか?,まだ注文【ちゅうもん】していいですか?,restaurant,まだ,still
 追加注文をお願いします。,I'd like to order more.,追加【ついか】注文【ちゅうもん】をお願い【ねがい】します。,追加【ついか】注文【ちゅうもん】を、お願い【ねがい】します。,restaurant,追加注文,extra order
 もう少し待ってください。,Please wait a little longer.,もう少し【すこし】待っ【まっ】てください。,もう少し【すこし】待っ【まっ】てください。,restaurant,もう少し,a little more
 すみません注文いいですか?,Excuse me may I order?,すみません注文【ちゅうもん】いいですか?,すみません注文【ちゅうもん】いいですか?,restaurant,注文,order
@@ -75,7 +75,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 うがいをしてね。,Gargle please.,うがいをしてね。,うがいを、してね。,daily-routine,うがい,gargle
 宿題やった?,Did you do your homework?,宿題【しゅくだい】やった?,宿題【しゅくだい】やった?,daily-routine,宿題,homework
 おやつを食べていいよ。,You can have a snack.,おやつを食べ【たべ】ていいよ。,おやつを、食べ【たべ】ていいよ。,daily-routine,おやつ,snack
-テレビは宿題の後でね。,TV after homework.,テレビは宿題【しゅくだい】の後【あと】でね。,テレビは宿題【しゅくだい】の後【あと】でね。,daily-routine,宿題,homework
+テレビは宿題の後でね。,TV after homework.,テレビは宿題【しゅくだい】の後【あと】でね。,テレビは宿題【しゅくだい】の後【あと】でね。,daily-routine,後,after
 お風呂に入りなさい。,Take a bath.,お風呂【ふろ】に入り【はいり】なさい。,お風呂【ふろ】に入り【はいり】なさい。,daily-routine,風呂,bath
 もう寝る時間だよ。,It's bedtime.,もう寝る【ねる】時間【じかん】だよ。,もう寝る【ねる】時間【じかん】だよ。,daily-routine,寝る時間,bedtime
 おやすみなさい。,Good night.,おやすみなさい。,おやすみなさい。,daily-routine,おやすみなさい,good night
@@ -106,7 +106,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 カーテンを閉めて。,Close the curtains.,カーテンを閉め【しめ】て。,カーテンを、閉め【しめ】て。,daily-routine,カーテン,curtain
 ドアを閉めてね。,Close the door.,ドアを閉め【しめ】てね。,ドアを、閉め【しめ】てね。,daily-routine,ドア,door
 鍵をかけた?,Did you lock it?,鍵【かぎ】をかけた?,鍵【かぎ】を、かけた?,daily-routine,鍵,key
-電話が鳴ってる。,The phone is ringing.,電話【でんわ】が鳴っ【なっ】てる。,電話【でんわ】が、鳴っ【なっ】てる。,daily-routine,電話,phone
+電話が鳴ってる。,The phone is ringing.,電話【でんわ】が鳴っ【なっ】てる。,電話【でんわ】が、鳴っ【なっ】てる。,daily-routine,鳴る,ring
 誰か来たみたい。,Someone's here.,誰【だれ】か来【き】たみたい。,誰【だれ】か来【き】たみたい。,daily-routine,誰か来た,someone came
 玄関に出てくる。,I'll get the door.,玄関【げんかん】に出【で】てくる。,玄関【げんかん】に出【で】てくる。,daily-routine,玄関,entrance
 ちょっと待ってて。,Wait a moment.,ちょっと待っ【まっ】てて。,ちょっと待っ【まっ】てて。,daily-routine,待つ,wait
@@ -133,7 +133,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 今日という日に感謝。,Grateful for today.,今日【きょう】という日【ひ】に感謝【かんしゃ】。,今日【きょう】という日【ひ】に感謝【かんしゃ】。,daily-routine,今日という日,this day
 家族がいて幸せ。,I'm happy to have family.,家族【かぞく】がいて幸せ【しあわせ】。,家族【かぞく】が、いて幸せ【しあわせ】。,daily-routine,家族,family
 毎日を大切に生きよう。,Let's cherish each day.,毎日【まいにち】を大切【たいせつ】に生きよう【いきよう】。,毎日【まいにち】を、大切【たいせつ】に生きよう【いきよう】。,daily-routine,毎日,every day
-病院の予約を取りました。,I made a doctor's appointment.,病院【びょういん】の予約【よやく】を取り【とり】ました。,病院【びょういん】の予約【よやく】を、取り【とり】ました。,medical,予約,appointment
+病院の予約を取りました。,I made a doctor's appointment.,病院【びょういん】の予約【よやく】を取り【とり】ました。,病院【びょういん】の予約【よやく】を、取り【とり】ました。,medical,病院,hospital
 保険証を持っていますか?,Do you have your insurance card?,保険【ほけん】証【しょう】を持っ【もっ】ていますか?,保険【ほけん】証【しょう】を、持っ【もっ】ていますか?,medical,保険証,insurance card
 症状を教えてください。,Please tell me your symptoms.,症状【しょうじょう】を教え【おしえ】てください。,症状【しょうじょう】を、教え【おしえ】てください。,medical,症状,symptoms
 いつから具合が悪いですか?,Since when have you felt unwell?,いつから具合【ぐあい】が悪い【わるい】ですか?,いつから具合【ぐあい】が、悪い【わるい】ですか?,medical,具合,condition
@@ -141,7 +141,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 薬局に行ってくる。,I'll go to the pharmacy.,薬局【やっきょく】に行っ【いっ】てくる。,薬局【やっきょく】に行っ【いっ】てくる。,medical,薬局,pharmacy
 この薬は食後に飲んでください。,Please take this medicine after meals.,この薬【くすり】は食後【しょくご】に飲ん【のん】でください。,この薬【くすり】は食後【しょくご】に飲ん【のん】でください。,medical,薬,medicine
 副作用はありますか?,Are there any side effects?,副【ふく】作用【さよう】はありますか?,副【ふく】作用【さよう】はありますか?,medical,副作用,side effects
-アレルギーがあります。,I have allergies.,アレルギーがあります。,アレルギーが、あります。,medical,アレルギー,allergy
+アレルギーの薬を飲んでいます。,I'm taking allergy medicine.,アレルギーの薬【くすり】を飲ん【のん】でいます。,アレルギーの薬【くすり】を、飲ん【のん】でいます。,medical,アレルギーの薬,allergy medicine
 検査を受けなきゃ。,I need to get tested.,検査【けんさ】を受け【うけ】なきゃ。,検査【けんさ】を、受け【うけ】なきゃ。,medical,検査,test/exam
 健康診断の結果が来た。,The health checkup results arrived.,健康【けんこう】診断【しんだん】の結果【けっか】が来【き】た。,健康【けんこう】診断【しんだん】の結果【けっか】が、来【き】た。,medical,健康診断,health checkup
 熱が下がらない。,The fever won't go down.,熱【ねつ】が下がら【さがら】ない。,熱【ねつ】が、下が、ら【さがら】ない。,medical,熱,fever
@@ -182,7 +182,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 様子を見てください。,Please monitor your condition.,様子【ようす】を見【み】てください。,様子【ようす】を、見【み】てください。,medical,様子,condition
 良くならなかったら来てください。,Come back if it doesn't improve.,良く【よく】ならなかったら来【き】てください。,良く【よく】ならなかったら来【き】てください。,medical,良くなる,get better
 お大事にしてください。,Please take care.,お大事【だいじ】にしてください。,お大事【だいじ】にしてください。,medical,お大事に,take care
-次回の予約を取りますか?,Shall we schedule your next appointment?,次回【じかい】の予約【よやく】を取り【とり】ますか?,次回【じかい】の予約【よやく】を、取り【とり】ますか?,medical,予約,reservation
+次回の予約を取りますか?,Shall we schedule your next appointment?,次回【じかい】の予約【よやく】を取り【とり】ますか?,次回【じかい】の予約【よやく】を、取り【とり】ますか?,medical,次回,next time
 保険は効きますか?,Is this covered by insurance?,保険【ほけん】は効き【きき】ますか?,保険【ほけん】は効き【きき】ますか?,medical,保険,insurance
 自費になります。,This will be out of pocket.,自費【じひ】になります。,自費【じひ】になります。,medical,自費,out of pocket
 診断書が必要です。,I need a medical certificate.,診断【しんだん】書【しょ】が必要【ひつよう】です。,診断【しんだん】書【しょ】が、必要【ひつよう】です。,medical,診断書,medical certificate
@@ -352,7 +352,7 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 よく寝てね。,Get good rest.,よく寝【ね】てね。,よく寝【ね】てね。,child-health,寝る,sleep
 水分をたくさん取って。,Drink lots of fluids.,水分【すいぶん】をたくさん取っ【とっ】て。,水分【すいぶん】を、たくさん取っ【とっ】て。,child-health,水分,fluids
 予防接種の予約を取った。,I made an appointment for vaccination.,予防【よぼう】接種【せっしゅ】の予約【よやく】を取っ【とっ】た。,予防【よぼう】接種【せっしゅ】の予約【よやく】を、取っ【とっ】た。,child-health,予防接種,vaccination
-アレルギーがあります。,I have allergies.,アレルギーがあります。,アレルギーが、あります。,child-health,アレルギー,allergy
+この子は乳製品アレルギーです。,This child has a dairy allergy.,この子【こ】は乳製品【にゅうせいひん】アレルギーです。,この子【こ】は乳製品【にゅうせいひん】アレルギーです。,child-health,乳製品アレルギー,dairy allergy
 クラスメイトを呼んでいい?,Can I invite my classmates over?,クラスメイトを呼ん【よん】でいい?,クラスメイトを、呼ん【よん】でいい?,child-health,クラスメイト,classmate
 おもちゃを貸してあげて。,Share your toys.,おもちゃを貸し【かし】てあげて。,おもちゃを、貸し【かし】てあげて。,child-health,おもちゃ,toys
 順番に遊んでね。,Take turns playing.,順番【じゅんばん】に遊ん【あそん】でね。,順番【じゅんばん】に遊ん【あそん】でね。,child-health,順番,turn
@@ -457,7 +457,7 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 浴衣を着よう。,Let's wear yukata.,浴衣【ゆかた】を着よう【きよう】。,浴衣【ゆかた】を、着よう【きよう】。,seasonal-events,浴衣,yukata
 スイカ割りをしよう。,Let's play watermelon splitting.,スイカ割り【すいかわり】をしよう。,スイカ割り【すいかわり】を、しよう。,seasonal-events,スイカ割り,watermelon splitting
 虫取りに行く?,Do you want to go bug catching?,虫取り【むしとり】に行く【いく】?,虫取り【むしとり】に行く【いく】?,seasonal-events,虫取り,bug catching
-宿題を早く終わらせてね。,Finish your homework early.,宿題【しゅくだい】を早く【はやく】終わら【おわら】せてね。,宿題【しゅくだい】を、早く【はやく】終わら【おわら】せてね。,seasonal-events,宿題,homework
+宿題を早く終わらせてね。,Finish your homework early.,宿題【しゅくだい】を早く【はやく】終わら【おわら】せてね。,宿題【しゅくだい】を、早く【はやく】終わら【おわら】せてね。,seasonal-events,終わらせる,finish
 自由研究は何にする?,What will you do for your independent study?,自由【じゆう】研究【けんきゅう】は何【なん】にする?,自由【じゆう】研究【けんきゅう】は何【なん】にする?,seasonal-events,自由研究,independent study
 読書感想文を書かなきゃ。,I have to write a book report.,読書【どくしょ】感想【かんそう】文【ぶん】を書か【かか】なきゃ。,読書【どくしょ】感想【かんそう】文【ぶん】を、書か【かか】なきゃ。,seasonal-events,読書感想文,book report
 敬老の日におじいちゃんに電話しよう。,Let's call grandpa on Respect for the Aged Day.,敬老【けいろう】の日【ひ】におじいちゃんに電話【でんわ】しよう。,敬老【けいろう】の日【ひ】におじいちゃんに電話【でんわ】しよう。,seasonal-events,敬老の日,Respect for Aged Day
@@ -696,7 +696,7 @@ PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【
 片付けなさい。,Clean up.,片付け【かたづけ】なさい。,片付け【かたづけ】なさい。,discipline,片付ける,clean up
 ごめんなさいは?,Say sorry.,ごめんなさいは?,ごめんなさいは?,discipline,ごめんなさい,sorry
 カートに入れる。,Add to cart.,カートに入れる【いれる】。,カートに入れる【いれる】。,online-shopping,カート,cart
-注文を確定する。,Confirm order.,注文【ちゅうもん】を確定【かくてい】する。,注文【ちゅうもん】を、確定【かくてい】する。,online-shopping,注文,order
+注文を確定する。,Confirm order.,注文【ちゅうもん】を確定【かくてい】する。,注文【ちゅうもん】を、確定【かくてい】する。,online-shopping,確定,confirm
 送料はいくらですか?,How much is shipping?,送料【そうりょう】はいくらですか?,送料【そうりょう】はいくらですか?,online-shopping,送料,shipping
 届け先を変更したい。,I want to change the delivery address.,届け先【とどけさき】を変更【へんこう】したい。,届け先【とどけさき】を、変更【へんこう】したい。,online-shopping,届け先,delivery address
 配達日を指定できますか?,Can I specify the delivery date?,配達【はいたつ】日【ひ】を指定【してい】できますか?,配達【はいたつ】日【ひ】を、指定【してい】できますか?,online-shopping,配達日,delivery date
@@ -932,9 +932,9 @@ Wi-Fiはありますか?,Do you have Wi-Fi?,Wi-Fiはありますか?,Wi-Fiはあ
 〇〇ですが。,This is...,〇〇ですが。,〇〇ですが。,phone,〇〇ですが,this is (name)
 少々お待ちください。,Please wait a moment.,少々【しょうしょう】お待ち【まち】ください。,少々【しょうしょう】お待ち【まち】ください。,phone,少々,a moment
 伝言をお願いできますか?,Can I leave a message?,伝言【でんごん】をお願い【ねがい】できますか?,伝言【でんごん】を、お願い【ねがい】できますか?,phone,伝言,message
-折り返しお電話いただけますか?,Could you call me back?,折り返し【おりかえし】お電話【でんわ】いただけますか?,折り返し【おりかえし】お電話【でんわ】いただけますか?,phone,電話,phone
+折り返しお電話いただけますか?,Could you call me back?,折り返し【おりかえし】お電話【でんわ】いただけますか?,折り返し【おりかえし】お電話【でんわ】いただけますか?,phone,折り返し,callback
 留守番電話にメッセージを残しました。,I left a message on the answering machine.,留守【るす】番【ばん】電話【でんわ】にメッセージを残し【のこし】ました。,留守【るす】番【ばん】電話【でんわ】にメッセージを、残し【のこし】ました。,phone,メッセージ,message
-電話が切れた。,The call dropped.,電話【でんわ】が切れ【きれ】た。,電話【でんわ】が、切れ【きれ】た。,phone,電話,phone
+電話が切れた。,The call dropped.,電話【でんわ】が切れ【きれ】た。,電話【でんわ】が、切れ【きれ】た。,phone,切れる,disconnect
 ガソリンを満タンにしてください。,Fill it up please.,ガソリンを満タン【まんたん】にしてください。,ガソリンを、満タン【まんたん】にしてください。,car,ガソリン,gas
 車検の時期です。,It's time for vehicle inspection.,車検【しゃけん】の時期【じき】です。,車検【しゃけん】の時期【じき】です。,car,車検,vehicle inspection
 駐車場を探しています。,I'm looking for parking.,駐車【ちゅうしゃ】場【じょう】を探し【さがし】ています。,駐車【ちゅうしゃ】場【じょう】を、探し【さがし】ています。,car,駐車場,parking
@@ -990,10 +990,10 @@ DIYの材料を買いたい。,I want to buy DIY materials.,DIYの材料【ざ�
 責任者を呼んでください。,Please call the manager.,責任【せきにん】者【しゃ】を呼ん【よん】でください。,責任【せきにん】者【しゃ】を、呼ん【よん】でください。,complaints,責任者,manager
 どう対応してもらえますか?,How will you handle this?,どう対応【たいおう】してもらえますか?,どう対応【たいおう】してもらえますか?,complaints,対応,handling
 予約を取りたいのですが。,I'd like to make a reservation.,予約【よやく】を取り【とり】たいのですが。,予約【よやく】を、取り【とり】たいのですが。,appointments,予約,reservation
-予約をキャンセルしたいのですが。,I'd like to cancel my reservation.,予約【よやく】をキャンセルしたいのですが。,予約【よやく】を、キャンセルしたいのですが。,appointments,予約,reservation
-予約を変更できますか?,Can I change my reservation?,予約【よやく】を変更【へんこう】できますか?,予約【よやく】を、変更【へんこう】できますか?,appointments,予約,reservation
+予約をキャンセルしたいのですが。,I'd like to cancel my reservation.,予約【よやく】をキャンセルしたいのですが。,予約【よやく】を、キャンセルしたいのですが。,appointments,キャンセル,cancel
+予約を変更できますか?,Can I change my reservation?,予約【よやく】を変更【へんこう】できますか?,予約【よやく】を、変更【へんこう】できますか?,appointments,変更,change
 何時が空いていますか?,What times are available?,何時【いつ】が空い【あい】ていますか?,何時【いつ】が、空い【あい】ていますか?,appointments,何時,what time
-確認のお電話をいただけますか?,Could you call to confirm?,確認【かくにん】のお電話【でんわ】をいただけますか?,確認【かくにん】のお電話【でんわ】を、いただけますか?,appointments,電話,phone
+確認のお電話をいただけますか?,Could you call to confirm?,確認【かくにん】のお電話【でんわ】をいただけますか?,確認【かくにん】のお電話【でんわ】を、いただけますか?,appointments,確認,confirmation
 不審者がいます。,There's a suspicious person.,不審【ふしん】者【しゃ】がいます。,不審【ふしん】者【しゃ】が、います。,crime,不審者,suspicious person
 泥棒に入られた。,We were robbed.,泥棒【どろぼう】に入ら【はいら】れた。,泥棒【どろぼう】に入ら【はいら】れた。,crime,泥棒,burglar
 ストーカー被害に遭っています。,I'm being stalked.,ストーカー被害【ひがい】に遭っ【あっ】ています。,ストーカー被害【ひがい】に遭っ【あっ】ています。,crime,ストーカー,stalking
