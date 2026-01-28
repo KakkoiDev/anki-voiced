@@ -242,14 +242,28 @@ def extract_furigana(text: str) -> str:
     Pattern: [digits]kanji【reading】 → reading
     All other text is preserved as-is.
     """
-    # Pattern matches: optional digits + one or more kanji followed by 【reading】
+    # Pattern matches: optional digits + kanji (with optional okurigana) followed by 【reading】
     # Kanji range: \u4e00-\u9fff (CJK Unified Ideographs)
-    pattern = r"([0-9]*[\u4e00-\u9fff]+)【([^】]+)】"
-
+    # Hiragana range: \u3040-\u309f, Katakana range: \u30a0-\u30ff
+    # Matches kanji (with optional okurigana) immediately before 【reading】
+    # \u3005 is 々 (ideographic iteration mark, e.g. 別々)
+    # Handles compound patterns like 忘れ物【】, 持ち帰り【】 (kanji-kana-kanji before bracket)
+    # Uses atomic-style matching: find 【 first, then look back for the kanji+kana group
     def replace_with_reading(match):
         return match.group(2)
 
-    return re.sub(pattern, replace_with_reading, text)
+    # First pass: handle sequences with kana between kanji (e.g. 忘れ物【わすれもの】)
+    # These have kana sandwiched between kanji, all before 【
+    text = re.sub(
+        r"([0-9]*[\u4e00-\u9fff\u3005](?:[\u3040-\u309f\u30a0-\u30ff]+[\u4e00-\u9fff\u3005])+[\u3040-\u309f\u30a0-\u30ff]*)【([^】]+)】",
+        replace_with_reading, text,
+    )
+    # Second pass: simple kanji+optional okurigana (e.g. 食べ【たべ】, 天気【てんき】)
+    text = re.sub(
+        r"([0-9]*[\u4e00-\u9fff\u3005]+[\u3040-\u309f\u30a0-\u30ff]*)【([^】]+)】",
+        replace_with_reading, text,
+    )
+    return text
 
 
 def to_ruby_html(text: str) -> str:
