@@ -142,11 +142,11 @@ sentence,translation,pronunciation,tts_pronunciation,tags
 お茶漬けにしようか。,Shall we have ochazuke?,お茶漬け【ちゃづけ】にしようか。,お茶漬け【ちゃづけ】にしようか。,japanese-cuisine
 おにぎりを握ります。,I'll make rice balls.,おにぎりを握り【にぎり】ます。,おにぎりを、握り【にぎり】ます。,japanese-cuisine
 巻き寿司を作ろう。,Let's make sushi rolls.,巻き寿司【まきずし】を作ろう【つくろう】。,巻き寿司【まきずし】を、作ろう【つくろう】。,japanese-cuisine
-今週の献立を考えよう。,Let's plan this week's menu.,今週【こんしゅう】の献立【こんだて】を考えよう【かんがえよう】。,今週【こんしゅう】の献立【こんだて】を、考えよう【かんが、えよう】。,meal-planning
+今週の献立を考えよう。,Let's plan this week's menu.,今週【こんしゅう】の献立【こんだて】を考えよう【かんがえよう】。,今週【こんしゅう】の献立【こんだて】を、考えよう【かんがえよう】。,meal-planning
 作り置きを週末に作る。,I'll make batch dishes on the weekend.,作り置き【つくりおき】を週末【しゅうまつ】に作る【つくる】。,作り置き【つくりおき】を、週末【しゅうまつ】に作る【つくる】。,meal-planning
 お弁当の中身は何にする?,What should I put in the lunch box?,お弁当【べんとう】の中身【なかみ】は何【なん】にする?,お弁当【べんとう】の中身【なかみ】は何【なん】にする?,meal-planning
 冷凍できるおかずを作ろう。,Let's make side dishes we can freeze.,冷凍【れいとう】できるおかずを作ろう【つくろう】。,冷凍【れいとう】できるおかずを、作ろう【つくろう】。,meal-planning
-栄養バランスを考えて。,Think about nutritional balance.,栄養【えいよう】バランスを考え【かんがえ】て。,栄養【えいよう】バランスを、考え【かんが、え】て。,meal-planning
+栄養バランスを考えて。,Think about nutritional balance.,栄養【えいよう】バランスを考え【かんがえ】て。,栄養【えいよう】バランスを、考え【かんがえ】て。,meal-planning
 野菜が足りないかも。,We might not have enough vegetables.,野菜【やさい】が足り【たり】ないかも。,野菜【やさい】が、足り【たり】ないかも。,meal-planning
 魚を週2回は食べたい。,I want to eat fish twice a week.,魚【さかな】を週【しゅう】2回【かい】は食べ【たべ】たい。,魚【さかな】を、週【しゅう】2回【かい】は食べ【たべ】たい。,meal-planning
 子供が好きなメニューにしよう。,Let's make a menu the kids like.,子供【こども】が好き【すき】なメニューにしよう。,子供【こども】が、好き【すき】なメニューにしよう。,meal-planning
@@ -659,7 +659,7 @@ DIYの材料を買いたい。,I want to buy DIY materials.,DIYの材料【ざ�
 復習が大事だよ。,Review is important.,復習【ふくしゅう】が大事【だいじ】だよ。,復習【ふくしゅう】が、大事【だいじ】だよ。,school
 この問題わかる?,Do you understand this problem?,この問題【もんだい】わかる?,この問題【もんだい】わかる?,school
 教えてあげようか?,Shall I help you?,教え【おしえ】てあげようか?,教え【おしえ】てあげようか?,school
-自分で考えてみて。,Try thinking for yourself.,自分【じぶん】で考え【かんがえ】てみて。,自分【じぶん】で考え【かんが、え】てみて。,school
+自分で考えてみて。,Try thinking for yourself.,自分【じぶん】で考え【かんがえ】てみて。,自分【じぶん】で考え【かんがえ】てみて。,school
 字をきれいに書いて。,Write neatly.,字【じ】をきれいに書い【かい】て。,字【じ】を、きれいに書い【かい】て。,school
 消しゴムを使って。,Use the eraser.,消し【けし】ゴムを使っ【つかっ】て。,消し【けし】ゴムを、使っ【つかっ】て。,school
 鉛筆を削ってね。,Sharpen your pencil.,鉛筆【えんぴつ】を削っ【けずっ】てね。,鉛筆【えんぴつ】を、削っ【けずっ】てね。,school
