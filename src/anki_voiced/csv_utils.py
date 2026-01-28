@@ -112,6 +112,11 @@ def load_csv(
             )
 
         # Find column mappings based on template
+        # Common columns for audio generation
+        tts_pron_col = _find_column(headers, COLUMN_MAPPINGS["tts_pronunciation"])
+        pron_col = _find_column(headers, COLUMN_MAPPINGS["pronunciation"])
+        sentence_col = _find_column(headers, COLUMN_MAPPINGS["sentence"])
+
         if template == "basic":
             front_col = _find_column(headers, COLUMN_MAPPINGS["front"])
             back_col = _find_column(headers, COLUMN_MAPPINGS["back"])
@@ -142,12 +147,17 @@ def load_csv(
                 entry = VocabEntry(
                     sentence=row[front_col],
                     translation=row[back_col],
+                    pronunciation=row.get(pron_col, "") if pron_col else "",
+                    tts_pronunciation=row.get(tts_pron_col, "") if tts_pron_col else "",
                     tags=tags,
                 )
             elif template == "cloze":
                 entry = VocabEntry(
                     text=row[text_col],
                     extra=row.get(extra_col, "") if extra_col else "",
+                    sentence=row.get(sentence_col, "") if sentence_col else "",
+                    pronunciation=row.get(pron_col, "") if pron_col else "",
+                    tts_pronunciation=row.get(tts_pron_col, "") if tts_pron_col else "",
                     tags=tags,
                 )
             else:  # double-card
@@ -191,6 +201,11 @@ def load_csv_from_stdin(template: str = "double-card") -> list[VocabEntry]:
 
     entries = []
 
+    # Common columns for audio generation
+    tts_pron_col = _find_column(headers, COLUMN_MAPPINGS["tts_pronunciation"])
+    pron_col = _find_column(headers, COLUMN_MAPPINGS["pronunciation"])
+    sentence_col = _find_column(headers, COLUMN_MAPPINGS["sentence"])
+
     if template == "basic":
         front_col = _find_column(headers, COLUMN_MAPPINGS["front"])
         back_col = _find_column(headers, COLUMN_MAPPINGS["back"])
@@ -198,10 +213,7 @@ def load_csv_from_stdin(template: str = "double-card") -> list[VocabEntry]:
         text_col = _find_column(headers, COLUMN_MAPPINGS["text"])
         extra_col = _find_column(headers, COLUMN_MAPPINGS["extra"])
     else:
-        sentence_col = _find_column(headers, COLUMN_MAPPINGS["sentence"])
         translation_col = _find_column(headers, COLUMN_MAPPINGS["translation"])
-        pron_col = _find_column(headers, COLUMN_MAPPINGS["pronunciation"])
-        tts_pron_col = _find_column(headers, COLUMN_MAPPINGS["tts_pronunciation"])
         hint_col = _find_column(headers, COLUMN_MAPPINGS["hint"])
         cloze_col = _find_column(headers, COLUMN_MAPPINGS["cloze"])
         key_meaning_col = _find_column(headers, COLUMN_MAPPINGS["key_meaning"])
@@ -219,12 +231,17 @@ def load_csv_from_stdin(template: str = "double-card") -> list[VocabEntry]:
             entry = VocabEntry(
                 sentence=row[front_col],
                 translation=row[back_col],
+                pronunciation=row.get(pron_col, "") if pron_col else "",
+                tts_pronunciation=row.get(tts_pron_col, "") if tts_pron_col else "",
                 tags=tags,
             )
         elif template == "cloze":
             entry = VocabEntry(
                 text=row[text_col],
                 extra=row.get(extra_col, "") if extra_col else "",
+                sentence=row.get(sentence_col, "") if sentence_col else "",
+                pronunciation=row.get(pron_col, "") if pron_col else "",
+                tts_pronunciation=row.get(tts_pron_col, "") if tts_pron_col else "",
                 tags=tags,
             )
         else:
