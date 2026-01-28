@@ -669,5 +669,129 @@ def voices(
         console.print("Use --lang to filter, e.g.: anki-voiced voices --lang japanese")
 
 
+@app.command()
+def validate(
+    csv_file: Annotated[
+        Path,
+        typer.Argument(help="CSV file to validate"),
+    ],
+    check_audio: Annotated[
+        bool,
+        typer.Option(
+            "--check-audio",
+            "-a",
+            help="Also validate audio files in audio/ directory",
+        ),
+    ] = False,
+    verbose: Annotated[
+        bool,
+        typer.Option(
+            "--verbose",
+            "-v",
+            help="Show detailed errors and warnings",
+        ),
+    ] = False,
+    json_output: Annotated[
+        bool,
+        typer.Option(
+            "--json",
+            help="Machine-readable JSON output",
+        ),
+    ] = False,
+) -> None:
+    """Validate a CSV file before deck generation.
+
+    Checks for:
+      - Required columns exist
+      - Empty required fields
+      - Valid furigana format (matched 【】 brackets)
+      - Audio files exist (with --check-audio)
+
+    Examples:
+      anki-voiced validate vocabulary.csv
+      anki-voiced validate vocabulary.csv --check-audio --verbose
+    """
+    from .validation import validate_csv_file, validate_audio_files
+
+    if not csv_file.exists():
+        print_error(f"CSV file not found: {csv_file}")
+        raise typer.Exit(1)
+
+    result = validate_csv_file(csv_file, check_furigana=True)
+
+    # Check audio if requested
+    if check_audio:
+        audio_dir = csv_file.parent / "audio"
+        if audio_dir.exists():
+            validate_audio_files(audio_dir, result.row_count, result)
+        else:
+            result.add_warning(f"Audio directory not found: {audio_dir}")
+
+    # JSON output
+    if json_output:
+        output_json({
+            "valid": result.is_valid,
+            "row_count": result.row_count,
+            "errors": result.errors,
+            "warnings": result.warnings,
+            "furigana": {
+                "valid": result.furigana_valid,
+                "total": result.furigana_total,
+            },
+            "audio": {
+                "valid": result.audio_valid,
+                "total": result.audio_total,
+            },
+        })
+        raise typer.Exit(0 if result.is_valid else 1)
+
+    # Human-readable output
+    console.print(f"\nValidating [cyan]{csv_file}[/cyan]...\n")
+
+    # CSV status
+    if result.csv_valid:
+        console.print(f"  CSV: {result.row_count} rows [green]✓[/green]")
+    else:
+        console.print(f"  CSV: [red]✗[/red]")
+
+    # Furigana status
+    if result.furigana_total > 0:
+        status = "[green]✓[/green]" if result.furigana_valid == result.furigana_total else "[red]✗[/red]"
+        console.print(f"  Furigana: {result.furigana_valid}/{result.furigana_total} valid {status}")
+
+    # Audio status
+    if result.audio_total > 0:
+        status = "[green]✓[/green]" if result.audio_valid == result.audio_total else "[red]✗[/red]"
+        console.print(f"  Audio: {result.audio_valid}/{result.audio_total} files {status}")
+
+    # Errors
+    if result.errors:
+        console.print(f"\n[red]Errors ({len(result.errors)}):[/red]")
+        errors_to_show = result.errors if verbose else result.errors[:5]
+        for error in errors_to_show:
+            console.print(f"  {error}")
+        if not verbose and len(result.errors) > 5:
+            console.print(f"  ... and {len(result.errors) - 5} more (use --verbose)")
+
+    # Warnings
+    if result.warnings:
+        console.print(f"\n[yellow]Warnings ({len(result.warnings)}):[/yellow]")
+        warnings_to_show = result.warnings if verbose else result.warnings[:3]
+        for warning in warnings_to_show:
+            console.print(f"  {warning}")
+        if not verbose and len(result.warnings) > 3:
+            console.print(f"  ... and {len(result.warnings) - 3} more (use --verbose)")
+
+    # Summary
+    console.print()
+    if result.is_valid:
+        console.print("[green]Validation passed![/green]")
+        if result.warnings:
+            console.print(f"  ({len(result.warnings)} warnings)")
+    else:
+        console.print(f"[red]Validation failed:[/red] {len(result.errors)} errors")
+        raise typer.Exit(1)
+
+
 if __name__ == "__main__":
     app()

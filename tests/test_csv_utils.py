@@ -192,3 +192,45 @@ def test_create_sample_csv_includes_tts_pronunciation_header():
 
         content = path.read_text()
         assert "tts_pronunciation" in content.split("\n")[0]
+
+
+def test_load_csv_cloze_column():
+    """Test loading CSV with cloze column."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        path = Path(tmpdir) / "test.csv"
+        path.write_text(
+            "sentence,translation,cloze,key_meaning,tags\n"
+            "バグが発生しました,A bug occurred,発生,occurred,debug\n"
+        )
+
+        entries = load_csv(path, "double-card")
+        assert len(entries) == 1
+        assert entries[0].cloze == "発生"
+        assert entries[0].key_meaning == "occurred"
+
+
+def test_load_csv_keyword_column_alias():
+    """Test that 'keyword' column alias works for cloze."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        path = Path(tmpdir) / "test.csv"
+        path.write_text(
+            "sentence,translation,keyword,tags\n"
+            "テスト,Test,テスト,noun\n"
+        )
+
+        entries = load_csv(path, "double-card")
+        assert entries[0].cloze == "テスト"
+
+
+def test_load_csv_keymeaning_column_alias():
+    """Test that 'KeyMeaning' column works (case-insensitive)."""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        path = Path(tmpdir) / "test.csv"
+        path.write_text(
+            "Sentence,Translation,Cloze,KeyMeaning,Note\n"
+            "完了しました,Completed,完了,completed,status\n"
+        )
+
+        entries = load_csv(path, "double-card")
+        assert entries[0].cloze == "完了"
+        assert entries[0].key_meaning == "completed"

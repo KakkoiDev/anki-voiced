@@ -105,6 +105,10 @@ class VocabEntry(BaseModel):
     tags: list[str] = Field(default_factory=list, description="Tags for categorization")
     audio_file: str | None = Field(default=None, description="Path to audio file")
 
+    # Cloze/key word support
+    cloze: str = Field(default="", description="Key vocabulary word for cloze deletion")
+    key_meaning: str = Field(default="", description="English meaning of key word")
+
     # Aliases for basic template compatibility
     @property
     def front(self) -> str:

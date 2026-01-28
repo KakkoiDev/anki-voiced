@@ -16,9 +16,12 @@ COLUMN_MAPPINGS = {
     "sentence": ["sentence", "front", "word", "term", "target", "text"],
     "translation": ["translation", "back", "meaning", "definition", "answer"],
     "pronunciation": ["pronunciation", "reading", "furigana", "phonetic", "ipa"],
-    "tts_pronunciation": ["tts_pronunciation", "tts", "audio_text"],
+    "tts_pronunciation": ["tts_pronunciation", "tts", "audio_text", "ttspronunciation"],
     "hint": ["hint", "clue"],
     "tags": ["tags", "tag", "category", "categories", "note", "notes"],
+    # Key word/cloze support
+    "cloze": ["cloze", "keyword", "key_word", "vocab", "vocabulary"],
+    "key_meaning": ["key_meaning", "keymeaning", "meaning", "key_translation"],
     # For cloze template
     "text": ["text", "sentence", "front", "cloze"],
     "extra": ["extra", "hint", "note", "explanation"],
@@ -121,6 +124,8 @@ def load_csv(
             pron_col = _find_column(headers, COLUMN_MAPPINGS["pronunciation"])
             tts_pron_col = _find_column(headers, COLUMN_MAPPINGS["tts_pronunciation"])
             hint_col = _find_column(headers, COLUMN_MAPPINGS["hint"])
+            cloze_col = _find_column(headers, COLUMN_MAPPINGS["cloze"])
+            key_meaning_col = _find_column(headers, COLUMN_MAPPINGS["key_meaning"])
 
         tags_col = _find_column(headers, COLUMN_MAPPINGS["tags"])
 
@@ -152,6 +157,8 @@ def load_csv(
                     pronunciation=row.get(pron_col, "") if pron_col else "",
                     tts_pronunciation=row.get(tts_pron_col, "") if tts_pron_col else "",
                     hint=row.get(hint_col, "") if hint_col else "",
+                    cloze=row.get(cloze_col, "") if cloze_col else "",
+                    key_meaning=row.get(key_meaning_col, "") if key_meaning_col else "",
                     tags=tags,
                 )
 
@@ -196,6 +203,8 @@ def load_csv_from_stdin(template: str = "double-card") -> list[VocabEntry]:
         pron_col = _find_column(headers, COLUMN_MAPPINGS["pronunciation"])
         tts_pron_col = _find_column(headers, COLUMN_MAPPINGS["tts_pronunciation"])
         hint_col = _find_column(headers, COLUMN_MAPPINGS["hint"])
+        cloze_col = _find_column(headers, COLUMN_MAPPINGS["cloze"])
+        key_meaning_col = _find_column(headers, COLUMN_MAPPINGS["key_meaning"])
 
     tags_col = _find_column(headers, COLUMN_MAPPINGS["tags"])
 
@@ -225,6 +234,8 @@ def load_csv_from_stdin(template: str = "double-card") -> list[VocabEntry]:
                 pronunciation=row.get(pron_col, "") if pron_col else "",
                 tts_pronunciation=row.get(tts_pron_col, "") if tts_pron_col else "",
                 hint=row.get(hint_col, "") if hint_col else "",
+                cloze=row.get(cloze_col, "") if cloze_col else "",
+                key_meaning=row.get(key_meaning_col, "") if key_meaning_col else "",
                 tags=tags,
             )
 
