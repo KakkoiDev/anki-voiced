@@ -6,7 +6,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 メニューをください。,Menu please.,メニューをください。,メニューを、ください。,restaurant,メニュー,menu
 注文をお願いします。,I'd like to order.,注文【ちゅうもん】をお願い【ねがい】します。,注文【ちゅうもん】を、お願い【ねがい】します。,restaurant,注文,order
 おすすめは何ですか?,What do you recommend?,おすすめは何【なん】ですか?,おすすめは何【なん】ですか?,restaurant,おすすめ,recommendation
-これは何が入っていますか?,What's in this?,これは何【なん】が入っ【はいっ】ていますか?,これは何【なん】が、入っ【はいっ】ていますか?,restaurant,何が入っている,what's in it
+これは何が入っていますか?,What's in this?,これは何【なに】が入っ【はいっ】ていますか?,これは何【なに】が、入っ【はいっ】ていますか?,restaurant,何が入っている,what's in it
 アレルギーがあるのですが。,I have allergies.,アレルギーがあるのですが。,アレルギーが、あるのですが。,restaurant,アレルギー,allergy
 子供用の椅子はありますか?,Do you have a high chair?,子供【こども】用【よう】の椅子【いす】はありますか?,子供【こども】用【よう】の椅子【いす】はありますか?,restaurant,子供用の椅子,high chair
 お水をください。,Water please.,お水【みず】をください。,お水【みず】を、ください。,restaurant,お水,water
@@ -15,7 +15,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 持ち帰りできますか?,Can we get this to go?,持ち帰り【もちかえり】できますか?,持ち帰り【もちかえり】できますか?,restaurant,持ち帰り,takeout
 ごちそうさまでした。,Thank you for the meal.,ごちそうさまでした。,ごちそうさまでした。,restaurant,ごちそうさま,thanks for meal
 今夜は外食しよう。,Let's eat out tonight.,今夜【こんや】は外食【がいしょく】しよう。,今夜【こんや】は外食【がいしょく】しよう。,restaurant,外食,eating out
-何が食べたい気分?,What are you in the mood for?,何【なん】が食べ【たべ】たい気分【きぶん】?,何【なん】が、食べ【たべ】たい気分【きぶん】?,restaurant,気分,mood
+何が食べたい気分?,What are you in the mood for?,何【なに】が食べ【たべ】たい気分【きぶん】?,何【なに】が、食べ【たべ】たい気分【きぶん】?,restaurant,気分,mood
 和食と洋食どっちがいい?,Japanese or Western food?,和食【わしょく】と洋食【ようしょく】どっちがいい?,和食【わしょく】と洋食【ようしょく】どっちがいい?,restaurant,和食と洋食,Japanese and Western
 新しいお店を試してみよう。,Let's try a new place.,新しい【あたらしい】お店【みせ】を試し【ためし】てみよう。,新しい【あたらしい】お店【みせ】を、試し【ためし】てみよう。,restaurant,お店,restaurant
 口コミで評判がいいお店。,A restaurant with good reviews.,口コミ【くちこみ】で評判【ひょうばん】がいいお店【みせ】。,口コミ【くちこみ】で評判【ひょうばん】が、いいお店【みせ】。,restaurant,評判,reputation
@@ -465,7 +465,7 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 お菓子を用意しておこう。,Let's prepare candy.,お菓子【かし】を用意【ようい】しておこう。,お菓子【かし】を、用意【ようい】しておこう。,seasonal-events,お菓子,sweets
 トリックオアトリート!,Trick or treat!,トリックオアトリート!,トリックオアトリート!,seasonal-events,トリックオアトリート,trick or treat
 夕飯の準備をします。,I'll prepare dinner.,夕飯【ゆうはん】の準備【じゅんび】をします。,夕飯【ゆうはん】の準備【じゅんび】を、します。,cooking,準備,preparation
-何が食べたい?,What do you want to eat?,何【なん】が食べ【たべ】たい?,何【なん】が、食べ【たべ】たい?,cooking,何,what
+何が食べたい?,What do you want to eat?,何【なに】が食べ【たべ】たい?,何【なに】が、食べ【たべ】たい?,cooking,何,what
 今日は和食にしよう。,Let's have Japanese food today.,今日【きょう】は和食【わしょく】にしよう。,今日【きょう】は和食【わしょく】にしよう。,cooking,和食,japanese
 味見してみて。,Try tasting it.,味見【あじみ】してみて。,味見【あじみ】してみて。,cooking,味見,tasting
 塩を少し足して。,Add a little salt.,塩【しお】を少し【すこし】足し【たし】て。,塩【しお】を、少し【すこし】足し【たし】て。,cooking,塩,salt
@@ -474,7 +474,7 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 焦げないように見てて。,Watch it so it doesn't burn.,焦げ【こげ】ないように見【み】てて。,焦げ【こげ】ないように見【み】てて。,cooking,焦げる,burn
 出汁を取ります。,I'll make the stock.,出汁【だし】を取り【とり】ます。,出汁【だし】を、取り【とり】ます。,cooking,出汁,stock/broth
 ご飯を炊いてくれる?,Can you cook the rice?,ご飯【ごはん】を炊い【たい】てくれる?,ご飯【ごはん】を、炊い【たい】てくれる?,cooking,ご飯,rice
-冷蔵庫に何がある?,What's in the fridge?,冷蔵【れいぞう】庫【こ】に何【なん】がある?,冷蔵【れいぞう】庫【こ】に何【なん】が、ある?,cooking,冷蔵庫,refrigerator
+冷蔵庫に何がある?,What's in the fridge?,冷蔵【れいぞう】庫【こ】に何【なに】がある?,冷蔵【れいぞう】庫【こ】に何【なに】が、ある?,cooking,冷蔵庫,refrigerator
 作り置きを準備しよう。,Let's prepare make-ahead dishes.,作り置き【つくりおき】を準備【じゅんび】しよう。,作り置き【つくりおき】を、準備【じゅんび】しよう。,cooking,作り置き,meal prep
 レシピを検索して。,Search for a recipe.,レシピを検索【けんさく】して。,レシピを、検索【けんさく】して。,cooking,レシピ,recipe
 煮物を作ります。,I'll make simmered dishes.,煮物【にもの】を作り【つくり】ます。,煮物【にもの】を、作り【つくり】ます。,cooking,煮物,simmered
@@ -632,7 +632,7 @@ PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【
 家族と連絡が取れない。,I can't reach my family.,家族【かぞく】と連絡【れんらく】が取れ【とれ】ない。,家族【かぞく】と連絡【れんらく】が、取れ【とれ】ない。,disaster,家族,family
 スーパーに行ってくる。,I'm going to the supermarket.,スーパーに行っ【いっ】てくる。,スーパーに行っ【いっ】てくる。,grocery,スーパー,supermarket
 特売があるみたい。,There seems to be a sale.,特売【とくばい】があるみたい。,特売【とくばい】が、あるみたい。,grocery,特売,sale
-今日は何が安い?,What's on sale today?,今日【きょう】は何【なん】が安い【やすい】?,今日【きょう】は何【なん】が、安い【やすい】?,grocery,安い,cheap/on sale
+今日は何が安い?,What's on sale today?,今日【きょう】は何【なに】が安い【やすい】?,今日【きょう】は何【なに】が、安い【やすい】?,grocery,安い,cheap/on sale
 賞味期限を確認して。,Check the expiration date.,賞味【しょうみ】期限【きげん】を確認【かくにん】して。,賞味【しょうみ】期限【きげん】を、確認【かくにん】して。,grocery,賞味期限,expiration date
 ポイントカードはお持ちですか?,Do you have a point card?,ポイントカードはお持ち【もち】ですか?,ポイントカードはお持ち【もち】ですか?,grocery,ポイントカード,point card
 エコバッグを持ってきた。,I brought my eco bag.,エコバッグを持っ【もっ】てきた。,エコバッグを、持っ【もっ】てきた。,grocery,エコバッグ,eco bag
@@ -740,7 +740,7 @@ PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【
 にんにくを刻んで。,Chop the garlic.,にんにくを刻ん【きざん】で。,にんにくを、刻ん【きざん】で。,ingredients,にんにく,garlic
 ネギを小口切りにして。,Cut the green onion into small pieces.,ネギを小口【こぐち】切り【ぎり】にして。,ネギを、小口【こぐち】切り【ぎり】にして。,ingredients,ネギ,green onion
 大根おろしを作って。,Make grated daikon.,大根【だいこん】おろしを作っ【つくっ】て。,大根【だいこん】おろしを、作っ【つくっ】て。,ingredients,大根おろし,grated daikon
-きのこは何がある?,What mushrooms do we have?,きのこは何【なん】がある?,きのこは何【なん】が、ある?,ingredients,きのこ,mushroom
+きのこは何がある?,What mushrooms do we have?,きのこは何【なに】がある?,きのこは何【なに】が、ある?,ingredients,きのこ,mushroom
 家計簿をつけています。,I keep a household budget.,家計【かけい】簿【ぼ】をつけています。,家計【かけい】簿【ぼ】を、つけています。,finances,家計簿,household budget
 今月は節約しなきゃ。,We need to save money this month.,今月【こんげつ】は節約【せつやく】しなきゃ。,今月【こんげつ】は節約【せつやく】しなきゃ。,finances,節約,save money
 光熱費が高い。,The utility bills are high.,光熱【こうねつ】費【ひ】が高い【たかい】。,光熱【こうねつ】費【ひ】が、高い【たかい】。,finances,光熱費,utility bills
@@ -869,7 +869,7 @@ Wi-Fiはありますか?,Do you have Wi-Fi?,Wi-Fiはありますか?,Wi-Fiはあ
 動物病院に連れて行く。,I'll take them to the vet.,動物【どうぶつ】病院【びょういん】に連れ【つれ】て行く【いく】。,動物【どうぶつ】病院【びょういん】に連れ【つれ】て行く【いく】。,pets,動物病院,vet
 ペットフードを買わなきゃ。,I need to buy pet food.,ペットフードを買わ【かわ】なきゃ。,ペットフードを、買わ【かわ】なきゃ。,pets,ペットフード,pet food
 予防接種の時期だ。,It's time for vaccinations.,予防【よぼう】接種【せっしゅ】の時期【じき】だ。,予防【よぼう】接種【せっしゅ】の時期【じき】だ。,pets,予防接種,vaccination
-塾は何曜日?,What day is cram school?,塾【じゅく】は何曜【なんよう】日【ひ】?,塾【じゅく】は何曜【なんよう】日【ひ】?,activities,塾,cram school
+塾は何曜日?,What day is cram school?,塾【じゅく】は何曜日【なんようび】?,塾【じゅく】は何曜日【なんようび】?,activities,塾,cram school
 習い事を増やしたいの?,Do you want more lessons?,習い事【ならいごと】を増やし【ふやし】たいの?,習い事【ならいごと】を、増やし【ふやし】たいの?,activities,習い事,lessons
 ピアノの練習をしなさい。,Practice the piano.,ピアノの練習【れんしゅう】をしなさい。,ピアノの練習【れんしゅう】を、しなさい。,activities,ピアノ,piano
 サッカーの練習に送って行く。,I'll drive you to soccer practice.,サッカーの練習【れんしゅう】に送っ【おくっ】て行く【いく】。,サッカーの練習【れんしゅう】に送っ【おくっ】て行く【いく】。,activities,サッカー,soccer
@@ -927,7 +927,7 @@ Wi-Fiはありますか?,Do you have Wi-Fi?,Wi-Fiはありますか?,Wi-Fiはあ
 お祝いを贈りたいのですが。,I'd like to send a congratulatory gift.,お祝い【いわい】を贈り【おくり】たいのですが。,お祝い【いわい】を、贈り【おくり】たいのですが。,gifts,お祝い,celebration
 熨斗をつけてください。,Please attach a noshi.,熨斗【のし】をつけてください。,熨斗【のし】を、つけてください。,gifts,熨斗,noshi
 包装をお願いします。,Please wrap it.,包装【ほうそう】をお願い【ねがい】します。,包装【ほうそう】を、お願い【ねがい】します。,gifts,包装,wrapping
-お返しは何がいいかな?,What should I give in return?,お返し【がえし】は何【なん】がいいかな?,お返し【がえし】は何【なん】が、いいかな?,gifts,お返し,return gift
+お返しは何がいいかな?,What should I give in return?,お返し【がえし】は何【なに】がいいかな?,お返し【がえし】は何【なに】が、いいかな?,gifts,お返し,return gift
 もしもし。,Hello (on phone).,もしもし。,もしもし。,phone,もしもし,hello (phone)
 〇〇ですが。,This is...,〇〇ですが。,〇〇ですが。,phone,〇〇ですが,this is (name)
 少々お待ちください。,Please wait a moment.,少々【しょうしょう】お待ち【まち】ください。,少々【しょうしょう】お待ち【まち】ください。,phone,少々,a moment
@@ -959,7 +959,7 @@ Wi-Fiはありますか?,Do you have Wi-Fi?,Wi-Fiはありますか?,Wi-Fiはあ
 シミ抜きをお願いします。,Please remove the stain.,シミ抜き【しみぬき】をお願い【ねがい】します。,シミ抜き【しみぬき】を、お願い【ねがい】します。,dry-cleaning,シミ抜き,stain removal
 仕上がりはいつですか?,When will it be ready?,仕上がり【しあがり】はいつですか?,仕上がり【しあがり】はいつですか?,dry-cleaning,仕上がり,completion
 受け取りに来ました。,I came to pick it up.,受け取り【うけとり】に来【き】ました。,受け取り【うけとり】に来【き】ました。,dry-cleaning,受け取り,pickup
-今日は何曜日?,What day is it today?,今日【きょう】は何曜【なんよう】日【ひ】?,今日【きょう】は何曜【なんよう】日【ひ】?,time,何曜日,what day
+今日は何曜日?,What day is it today?,今日【きょう】は何曜日【なんようび】?,今日【きょう】は何曜日【なんようび】?,time,何曜日,what day
 来週の火曜日はどう?,How about next Tuesday?,来週【らいしゅう】の火曜【かよう】日【ひ】はどう?,来週【らいしゅう】の火曜【かよう】日【ひ】はどう?,time,火曜日,Tuesday
 再来週に予定がある。,I have plans the week after next.,再来【さらい】週【しゅう】に予定【よてい】がある。,再来【さらい】週【しゅう】に予定【よてい】が、ある。,time,再来週,week after next
 先日はありがとうございました。,Thank you for the other day.,先日【せんじつ】はありがとうございました。,先日【せんじつ】はありがとうございました。,time,先日,the other day

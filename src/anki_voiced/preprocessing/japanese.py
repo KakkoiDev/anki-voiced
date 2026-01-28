@@ -270,19 +270,28 @@ def to_ruby_html(text: str) -> str:
     """Convert bracket notation to HTML ruby tags for furigana display.
 
     Converts: 会議【かいぎ】は10時【じ】に → <ruby>会議<rt>かいぎ</rt></ruby>は10<ruby>時<rt>じ</rt></ruby>に
+    Also handles okurigana: 食べ【たべ】 → <ruby>食べ<rt>たべ</rt></ruby>
 
     Pattern: kanji【reading】 → <ruby>kanji<rt>reading</rt></ruby>
     Only kanji characters are wrapped in ruby tags, not preceding numbers.
     """
-    # Match only kanji (no leading digits) followed by furigana
-    pattern = r"([\u4e00-\u9fff]+)【([^】]+)】"
-
     def replace_with_ruby(match):
         base = match.group(1)
         reading = match.group(2)
         return f"<ruby>{base}<rt>{reading}</rt></ruby>"
 
-    return re.sub(pattern, replace_with_ruby, text)
+    # First pass: compound kanji-kana-kanji patterns (e.g. 忘れ物【わすれもの】)
+    # \u3005 is 々 (ideographic iteration mark)
+    text = re.sub(
+        r"([\u4e00-\u9fff\u3005](?:[\u3040-\u309f\u30a0-\u30ff]+[\u4e00-\u9fff\u3005])+[\u3040-\u309f\u30a0-\u30ff]*)【([^】]+)】",
+        replace_with_ruby, text,
+    )
+    # Second pass: simple kanji+optional okurigana (e.g. 食べ【たべ】, 天気【てんき】)
+    text = re.sub(
+        r"([\u4e00-\u9fff\u3005]+[\u3040-\u309f\u30a0-\u30ff]*)【([^】]+)】",
+        replace_with_ruby, text,
+    )
+    return text
 
 
 def convert_acronym(match: re.Match) -> str:
