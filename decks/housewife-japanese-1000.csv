@@ -27,7 +27,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 ベビーカーでも入れますか?,Can I bring a stroller?,ベビーカーでも入れ【いれ】ますか?,ベビーカーでもいれますか?,restaurant,ベビーカー,stroller
 お子様メニューはありますか?,Do you have a kids menu?,お子【こ】様【さま】メニューはありますか?,おこさまメニューはありますか?,restaurant,お子様メニュー,kids menu
 ご飯大盛りでお願いします。,A large serving of rice please.,ご飯【ごはん】大盛り【おおもり】でお願い【ねがい】します。,ごはんおおもりで、おねがいします。,restaurant,大盛り,large serving
-辛くしないでください。,Please don't make it spicy.,辛く【つらく】しないでください。,つらくしないでください。,restaurant,辛,spicy
+辛くしないでください。,Please don't make it spicy.,辛く【からく】しないでください。,からくしないでください。,restaurant,辛い,spicy
 ネギ抜きでお願いします。,Without green onions please.,ネギ抜き【ぬき】でお願い【ねがい】します。,ネギぬきでおねがいします。,restaurant,ネギ,green onion
 卵アレルギーがあります。,I have an egg allergy.,卵【たまご】アレルギーがあります。,たまごアレルギーが、あります。,restaurant,卵アレルギー,egg allergy
 卵を使っていますか?,Does this contain eggs?,卵【たまご】を使っ【つかっ】ていますか?,たまごを、つかっていますか?,restaurant,卵,egg
@@ -45,7 +45,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 取り皿をいただけますか?,Could I have a small plate?,取り皿【とりざら】をいただけますか?,とりざらを、いただけますか?,restaurant,取り皿,small plate
 ナプキンをもらえますか?,Could I have a napkin?,ナプキンをもらえますか?,ナプキンを、もらえますか?,restaurant,ナプキン,napkin
 おしぼりをください。,Wet towel please.,おしぼりをください。,おしぼりを、ください。,restaurant,おしぼり,wet towel
-お冷やをください。,Cold water please.,お冷や【ひや】をください。,おひやを、ください。,restaurant,お冷や,cold
+お冷やをください。,Cold water please.,お冷や【ひや】をください。,おひやを、ください。,restaurant,お冷や,cold water
 熱いお茶をください。,Hot tea please.,熱い【あつい】お茶【ちゃ】をください。,あついおちゃを、ください。,restaurant,お茶,tea
 これ私の一番好きな料理。,This is my favorite dish.,これ私【わたし】の一番【いちばん】好き【すき】な料理【りょうり】。,これ、わたしのいちばんすきなりょうり。,restaurant,一番,favorite
 何にする?一緒のにしようか。,What are you having? Should we get the same thing?,何【なに】にする?一緒【いっしょ】のにしようか。,なににする?いっしょのにしようか。,restaurant,一緒,together
@@ -114,7 +114,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 何してるの?,What are you doing?,何【なに】してるの?,なにしてるの?,daily-routine,何,what
 どこに行くの?,Where are you going?,どこに行く【いく】の?,どこにいくの?,daily-routine,行く,go
 いつ帰ってくる?,When will you be back?,いつ帰っ【かえっ】てくる?,いつかえってくる?,daily-routine,帰る,return home
-ご飯の支度ができたよ。,Dinner is ready.,ご飯【ごはん】の支度【したく】ができたよ。,ごごはんのしたくが、できたよ。,daily-routine,支度,preparation
+ご飯の支度ができたよ。,Dinner is ready.,ご飯【ごはん】の支度【したく】ができたよ。,ごはんのしたくが、できたよ。,daily-routine,支度,preparation
 食べ終わったら片付けて。,Clean up when you're done eating.,食べ【たべ】終わっ【おわっ】たら片付け【かたづけ】て。,たべおわったらかたづけて。,daily-routine,片付ける,clean up
 お皿を下げて。,Clear the dishes.,お皿【さら】を下げ【さげ】て。,おさらを、さげて。,daily-routine,お皿を下げる,clear dishes
 テーブルを拭いて。,Wipe the table.,テーブルを拭い【ふい】て。,テーブルを、ふいて。,daily-routine,テーブル,table
@@ -122,9 +122,9 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 お風呂が沸いたよ。,The bath is ready.,お風呂【ふろ】が沸い【わい】たよ。,おふろが、わいたよ。,daily-routine,お風呂,bath
 お風呂のお湯を足して。,Add more water to the bath.,お風呂【ふろ】のお湯【ゆ】を足し【たし】て。,おふろのおゆを、たして。,daily-routine,湯,hot water
 シャンプーが切れそう。,We're almost out of shampoo.,シャンプーが切れ【きれ】そう。,シャンプーが、きれそう。,daily-routine,シャンプー,shampoo
-タオルを持ってきて。,Bring a towel.,タオルを持っ【もっ】てきて。,タオルを、もってきて。,daily-routine,タオル,bring
+タオルを持ってきて。,Bring a towel.,タオルを持っ【もっ】てきて。,タオルを、もってきて。,daily-routine,タオル,towel
 髪を乾かして。,Dry your hair.,髪【かみ】を乾かし【かわかし】て。,かみを、かわかして。,daily-routine,髪,hair
-パジャマに着替えて。,Change into pajamas.,パジャマに着替え【きがえ】て。,パジャマにきがえて。,daily-routine,パジャマ,change
+パジャマに着替えて。,Change into pajamas.,パジャマに着替え【きがえ】て。,パジャマにきがえて。,daily-routine,パジャマ,pajamas
 布団を敷いて。,Lay out the futon.,布団【ふとん】を敷い【しい】て。,ふとんを、しいて。,daily-routine,布団,futon
 枕が高い。,The pillow is too high.,枕【まくら】が高い【たかい】。,まくらが、たかい。,daily-routine,枕,pillow
 毛布をかけて。,Put on a blanket.,毛布【もうふ】をかけて。,もうふを、かけて。,daily-routine,毛布,blanket
@@ -144,7 +144,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 アレルギーの薬を飲んでいます。,I'm taking allergy medicine.,アレルギーの薬【くすり】を飲ん【のん】でいます。,アレルギーのくすりを、のんでいます。,medical,アレルギーの薬,allergy medicine
 検査を受けなきゃ。,I need to get tested.,検査【けんさ】を受け【うけ】なきゃ。,けんさを、うけなきゃ。,medical,検査,test/exam
 健康診断の結果が来た。,The health checkup results arrived.,健康【けんこう】診断【しんだん】の結果【けっか】が来【き】た。,けんこうしんだんのけっかが、きた。,medical,健康診断,health checkup
-熱が下がらない。,The fever won't go down.,熱【ねつ】が下がら【さがら】ない。,ねつが、下が、ら【さがら】ない。,medical,熱,fever
+熱が下がらない。,The fever won't go down.,熱【ねつ】が下がら【さがら】ない。,ねつが、さがらない。,medical,熱,fever
 咳が止まらない。,I can't stop coughing.,咳【せき】が止まら【とまら】ない。,せきが、とまらない。,medical,咳,cough
 鼻水が出る。,I have a runny nose.,鼻水【はなみず】が出る【でる】。,はなみずが、でる。,medical,鼻水,runny nose
 喉が痛い。,My throat hurts.,喉【のど】が痛い【いたい】。,のどが、いたい。,medical,喉,throat
@@ -197,7 +197,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 具合どう?,How are you feeling?,具合【ぐあい】どう?,ぐあいどう?,medical,具合,condition
 少し良くなった?,Do you feel a little better?,少し【すこし】良く【よく】なった?,すこしよくなった?,medical,少し,a little
 まだ熱がある?,Do you still have a fever?,まだ熱【ねつ】がある?,まだねつが、ある?,medical,熱,fever
-ご飯食べられそう?,Do you think you can eat?,ご飯【ごはん】食べ【たべ】られそう?,ごごはんたべられそう?,medical,ご飯,meal
+ご飯食べられそう?,Do you think you can eat?,ご飯【ごはん】食べ【たべ】られそう?,ごはんたべられそう?,medical,ご飯,meal
 何か食べたいものある?,Is there anything you want to eat?,何【なん】か食べ【たべ】たいものある?,なんかたべたいものある?,medical,何か,something
 おかゆを作ろうか?,Shall I make rice porridge?,おかゆを作ろう【つくろう】か?,おかゆを、つくろうか?,medical,おかゆ,porridge
 氷枕を持ってくるね。,I'll bring an ice pillow.,氷枕【こおりまくら】を持っ【もっ】てくるね。,こおりまくらを、もってくるね。,medical,氷枕,ice pillow
@@ -205,7 +205,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 水分を取ってね。,Stay hydrated.,水分【すいぶん】を取っ【とっ】てね。,すいぶんを、とってね。,medical,水分,fluids
 スポーツドリンクを飲んで。,Drink sports drinks.,スポーツドリンクを飲ん【のん】で。,スポーツドリンクを、のんで。,medical,水分,fluids
 トイレに行きたい時は呼んでね。,Call me when you need to go to the bathroom.,トイレに行き【いき】たい時【とき】は呼ん【よん】でね。,トイレにいきたいときはよんでね。,medical,トイレ,bathroom
-寒かったら言ってね。,Tell me if you're cold.,寒かっ【さむかっ】たら言っ【いっ】てね。,さむかったらいってね。,medical,トイレ,bathroom
+寒かったら言ってね。,Tell me if you're cold.,寒かっ【さむかっ】たら言っ【いっ】てね。,さむかったらいってね。,medical,寒い,cold
 汗をかいたら着替えようね。,Let's change if you sweat.,汗【あせ】をかいたら着替えよう【きがえよう】ね。,あせを、かいたらきがえようね。,medical,汗,sweat
 掃除機をかけてもいいですか?,May I vacuum now?,掃除【そうじ】機【き】をかけてもいいですか?,そうじきを、かけてもいいですか?,cleaning,掃除機,vacuum
 床を拭かなきゃ。,I need to mop the floor.,床【ゆか】を拭か【ふか】なきゃ。,ゆかを、ふかなきゃ。,cleaning,床,floor
@@ -223,7 +223,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 掃除機の紙パックを交換して。,Change the vacuum bag.,掃除【そうじ】機【き】の紙【かみ】パックを交換【こうかん】して。,そうじきのかみパックを、こうかんして。,cleaning,紙パック,vacuum bag
 ベランダを掃除します。,I'll clean the balcony.,ベランダを掃除【そうじ】します。,ベランダを、そうじします。,cleaning,ベランダ,balcony
 玄関を掃きましょう。,Let's sweep the entrance.,玄関【げんかん】を掃き【はき】ましょう。,げんかんを、はきましょう。,cleaning,玄関,entrance
-ゴミ袋を買わなきゃ。,I need to buy garbage bags.,ゴミ袋【ごみぶくろ】を買わ【かわ】なきゃ。,ゴミごみぶくろを、かわなきゃ。,cleaning,ゴミ袋,garbage bag
+ゴミ袋を買わなきゃ。,I need to buy garbage bags.,ゴミ袋【ごみぶくろ】を買わ【かわ】なきゃ。,ごみぶくろを、かわなきゃ。,cleaning,ゴミ袋,garbage bag
 粗大ゴミの申し込みをした?,Did you apply for bulk trash pickup?,粗大【そだい】ゴミの申し込み【もうしこみ】をした?,そだいゴミのもうしこみを、した?,cleaning,粗大ゴミ,bulk trash
 シンクがピカピカになった。,The sink is sparkling clean.,シンクがピカピカになった。,シンクが、ピカピカになった。,cleaning,シンク,sink
 エアコンのフィルターを掃除して。,Clean the air conditioner filter.,エアコンのフィルターを掃除【そうじ】して。,エアコンのフィルターを、そうじして。,cleaning,フィルター,filter
@@ -234,13 +234,13 @@ PayPayで払えますか?,Can I pay with PayPay?,PayPayで払え【はらえ】�
 お釣りはいりません。,Keep the change.,お釣り【つり】はいりません。,おつりはいりません。,shopping,お釣り,change
 レシートをください。,Receipt please.,レシートをください。,レシートを、ください。,shopping,レシート,receipt
 領収書をお願いします。,I need a receipt.,領収【りょうしゅう】書【しょ】をお願い【ねがい】します。,りょうしゅうしょを、おねがいします。,shopping,領収書,receipt
-割引はありますか?,Is there a discount?,割引【わりびき】はありますか?,わりびきはありますか?,shopping,割引,there
+割引はありますか?,Is there a discount?,割引【わりびき】はありますか?,わりびきはありますか?,shopping,割引,discount
 セール中ですか?,Is it on sale?,セール中【ちゅう】ですか?,セールちゅうですか?,shopping,セール中,on sale
-まとめ買いで安くなりますか?,Is there a bulk discount?,まとめ買い【まとめがい】で安く【やすく】なりますか?,まとめまとめがいでやすくなりますか?,shopping,まとめ買い,bulk buying
+まとめ買いで安くなりますか?,Is there a bulk discount?,まとめ買い【まとめがい】で安く【やすく】なりますか?,まとめがいでやすくなりますか?,shopping,まとめ買い,bulk buying
 他の色はありますか?,Do you have other colors?,他【ほか】の色【いろ】はありますか?,ほかのいろはありますか?,shopping,色,color
 在庫はありますか?,Do you have it in stock?,在庫【ざいこ】はありますか?,ざいこはありますか?,shopping,在庫,stock
-取り寄せできますか?,Can you order it?,取り寄せ【とりよせ】できますか?,とりよせできますか?,shopping,取,order
-いつ届きますか?,When will it arrive?,いつ届き【とどき】ますか?,いつとどきますか?,shopping,届,arrive
+取り寄せできますか?,Can you order it?,取り寄せ【とりよせ】できますか?,とりよせできますか?,shopping,取り寄せ,order
+いつ届きますか?,When will it arrive?,いつ届き【とどき】ますか?,いつとどきますか?,shopping,届く,arrive
 ギフト用に包んでもらえますか?,Can you gift wrap it?,ギフト用【よう】に包ん【つつん】でもらえますか?,ギフトようにつつんでもらえますか?,shopping,ギフト用,gift
 別々に包んでください。,Please wrap them separately.,別々【べつべつ】に包ん【つつん】でください。,べつべつにつつんでください。,shopping,別々,separately
 紙袋をもう一枚もらえますか?,Can I have another paper bag?,紙袋【かみぶくろ】をもう一【いっ】枚【まい】もらえますか?,かみぶくろを、もういっまいもらえますか?,shopping,紙袋,paper bag
@@ -473,7 +473,7 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 沸騰したら教えて。,Tell me when it boils.,沸騰【ふっとう】したら教え【おしえ】て。,ふっとうしたらおしえて。,cooking,沸騰,boil
 焦げないように見てて。,Watch it so it doesn't burn.,焦げ【こげ】ないように見【み】てて。,こげないようにみてて。,cooking,焦げる,burn
 出汁を取ります。,I'll make the stock.,出汁【だし】を取り【とり】ます。,だしを、とります。,cooking,出汁,stock/broth
-ご飯を炊いてくれる?,Can you cook the rice?,ご飯【ごはん】を炊い【たい】てくれる?,ごごはんを、たいてくれる?,cooking,ご飯,rice
+ご飯を炊いてくれる?,Can you cook the rice?,ご飯【ごはん】を炊い【たい】てくれる?,ごはんを、たいてくれる?,cooking,ご飯,rice
 冷蔵庫に何がある?,What's in the fridge?,冷蔵【れいぞう】庫【こ】に何【なに】がある?,れいぞうこになにが、ある?,cooking,冷蔵庫,refrigerator
 作り置きを準備しよう。,Let's prepare make-ahead dishes.,作り置き【つくりおき】を準備【じゅんび】しよう。,つくりおきを、じゅんびしよう。,cooking,作り置き,meal prep
 レシピを検索して。,Search for a recipe.,レシピを検索【けんさく】して。,レシピを、けんさくして。,cooking,レシピ,recipe
@@ -649,7 +649,7 @@ PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【
 袋は要りません。,I don't need a bag.,袋【ふくろ】は要り【いり】ません。,ふくろはいりません。,grocery,袋,bag
 セルフレジを使います。,I'll use the self-checkout.,セルフレジを使い【つかい】ます。,セルフレジを、つかいます。,grocery,セルフレジ,self-checkout
 玉ねぎが高くなった。,Onions have gotten expensive.,玉ねぎ【たまねぎ】が高く【たかく】なった。,たまねぎが、たかくなった。,grocery,玉ねぎ,onion
-まとめ買いした方がお得です。,Buying in bulk is a better deal.,まとめ買い【まとめがい】した方【ほう】がお得【とく】です。,まとめまとめがいしたほうが、おとくです。,grocery,お得,good deal
+まとめ買いした方がお得です。,Buying in bulk is a better deal.,まとめ買い【まとめがい】した方【ほう】がお得【とく】です。,まとめがいしたほうが、おとくです。,grocery,お得,good deal
 公園に行こう。,Let's go to the park.,公園【こうえん】に行こう【いこう】。,こうえんにいこう。,parks,公園,park
 遊園地に連れて行って。,Take me to the amusement park.,遊園【ゆうえん】地【ち】に連れ【つれ】て行っ【いっ】て。,ゆうえんちにつれていって。,parks,遊園地,amusement park
 動物園は何時まで?,Until what time is the zoo open?,動物【どうぶつ】園【えん】は何【なん】時【じ】まで?,どうぶつえんはなんじまで?,parks,動物園,zoo
@@ -773,8 +773,8 @@ ATMはどこですか?,Where is the ATM?,ATMはどこですか?,ATMはどこで�
 味噌汁の具は何にする?,What should we put in the miso soup?,味噌【みそ】汁【しる】の具【ぐ】は何【なに】にする?,みそしるのぐはなににする?,japanese-cuisine,具,ingredients
 おひたしを作ります。,I'll make ohitashi.,おひたしを作り【つくり】ます。,おひたしを、つくります。,japanese-cuisine,おひたし,ohitashi
 切り干し大根を戻して。,Rehydrate the dried daikon.,切り干し【きりぼし】大根【だいこん】を戻し【もどし】て。,きりぼしだいこんを、もどして。,japanese-cuisine,切り干し大根,dried daikon
-ぬか漬けを取り出して。,Take out the pickles from the rice bran.,ぬか漬け【ぬかづけ】を取り出し【とりだし】て。,ぬかぬかづけを、とりだして。,japanese-cuisine,ぬか漬け,rice bran pickles
-炊き込みご飯にしよう。,Let's make mixed rice.,炊き込み【たきこみ】ご飯【ごはん】にしよう。,たきこみごごはんにしよう。,japanese-cuisine,炊き込みご飯,mixed rice
+ぬか漬けを取り出して。,Take out the pickles from the rice bran.,ぬか漬け【ぬかづけ】を取り出し【とりだし】て。,ぬかづけを、とりだして。,japanese-cuisine,ぬか漬け,rice bran pickles
+炊き込みご飯にしよう。,Let's make mixed rice.,炊き込み【たきこみ】ご飯【ごはん】にしよう。,たきこみごはんにしよう。,japanese-cuisine,炊き込みご飯,mixed rice
 天ぷらの衣を作って。,Make the tempura batter.,天ぷら【てんぷら】の衣【ころも】を作っ【つくっ】て。,てんぷらのころもを、つくって。,japanese-cuisine,衣,batter
 照り焼きのタレを作る。,I'll make teriyaki sauce.,照り焼き【てりやき】のタレを作る【つくる】。,てりやきのタレを、つくる。,japanese-cuisine,タレ,sauce
 とんかつを揚げます。,I'll fry the tonkatsu.,とんかつを揚げ【あげ】ます。,とんかつを、あげます。,japanese-cuisine,とんかつ,tonkatsu
@@ -865,7 +865,7 @@ Wi-Fiはありますか?,Do you have Wi-Fi?,Wi-Fiはありますか?,Wi-Fiはあ
 管理組合の会議がある。,There's a condo association meeting.,管理【かんり】組合【くみあい】の会議【かいぎ】がある。,かんりくみあいのかいぎが、ある。,housing,管理組合,condo association
 引っ越しの準備をしなきゃ。,I need to prepare for the move.,引っ越し【ひっこし】の準備【じゅんび】をしなきゃ。,ひっこしのじゅんびを、しなきゃ。,housing,引っ越し,moving
 犬の散歩に行ってくる。,I'll take the dog for a walk.,犬【いぬ】の散歩【さんぽ】に行っ【いっ】てくる。,いぬのさんぽにいってくる。,pets,散歩,walk
-猫のご飯をあげて。,Feed the cat.,猫【ねこ】のご飯【ごはん】をあげて。,ねこのごごはんを、あげて。,pets,猫,cat
+猫のご飯をあげて。,Feed the cat.,猫【ねこ】のご飯【ごはん】をあげて。,ねこのごはんを、あげて。,pets,猫,cat
 動物病院に連れて行く。,I'll take them to the vet.,動物【どうぶつ】病院【びょういん】に連れ【つれ】て行く【いく】。,どうぶつびょういんにつれていく。,pets,動物病院,vet
 ペットフードを買わなきゃ。,I need to buy pet food.,ペットフードを買わ【かわ】なきゃ。,ペットフードを、かわなきゃ。,pets,ペットフード,pet food
 予防接種の時期だ。,It's time for vaccinations.,予防【よぼう】接種【せっしゅ】の時期【じき】だ。,よぼうせっしゅのじきだ。,pets,予防接種,vaccination
