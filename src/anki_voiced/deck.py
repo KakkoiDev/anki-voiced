@@ -114,9 +114,10 @@ class DeckBuilder:
         all_decks = []
         media_files = []
 
-        for tag_name, tag_entries in groups.items():
+        for idx, (tag_name, tag_entries) in enumerate(groups.items(), start=1):
             deck_id = random.randint(1000000000, 9999999999)
-            full_name = f"{self.config.name}::{tag_name.replace(' ', '_').title()}"
+            formatted_tag = tag_name.replace(' ', '_').title()
+            full_name = f"{self.config.name}::{idx:02d} {formatted_tag}"
             deck = genanki.Deck(deck_id, full_name)
 
             for entry in tag_entries:
