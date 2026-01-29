@@ -28,6 +28,8 @@ def create_double_card_model() -> genanki.Model:
             {"name": "Hint"},
             {"name": "Tags"},
             {"name": "Audio"},
+            {"name": "Keyword"},
+            {"name": "KeyMeaning"},
         ],
         templates=[
             # Card A: Comprehension (Listening + Reading)
@@ -46,6 +48,7 @@ def create_double_card_model() -> genanki.Model:
 <div class="tags">{{Tags}}</div>
 <hr id="answer">
 <div class="translation">{{Translation}}</div>
+{{#Keyword}}<div class="keyword">{{Keyword}} - {{KeyMeaning}}</div>{{/Keyword}}
 """,
             },
             # Card B: Production
@@ -63,6 +66,7 @@ def create_double_card_model() -> genanki.Model:
 <hr id="answer">
 <div class="sentence">{{Sentence}}</div>
 <div class="audio">{{Audio}}</div>
+{{#Keyword}}<div class="keyword">{{Keyword}} - {{KeyMeaning}}</div>{{/Keyword}}
 """,
             },
         ],
@@ -140,6 +144,16 @@ hr#answer {
     border-top: 1px solid #ddd;
     margin: 20px 0;
 }
+
+.keyword {
+    font-size: 18px;
+    color: #555;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    display: inline-block;
+}
 """,
     )
 
@@ -167,6 +181,10 @@ class DoubleCardTemplate:
         # Convert bracket furigana to ruby HTML for display
         sentence_html = to_ruby_html(entry.pronunciation if entry.pronunciation else entry.sentence)
 
+        # Get keyword with furigana (using cloze column) and its meaning
+        keyword_html = to_ruby_html(entry.cloze) if entry.cloze else ""
+        key_meaning = entry.key_meaning if entry.key_meaning else ""
+
         return genanki.Note(
             model=cls.get_model(),
             fields=[
@@ -176,6 +194,8 @@ class DoubleCardTemplate:
                 hint,
                 ", ".join(entry.tags),
                 audio_ref,
+                keyword_html,
+                key_meaning,
             ],
             tags=entry.tags,
         )

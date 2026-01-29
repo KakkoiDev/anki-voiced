@@ -88,7 +88,8 @@ class DeckBuilder:
         """Build an Anki deck with subdecks grouped by tag.
 
         Entries are grouped by their first tag. Each group becomes a subdeck
-        named DeckName::TagName.
+        named DeckName::TagName. Tag order is preserved based on first occurrence
+        in the original CSV, and entries within each tag maintain their CSV order.
 
         Args:
             entries: List of vocabulary entries
@@ -97,12 +98,12 @@ class DeckBuilder:
         Returns:
             Path to the generated .apkg file
         """
-        from collections import defaultdict
-
-        # Group entries by first tag
-        groups: dict[str, list[VocabEntry]] = defaultdict(list)
+        # Group entries by first tag, preserving order of first occurrence
+        groups: dict[str, list[VocabEntry]] = {}
         for entry in entries:
             tag = entry.tags[0] if entry.tags else "Untagged"
+            if tag not in groups:
+                groups[tag] = []
             groups[tag].append(entry)
 
         # Get template handler
