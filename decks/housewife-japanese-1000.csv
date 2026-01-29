@@ -26,7 +26,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 テーブル席でお願いします。,Table seating please.,テーブル席【せき】でお願い【ねがい】します。,テーブルせきでおねがいします。,restaurant,テーブル席,table seating
 ベビーカーでも入れますか?,Can I bring a stroller?,ベビーカーでも入れ【いれ】ますか?,ベビーカーでもいれますか?,restaurant,ベビーカー,stroller
 お子様メニューはありますか?,Do you have a kids menu?,お子【こ】様【さま】メニューはありますか?,おこさまメニューはありますか?,restaurant,お子様メニュー,kids menu
-ご飯大盛りでお願いします。,A large serving of rice please.,ご飯【ごはん】大盛り【おおもり】でお願い【ねがい】します。,ごごはんおおもりで、おねがいします。,restaurant,大盛り,large serving
+ご飯大盛りでお願いします。,A large serving of rice please.,ご飯【ごはん】大盛り【おおもり】でお願い【ねがい】します。,ごはんおおもりで、おねがいします。,restaurant,大盛り,large serving
 辛くしないでください。,Please don't make it spicy.,辛く【つらく】しないでください。,つらくしないでください。,restaurant,辛,spicy
 ネギ抜きでお願いします。,Without green onions please.,ネギ抜き【ぬき】でお願い【ねがい】します。,ネギぬきでおねがいします。,restaurant,ネギ,green onion
 卵アレルギーがあります。,I have an egg allergy.,卵【たまご】アレルギーがあります。,たまごアレルギーが、あります。,restaurant,卵アレルギー,egg allergy
@@ -34,17 +34,17 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 おすすめは何ですか?,What do you recommend?,おすすめは何【なん】ですか?,おすすめはなんですか?,restaurant,おすすめ,recommendation
 本日のランチは何ですか?,What's today's lunch special?,本日【ほんじつ】のランチは何【なん】ですか?,ほんじつのランチはなんですか?,restaurant,本日のランチ,today's lunch
 セットにできますか?,Can I make it a set?,セットにできますか?,セットにできますか?,restaurant,セット,set
-ドリンクバーはありますか?,Do you have a drink bar?,ドリンクバーはありますか?,ドリンクバーはありますか?,restaurant,ドリンクバー,drink
+ドリンクバーはありますか?,Do you have a drink bar?,ドリンクバーはありますか?,ドリンクバーはありますか?,restaurant,ドリンクバー,drink bar
 食べ放題はいくらですか?,How much is all-you-can-eat?,食べ【たべ】放題【ほうだい】はいくらですか?,たべほうだいはいくらですか?,restaurant,食べ放題,all-you-can-eat
 飲み放題をつけますか?,Would you like all-you-can-drink?,飲み【のみ】放題【ほうだい】をつけますか?,のみほうだいを、つけますか?,restaurant,飲み放題,all-you-can-drink
 まだ注文していいですか?,Can I still order?,まだ注文【ちゅうもん】していいですか?,まだちゅうもんしていいですか?,restaurant,まだ,still
 追加注文をお願いします。,I'd like to order more.,追加【ついか】注文【ちゅうもん】をお願い【ねがい】します。,ついかちゅうもんを、おねがいします。,restaurant,追加注文,extra order
 もう少し待ってください。,Please wait a little longer.,もう少し【すこし】待っ【まっ】てください。,もうすこしまってください。,restaurant,もう少し,a little more
-すみません注文いいですか?,Excuse me may I order?,すみません注文【ちゅうもん】いいですか?,すみませんちゅうもんいいですか?,restaurant,注文,order
+すみません注文いいですか?,Excuse me may I order?,すみません注文【ちゅうもん】いいですか?,すみません、ちゅうもんいいですか?,restaurant,注文,order
 お水のおかわりをください。,More water please.,お水【みず】のおかわりをください。,おみずのおかわりを、ください。,restaurant,お水,water
 取り皿をいただけますか?,Could I have a small plate?,取り皿【とりざら】をいただけますか?,とりざらを、いただけますか?,restaurant,取り皿,small plate
 ナプキンをもらえますか?,Could I have a napkin?,ナプキンをもらえますか?,ナプキンを、もらえますか?,restaurant,ナプキン,napkin
-おしぼりをください。,Wet towel please.,おしぼりをください。,おしぼりを、ください。,restaurant,おしぼり,wet
+おしぼりをください。,Wet towel please.,おしぼりをください。,おしぼりを、ください。,restaurant,おしぼり,wet towel
 お冷やをください。,Cold water please.,お冷や【ひや】をください。,おひやを、ください。,restaurant,お冷や,cold
 熱いお茶をください。,Hot tea please.,熱い【あつい】お茶【ちゃ】をください。,あついおちゃを、ください。,restaurant,お茶,tea
 これ私の一番好きな料理。,This is my favorite dish.,これ私【わたし】の一番【いちばん】好き【すき】な料理【りょうり】。,これ、わたしのいちばんすきなりょうり。,restaurant,一番,favorite
@@ -120,7 +120,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 テーブルを拭いて。,Wipe the table.,テーブルを拭い【ふい】て。,テーブルを、ふいて。,daily-routine,テーブル,table
 食器を洗ってくれる?,Can you wash the dishes?,食器【しょっき】を洗っ【あらっ】てくれる?,しょっきを、あらってくれる?,daily-routine,食器を洗う,wash dishes
 お風呂が沸いたよ。,The bath is ready.,お風呂【ふろ】が沸い【わい】たよ。,おふろが、わいたよ。,daily-routine,お風呂,bath
-お風呂のお湯を足して。,Add more water to the bath.,お風呂【ふろ】のお湯【ゆ】を足し【たし】て。,おふろのおゆを、たして。,daily-routine,湯,add
+お風呂のお湯を足して。,Add more water to the bath.,お風呂【ふろ】のお湯【ゆ】を足し【たし】て。,おふろのおゆを、たして。,daily-routine,湯,hot water
 シャンプーが切れそう。,We're almost out of shampoo.,シャンプーが切れ【きれ】そう。,シャンプーが、きれそう。,daily-routine,シャンプー,shampoo
 タオルを持ってきて。,Bring a towel.,タオルを持っ【もっ】てきて。,タオルを、もってきて。,daily-routine,タオル,bring
 髪を乾かして。,Dry your hair.,髪【かみ】を乾かし【かわかし】て。,かみを、かわかして。,daily-routine,髪,hair
@@ -299,7 +299,7 @@ PayPayで払えますか?,Can I pay with PayPay?,PayPayで払え【はらえ】�
 発表会はいつ?,When is the recital?,発表【はっぴょう】会【かい】はいつ?,はっぴょうかいはいつ?,social,発表会,recital
 見に行ってもいい?,Can I come watch?,見【み】に行っ【いっ】てもいい?,みにいってもいい?,social,見に行く,go see
 応援に行くね。,I'll come cheer.,応援【おうえん】に行く【いく】ね。,おうえんにいくね。,social,応援,cheering
-写真を撮ってもいい?,Can I take a photo?,写真【しゃしん】を撮っ【とっ】てもいい?,しゃしんを、とってもいい?,social,写真,can
+写真を撮ってもいい?,Can I take a photo?,写真【しゃしん】を撮っ【とっ】てもいい?,しゃしんを、とってもいい?,social,写真,photograph
 動画を送るね。,I'll send the video.,動画【どうが】を送る【おくる】ね。,どうがを、おくるね。,social,動画,video
 LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEでおくって。,social,送る,send
 グループに入れてもらえる?,Can you add me to the group?,グループに入れ【いれ】てもらえる?,グループにいれてもらえる?,social,グループ,group
@@ -371,7 +371,7 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 うるさいよ。,You're being loud.,うるさいよ。,うるさいよ。,child-health,うるさいよ,you're
 大きな声を出さないで。,Don't shout.,大きな【おおきな】声【こえ】を出さ【ださ】ないで。,おおきなこえを、ださないで。,child-health,声,shout
 行儀よくしなさい。,Behave yourself.,行儀【ぎょうぎ】よくしなさい。,ぎょうぎよくしなさい。,child-health,行儀,behave
-姿勢を良くして。,Sit up straight.,姿勢【しせい】を良く【よく】して。,しせいを、よくして。,child-health,姿勢,sit
+姿勢を良くして。,Sit up straight.,姿勢【しせい】を良く【よく】して。,しせいを、よくして。,child-health,姿勢,posture
 肘をつかないで。,Don't put your elbows on the table.,肘【ひじ】をつかないで。,ひじを、つかないで。,child-health,肘,your
 口を閉じて食べなさい。,Eat with your mouth closed.,口【くち】を閉じ【とじ】て食べ【たべ】なさい。,くちを、とじてたべなさい。,child-health,口を閉じる,close mouth
 お箸の持ち方が違うよ。,That's not how you hold chopsticks.,お箸【はし】の持ち【もち】方【かた】が違う【ちがう】よ。,おはしのもちかたが、ちがうよ。,child-health,お箸の持ち方,how to hold chopsticks
@@ -382,9 +382,9 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 いただきますを言った?,Did you say itadakimasu?,いただきますを言っ【いっ】た?,いただきますを、いった?,child-health,いただきます,itadakimasu
 ごちそうさまは?,Say gochisousama.,ごちそうさまは?,ごちそうさまは?,child-health,ごちそうさまは,gochisousama
 ありがとうを言いなさい。,Say thank you.,ありがとうを言い【いい】なさい。,ありがとうを、いいなさい。,child-health,ありがとう,thank you
-すみませんを言えた?,Did you say sorry?,すみませんを言え【いえ】た?,すみませんを、いえた?,child-health,すみません,say
+すみませんを言えた?,Did you say sorry?,すみませんを言え【いえ】た?,すみませんを、いえた?,child-health,すみません,excuse me
 挨拶をちゃんとしてね。,Greet people properly.,挨拶【あいさつ】をちゃんとしてね。,あいさつを、ちゃんとしてね。,child-health,挨拶,greeting
-大人の人には敬語を使って。,Use polite language with adults.,大人【おとな】の人【ひと】には敬語【けいご】を使っ【つかっ】て。,おとなのひとにはけいごを、つかって。,child-health,敬語,use
+大人の人には敬語を使って。,Use polite language with adults.,大人【おとな】の人【ひと】には敬語【けいご】を使っ【つかっ】て。,おとなのひとにはけいごを、つかって。,child-health,敬語,polite language
 靴を揃えて。,Line up your shoes.,靴【くつ】を揃え【そろえ】て。,くつを、そろえて。,child-health,靴,line
 脱いだ服をたたんで。,Fold the clothes you took off.,脱い【ぬい】だ服【ふく】をたたんで。,ぬいだふくを、たたんで。,child-health,服,clothing
 使ったものは元に戻して。,Put things back where you found them.,使っ【つかっ】たものは元【もと】に戻し【もどし】て。,つかったものはもとにもどして。,child-health,元に戻す,put back
@@ -445,7 +445,7 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 羽子板で遊ぼう。,Let's play hanetsuki.,羽子板【はごいた】で遊ぼう【あそぼう】。,はごいたであそぼう。,seasonal-events,羽子板,hanetsuki paddle
 福袋を買いに行こう。,Let's go buy lucky bags.,福袋【ふくぶくろ】を買い【かい】に行こう【いこう】。,ふくぶくろを、かいにいこう。,seasonal-events,福袋,lucky bag
 バレンタインのチョコを作ろう。,Let's make Valentine's chocolates.,バレンタインのチョコを作ろう【つくろう】。,バレンタインのチョコを、つくろう。,seasonal-events,チョコ,valentine's
-ホワイトデーのお返しを買わなきゃ。,I need to buy White Day gifts.,ホワイトデーのお返し【がえし】を買わ【かわ】なきゃ。,ホワイトデーのおがえしを、かわなきゃ。,seasonal-events,ホワイトデー,buy
+ホワイトデーのお返しを買わなきゃ。,I need to buy White Day gifts.,ホワイトデーのお返し【がえし】を買わ【かわ】なきゃ。,ホワイトデーのおがえしを、かわなきゃ。,seasonal-events,ホワイトデー,White Day
 お花見に行こう。,Let's go cherry blossom viewing.,お花見【はなみ】に行こう【いこう】。,おはなみにいこう。,seasonal-events,お花見,cherry blossom viewing
 桜が満開だね。,The cherry blossoms are in full bloom.,桜【さくら】が満開【まんかい】だね。,さくらが、まんかいだね。,seasonal-events,満開,full bloom
 ゴールデンウィークの予定は?,What are your Golden Week plans?,ゴールデンウィークの予定【よてい】は?,ゴールデンウィークのよていは?,seasonal-events,ゴールデンウィーク,Golden Week
@@ -497,7 +497,7 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 パスタを茹でます。,I'll boil the pasta.,パスタを茹で【ゆで】ます。,パスタを、ゆでます。,cooking,パスタ,pasta
 卵を溶いて。,Beat the eggs.,卵【たまご】を溶い【とい】て。,たまごを、といて。,cooking,卵,egg
 小麦粉をふるって。,Sift the flour.,小【こ】麦粉【むぎこ】をふるって。,こむぎこを、ふるって。,cooking,小麦粉,sift
-生地を寝かせて。,Let the dough rest.,生地【きじ】を寝かせ【ねかせ】て。,きじを、ねかせて。,cooking,生地,let
+生地を寝かせて。,Let the dough rest.,生地【きじ】を寝かせ【ねかせ】て。,きじを、ねかせて。,cooking,生地,dough
 オーブンで焼きます。,I'll bake it in the oven.,オーブンで焼き【やき】ます。,オーブンでやきます。,cooking,オーブン,oven
 グリルで焼いて。,Grill it.,グリルで焼い【やい】て。,グリルでやいて。,cooking,グリル,grill
 フライパンで炒めて。,Stir-fry in the pan.,フライパンで炒め【いため】て。,フライパンでいためて。,cooking,フライパン,frying pan
@@ -514,7 +514,7 @@ LINEで送って。,Send it via LINE.,LINEで送っ【おくっ】て。,LINEで
 レンジで3分温めて。,Microwave for 3 minutes.,レンジで3分【ぷん】温め【あたため】て。,レンジで3ぷんあたためて。,cooking,レンジ,microwave
 解凍してから使って。,Defrost before using.,解凍【かいとう】してから使っ【つかっ】て。,かいとうしてからつかって。,cooking,解凍,defrost
 冷凍庫に入れておいて。,Put it in the freezer.,冷凍【れいとう】庫【こ】に入れ【いれ】ておいて。,れいとうこにいれておいて。,cooking,冷凍庫,freezer
-常温に戻してから。,Let it come to room temperature first.,常温【じょうおん】に戻し【もどし】てから。,じょうおんにもどしてから。,cooking,常温,let
+常温に戻してから。,Let it come to room temperature first.,常温【じょうおん】に戻し【もどし】てから。,じょうおんにもどしてから。,cooking,常温,room temperature
 賞味期限が切れてる。,It's past the expiration date.,賞味【しょうみ】期限【きげん】が切れ【きれ】てる。,しょうみきげんが、きれてる。,cooking,賞味期限,expiration date
 まだ食べられるかな。,Can we still eat this?,まだ食べ【たべ】られるかな。,まだたべられるかな。,cooking,食べられる,can eat
 匂いを嗅いでみて。,Smell it.,匂い【におい】を嗅い【かい】でみて。,においを、かいでみて。,cooking,匂い,smell
@@ -557,7 +557,7 @@ PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【
 ランドセルに入れた?,Did you put it in your school bag?,ランドセルに入れ【いれ】た?,ランドセルにいれた?,school,ランドセル,school bag
 友達と仲良くしてね。,Get along with your friends.,友達【ともだち】と仲良く【なかよく】してね。,ともだちとなかよくしてね。,school,友達,friends
 いじめはダメだよ。,Bullying is not okay.,いじめはダメだよ。,いじめはダメだよ。,school,ダメ,bullying
-困ったら先生に相談して。,If you have trouble talk to your teacher.,困っ【こまっ】たら先生【せんせい】に相談【そうだん】して。,こまったらせんせいにそうだんして。,school,先生,if
+困ったら先生に相談して。,If you have trouble talk to your teacher.,困っ【こまっ】たら先生【せんせい】に相談【そうだん】して。,こまったらせんせいにそうだんして。,school,先生,teacher
 今日は学校どうだった?,How was school today?,今日【きょう】は学校【がっこう】どうだった?,きょうはがっこうどうだった?,school,学校,school
 楽しかった?,Did you have fun?,楽しかっ【たのしかっ】た?,たのしかった?,school,楽,fun
 包丁を研いでくれる?,Can you sharpen the knife?,包丁【ほうちょう】を研い【とい】でくれる?,ほうちょうを、といでくれる?,kitchen,包丁,knife
@@ -586,7 +586,7 @@ PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【
 カラーリングをお願いします。,I'd like to get my hair colored.,カラーリングをお願い【ねがい】します。,カラーリングを、おねがいします。,beauty,カラーリング,hair coloring
 パーマをかけたいです。,I'd like to get a perm.,パーマをかけたいです。,パーマを、かけたいです。,beauty,パーマ,perm
 このサイズはありますか?,Do you have this size?,このサイズはありますか?,このサイズはありますか?,beauty,サイズ,size
-試着してもいいですか?,May I try this on?,試着【しちゃく】してもいいですか?,しちゃくしてもいいですか?,beauty,試着,try
+試着してもいいですか?,May I try this on?,試着【しちゃく】してもいいですか?,しちゃくしてもいいですか?,beauty,試着,fitting
 お直しをお願いできますか?,Can you alter this?,お直し【なおし】をお願い【ねがい】できますか?,おなおしを、おねがいできますか?,beauty,お直し,alterations
 教会に行きます。,I'm going to church.,教会【きょうかい】に行き【いき】ます。,きょうかいにいきます。,church,教会,church
 日曜礼拝は何時からですか?,What time does Sunday service start?,日曜【にちよう】礼拝【れいはい】は何時【いつ】からですか?,にちようれいはいはいつからですか?,church,日曜礼拝,Sunday service
@@ -674,7 +674,7 @@ PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【
 風が強いですね。,The wind is strong.,風【かぜ】が強い【つよい】ですね。,かぜが、つよいですね。,small-talk,風,wind
 お子さん大きくなりましたね。,Your child has grown.,お子【こ】さん大きく【おおきく】なりましたね。,おこさんおおきくなりましたね。,small-talk,お子さん,your child
 お元気そうで何よりです。,I'm glad you look well.,お元気【げんき】そうで何【なに】よりです。,おげんきそうでなによりです。,small-talk,元気,healthy/well
-最近どうですか?,How have you been?,最近【さいきん】どうですか?,さいきんどうですか?,small-talk,最近,how
+最近どうですか?,How have you been?,最近【さいきん】どうですか?,さいきんどうですか?,small-talk,最近,recently
 お久しぶりです。,Long time no see.,お久し【ひさし】ぶりです。,おひさしぶりです。,small-talk,お久しぶり,long time no see
 またお会いできて嬉しいです。,Nice to see you again.,またお会い【あい】できて嬉しい【うれしい】です。,また、おあいできてうれしいです。,small-talk,会う,meet
 今度ゆっくりお話ししましょう。,Let's chat properly sometime.,今度【こんど】ゆっくりお話し【はなし】しましょう。,こんどゆっくりおはなししましょう。,small-talk,今度,next time
@@ -840,7 +840,7 @@ Wi-Fiはありますか?,Do you have Wi-Fi?,Wi-Fiはありますか?,Wi-Fiはあ
 ガーデニングが好きです。,I like gardening.,ガーデニングが好き【すき】です。,ガーデニングが、すきです。,hobbies,ガーデニング,gardening
 読書が趣味です。,Reading is my hobby.,読書【どくしょ】が趣味【しゅみ】です。,どくしょが、しゅみです。,hobbies,読書,reading
 料理教室に通っています。,I'm taking cooking classes.,料理【りょうり】教室【きょうしつ】に通っ【かよっ】ています。,りょうりきょうしつにかよっています。,hobbies,料理教室,cooking class
-ヨガを始めたい。,I want to start yoga.,ヨガを始め【はじめ】たい。,ヨガを、はじめたい。,hobbies,ヨガ,yoga
+ピラティスを始めたい。,I want to start pilates.,ピラティスを始め【はじめ】たい。,ピラティスを、はじめたい。,hobbies,ピラティス,pilates
 今週の献立を考えよう。,Let's plan this week's menu.,今週【こんしゅう】の献立【こんだて】を考えよう【かんがえよう】。,こんしゅうのこんだてを、かんがえよう。,meal-planning,献立,menu
 作り置きを週末に作る。,I'll make batch dishes on the weekend.,作り置き【つくりおき】を週末【しゅうまつ】に作る【つくる】。,つくりおきを、しゅうまつにつくる。,meal-planning,作り置き,meal prep
 お弁当の中身は何にする?,What should I put in the lunch box?,お弁当【べんとう】の中身【なかみ】は何【なに】にする?,おべんとうのなかみはなににする?,meal-planning,中身,contents
@@ -935,7 +935,7 @@ Wi-Fiはありますか?,Do you have Wi-Fi?,Wi-Fiはありますか?,Wi-Fiはあ
 折り返しお電話いただけますか?,Could you call me back?,折り返し【おりかえし】お電話【でんわ】いただけますか?,おりかえしおでんわいただけますか?,phone,折り返し,callback
 留守番電話にメッセージを残しました。,I left a message on the answering machine.,留守【るす】番【ばん】電話【でんわ】にメッセージを残し【のこし】ました。,るすばんでんわにメッセージを、のこしました。,phone,メッセージ,message
 電話が切れた。,The call dropped.,電話【でんわ】が切れ【きれ】た。,でんわが、きれた。,phone,切れる,disconnect
-ガソリンを満タンにしてください。,Fill it up please.,ガソリンを満タン【まんたん】にしてください。,ガソリンを、まんたんにしてください。,car,ガソリン,gas
+ガソリンを満タンにしてください。,Fill it up please.,ガソリンを満タン【まんたん】にしてください。,ガソリンを、まんたんにしてください。,car,ガソリン,gasoline
 車検の時期です。,It's time for vehicle inspection.,車検【しゃけん】の時期【じき】です。,しゃけんのじきです。,car,車検,vehicle inspection
 駐車場を探しています。,I'm looking for parking.,駐車【ちゅうしゃ】場【じょう】を探し【さがし】ています。,ちゅうしゃじょうを、さがしています。,car,駐車場,parking
 運転免許の更新に行く。,I'm going to renew my driver's license.,運転【うんてん】免許【めんきょ】の更新【こうしん】に行く【いく】。,うんてんめんきょのこうしんにいく。,car,運転免許,driver's license

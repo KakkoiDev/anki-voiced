@@ -193,6 +193,13 @@ NUMBER_MAP = {
 # Introductory adverbs/phrases that benefit from comma after
 # These typically appear at the start of sentences or clauses
 ADVERBS = [
+    # Attention-getters / Politeness
+    "すみません",  # excuse me / sorry
+    "すいません",  # casual form of sumimasen
+    "ごめんなさい",  # sorry
+    "ごめん",  # casual sorry
+    "あのう",  # um / excuse me
+    "あの",  # um / excuse me (casual)
     # Sequence
     "まず",  # first
     "次に",  # next
