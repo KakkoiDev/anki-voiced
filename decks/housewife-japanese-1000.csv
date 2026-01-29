@@ -169,7 +169,7 @@ sentence,translation,pronunciation,tts_pronunciation,tags,cloze,key_meaning
 妊娠の可能性はありますか?,Is there a possibility of pregnancy?,妊娠【にんしん】の可能【かのう】性【せい】はありますか?,にんしんのかのうせいはありますか?,medical,妊娠,pregnancy
 授乳中ですか?,Are you breastfeeding?,授乳【じゅにゅう】中【ちゅう】ですか?,じゅにゅうちゅうですか?,medical,授乳中,breastfeeding
 検査結果が出ました。,The test results are in.,検査【けんさ】結果【けっか】が出【で】ました。,けんさけっかが、でました。,medical,検査結果,test results
-特に問題ありません。,There are no problems.,特に【とくに】問題【もんだい】ありません。,特に、【とくに】もんだいありません。,medical,問題,problem
+特に問題ありません。,There are no problems.,特に【とくに】問題【もんだい】ありません。,とくに、もんだいありません。,medical,問題,problem
 精密検査が必要です。,You need a detailed examination.,精密【せいみつ】検査【けんさ】が必要【ひつよう】です。,せいみつけんさが、ひつようです。,medical,精密検査,detailed exam
 紹介状を書きます。,I'll write a referral letter.,紹介【しょうかい】状【じょう】を書き【かき】ます。,しょうかいじょうを、かきます。,medical,紹介状,referral letter
 大きい病院に行ってください。,Please go to a larger hospital.,大きい【おおきい】病院【びょういん】に行っ【いっ】てください。,おおきいびょういんにいってください。,medical,病院,hospital
@@ -561,7 +561,7 @@ PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【
 今日は学校どうだった?,How was school today?,今日【きょう】は学校【がっこう】どうだった?,きょうはがっこうどうだった?,school,学校,school
 楽しかった?,Did you have fun?,楽しかっ【たのしかっ】た?,たのしかった?,school,楽,fun
 包丁を研いでくれる?,Can you sharpen the knife?,包丁【ほうちょう】を研い【とい】でくれる?,ほうちょうを、といでくれる?,kitchen,包丁,knife
-まな板を消毒して。,Disinfect the cutting board.,まな板【まないた】を消毒【しょうどく】して。,まなまないたを、しょうどくして。,kitchen,まな板,cutting board
+まな板を消毒して。,Disinfect the cutting board.,まな板【まないた】を消毒【しょうどく】して。,まないたを、しょうどくして。,kitchen,まな板,cutting board
 フライパンを温めて。,Heat up the frying pan.,フライパンを温め【あたため】て。,フライパンを、あたためて。,kitchen,フライパン,frying pan
 鍋が焦げついた。,The pot got burnt.,鍋【なべ】が焦げつい【こげつい】た。,なべが、こげついた。,kitchen,鍋,pot
 おたまを取って。,Pass me the ladle.,おたまを取っ【とっ】て。,おたまを、とって。,kitchen,おたま,ladle
@@ -720,8 +720,8 @@ PTAの会議に出なきゃ。,I have to attend the PTA meeting.,PTAの会議【
 にんじんを3本ください。,Three carrots please.,にんじんを3本【ぽん】ください。,にんじんを、3ぽんください。,ingredients,にんじん,carrot
 キャベツを半分に切ってもらえますか?,Can you cut the cabbage in half?,キャベツを半分【はんぶん】に切っ【きっ】てもらえますか?,キャベツを、はんぶんにきってもらえますか?,ingredients,キャベツ,cabbage
 豚肉の薄切りをお願いします。,Thinly sliced pork please.,豚肉【ぶたにく】の薄切り【うすぎり】をお願い【ねがい】します。,ぶたにくのうすぎりを、おねがいします。,ingredients,豚肉,pork
-鶏もも肉を2枚ください。,Two chicken thighs please.,鶏【とり】もも肉【ももにく】を2枚【まい】ください。,とりももももにくを、2まいください。,ingredients,鶏もも肉,chicken thigh
-ひき肉は何グラム必要?,How many grams of ground meat do we need?,ひき肉【ひきにく】は何【なん】グラム必要【ひつよう】?,ひきひきにくはなんグラムひつよう?,ingredients,ひき肉,ground meat
+鶏もも肉を2枚ください。,Two chicken thighs please.,鶏【とり】もも肉【ももにく】を2枚【まい】ください。,とりももにくを、2まいください。,ingredients,鶏もも肉,chicken thigh
+ひき肉は何グラム必要?,How many grams of ground meat do we need?,ひき肉【ひきにく】は何【なん】グラム必要【ひつよう】?,ひきにくはなんグラムひつよう?,ingredients,ひき肉,ground meat
 今日は魚が新鮮だね。,The fish is fresh today.,今日【きょう】は魚【さかな】が新鮮【しんせん】だね。,きょうはさかなが、しんせんだね。,ingredients,魚,fish
 刺身用のサーモンはありますか?,Do you have salmon for sashimi?,刺身【さしみ】用【よう】のサーモンはありますか?,さしみようのサーモンはありますか?,ingredients,刺身,sashimi
 卵を1パック買って。,Buy a pack of eggs.,卵【たまご】を1パック買っ【かっ】て。,たまごを、1パックかって。,ingredients,卵,eggs
@@ -831,7 +831,7 @@ Wi-Fiはありますか?,Do you have Wi-Fi?,Wi-Fiはありますか?,Wi-Fiはあ
 電気代が高すぎる。,The electricity bill is too high.,電気【でんき】代【だい】が高【たか】すぎる。,でんきだいが、たかすぎる。,utilities,電気代,electricity bill
 ガスの契約を変更したい。,I want to change the gas contract.,ガスの契約【けいやく】を変更【へんこう】したい。,ガスのけいやくを、へんこうしたい。,utilities,契約,contract
 水道の検針日はいつですか?,When is the water meter reading day?,水道【すいどう】の検針【けんしん】日【ひ】はいつですか?,すいどうのけんしんひはいつですか?,utilities,検針日,meter reading day
-インターネットが繋がらない。,The internet isn't connecting.,インターネットが繋がら【つながら】ない。,インターネットが、繋が、ら【つながら】ない。,utilities,インターネット,internet
+インターネットが繋がらない。,The internet isn't connecting.,インターネットが繋がら【つながら】ない。,インターネットが、つながらない。,utilities,インターネット,internet
 契約を解約したいのですが。,I'd like to cancel my contract.,契約【けいやく】を解約【かいやく】したいのですが。,けいやくを、かいやくしたいのですが。,utilities,解約,cancellation
 料金プランを変えたい。,I want to change my rate plan.,料金【りょうきん】プランを変え【かえ】たい。,りょうきんプランを、かえたい。,utilities,料金プラン,rate plan
 引っ越しの手続きをしたい。,I want to do the moving procedures.,引っ越し【ひっこし】の手続き【てつづき】をしたい。,ひっこしのてつづきを、したい。,utilities,引っ越し,moving
