@@ -1,0 +1,14 @@
+[deck]
+slug = "housewife"
+name = "Japanese Housewife Survival"
+model_id = 1701123456
+deck_base_id = 2108234567
+
+[tiers]
+count = 1
+
+[tiers.names]
+1 = "Tier 1 - Daily Life"
+
+[tiers.sizes]
+1 = 1000

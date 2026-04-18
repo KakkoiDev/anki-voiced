@@ -1,16 +1,17 @@
 [project]
 name = "anki-voiced"
-version = "0.1.0"
-description = "Generate Anki flashcard decks with AI-voiced audio"
+version = "0.2.0"
+description = "Generate Japanese Anki flashcard decks with AI-voiced audio, pitch accent, and furigana"
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
-keywords = ["anki", "flashcards", "tts", "language-learning", "vocabulary", "audio"]
+keywords = ["anki", "flashcards", "tts", "japanese", "furigana", "pitch-accent", "edge-tts"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Console",
     "Intended Audience :: Education",
     "License :: OSI Approved :: MIT License",
+    "Natural Language :: Japanese",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -21,22 +22,19 @@ classifiers = [
 ]
 dependencies = [
     "genanki>=0.13.1",
-    "kokoro>=0.9.4",
-    "lameenc>=1.7.0",
-    "numpy>=1.24.0",
+    "edge-tts>=6.1.0",
     "typer>=0.15.0",
     "rich>=13.0.0",
     "pydantic>=2.0.0",
-    "pyopenjtalk>=0.4.1",
     "fugashi>=1.5.2",
     "unidic>=1.1.0",
-    "misaki[ja]>=0.9.4",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0.0",
     "pytest-cov>=4.0.0",
+    "pytest-asyncio>=0.23.0",
     "ruff>=0.8.0",
 ]
 
@@ -60,6 +58,9 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/anki_voiced"]
 
+[tool.hatch.build.targets.wheel.shared-data]
+"src/anki_voiced/templates/assets" = "anki_voiced/templates/assets"
+
 [tool.ruff]
 line-length = 100
 target-version = "py310"
@@ -70,3 +71,8 @@ select = ["E", "F", "I", "N", "W"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-v --cov=anki_voiced"
+asyncio_mode = "auto"
+filterwarnings = [
+    "ignore::UserWarning:pydantic",
+    "ignore:.*shadows an attribute in parent.*:UserWarning",
+]

@@ -1,116 +1,85 @@
-"""Tests for CSV validation functionality."""
+"""Tests for CSV/audio validation."""
 
-import tempfile
 from pathlib import Path
 
-import pytest
-
+from anki_voiced.csv_utils import create_sample_csv
+from anki_voiced.models import DeckConfig, TierConfig
 from anki_voiced.validation import (
     ValidationResult,
-    validate_csv_file,
-    validate_furigana_text,
+    validate_audio,
+    validate_csv,
+    validate_tier,
 )
 
 
-class TestValidateFuriganaText:
-    """Tests for furigana validation."""
-
-    def test_valid_furigana(self):
-        result = ValidationResult()
-        assert validate_furigana_text("機能【きのう】は完了【かんりょう】", 1, result) is True
-        assert not result.errors
-
-    def test_unmatched_open_bracket(self):
-        result = ValidationResult()
-        assert validate_furigana_text("機能【きのう", 1, result) is False
-        assert len(result.errors) == 1
-        assert "Unmatched brackets" in result.errors[0]
-
-    def test_unmatched_close_bracket(self):
-        result = ValidationResult()
-        assert validate_furigana_text("機能きのう】", 1, result) is False
-        assert len(result.errors) == 1
-
-    def test_invalid_reading(self):
-        result = ValidationResult()
-        # Reading contains invalid characters (Chinese characters inside brackets)
-        assert validate_furigana_text("機能【漢字】", 1, result) is False
-        assert "Invalid reading" in result.errors[0]
-
-    def test_valid_katakana_reading(self):
-        result = ValidationResult()
-        assert validate_furigana_text("API【エーピーアイ】", 1, result) is True
-        assert not result.errors
-
-    def test_no_furigana(self):
-        result = ValidationResult()
-        assert validate_furigana_text("普通のテキスト", 1, result) is True
-        assert not result.errors
+def _sample_deck_config(slug: str = "test", size: int = 1) -> DeckConfig:
+    return DeckConfig(
+        slug=slug,
+        name="Test Deck",
+        model_id=1234567890,
+        deck_base_id=9876543210,
+        tiers=[TierConfig(number=1, name="Tier 1", size=size)],
+    )
 
 
-class TestValidateCsvFile:
-    """Tests for CSV file validation."""
-
-    def test_missing_file(self):
-        result = validate_csv_file(Path("/nonexistent/file.csv"))
-        assert result.has_errors
-        assert "not found" in result.errors[0]
-
-    def test_valid_csv(self):
-        with tempfile.NamedTemporaryFile(mode="w", suffix=".csv", delete=False) as f:
-            f.write("sentence,translation,pronunciation\n")
-            f.write("こんにちは,Hello,こんにちは\n")
-            f.write("ありがとう,Thank you,ありがとう\n")
-            f.flush()
-
-            result = validate_csv_file(Path(f.name))
-            assert result.is_valid
-            assert result.row_count == 2
-            Path(f.name).unlink()
-
-    def test_empty_required_field(self):
-        with tempfile.NamedTemporaryFile(mode="w", suffix=".csv", delete=False) as f:
-            f.write("sentence,translation\n")
-            f.write(",Hello\n")  # Empty sentence
-            f.flush()
-
-            result = validate_csv_file(Path(f.name))
-            assert result.has_errors
-            assert "Empty required field" in result.errors[0]
-            Path(f.name).unlink()
-
-    def test_furigana_validation(self):
-        with tempfile.NamedTemporaryFile(mode="w", suffix=".csv", delete=False) as f:
-            f.write("sentence,translation,pronunciation\n")
-            f.write("テスト,Test,機能【きのう】\n")
-            f.write("テスト2,Test2,機能【きのう\n")  # Unmatched bracket
-            f.flush()
-
-            result = validate_csv_file(Path(f.name), check_furigana=True)
-            assert result.has_errors
-            assert result.furigana_total == 2
-            assert result.furigana_valid == 1
-            Path(f.name).unlink()
+def test_validate_csv_ok(tmp_path: Path):
+    csv_path = tmp_path / "t1.csv"
+    create_sample_csv(csv_path)
+    result = ValidationResult(tier=1)
+    rows = validate_csv(csv_path, result, expected_size=1)
+    assert len(rows) == 1
+    assert result.csv_valid
+    assert result.is_valid
 
 
-class TestValidationResult:
-    """Tests for ValidationResult class."""
+def test_validate_csv_missing_columns(tmp_path: Path):
+    csv_path = tmp_path / "bad.csv"
+    csv_path.write_text("Sentence,Translation\nこんにちは,hello\n", encoding="utf-8")
+    result = ValidationResult(tier=1)
+    rows = validate_csv(csv_path, result)
+    assert rows == []
+    assert not result.is_valid
+    assert any("Missing columns" in e for e in result.errors)
 
-    def test_empty_result(self):
-        result = ValidationResult()
-        assert result.is_valid
-        assert not result.has_errors
 
-    def test_add_error(self):
-        result = ValidationResult()
-        result.add_error("Test error")
-        assert result.has_errors
-        assert not result.is_valid
-        assert "Test error" in result.errors
+def test_validate_furigana_bracket_mismatch(tmp_path: Path):
+    csv_path = tmp_path / "t1.csv"
+    csv_path.write_text(
+        "Sentence,Translation,Cloze,Pronunciation,Note,Register,KeyMeaning,PitchAccent,Audio\n"
+        "テスト,test,テスト,テスト【,tag,polite,test,,\n",
+        encoding="utf-8",
+    )
+    result = ValidationResult(tier=1)
+    validate_csv(csv_path, result)
+    assert any("unmatched brackets" in e.lower() for e in result.errors)
 
-    def test_add_warning(self):
-        result = ValidationResult()
-        result.add_warning("Test warning")
-        assert not result.has_errors
-        assert result.is_valid
-        assert "Test warning" in result.warnings
+
+def test_validate_audio_reports_missing(tmp_path: Path):
+    result = ValidationResult(tier=1)
+    validate_audio(tmp_path / "absent", 2, tier=1, result=result)
+    assert any("not found" in w for w in result.warnings)
+
+
+def test_validate_audio_counts_files(tmp_path: Path):
+    audio_dir = tmp_path / "tier1-audio"
+    audio_dir.mkdir()
+    (audio_dir / "tier1_001.mp3").write_bytes(b"X" * 2048)
+    (audio_dir / "tier1_002.mp3").write_bytes(b"X" * 2048)
+
+    result = ValidationResult(tier=1)
+    validate_audio(audio_dir, 2, tier=1, result=result)
+    assert result.audio_valid == 2
+    assert result.is_valid
+
+
+def test_validate_tier_integration(tmp_path: Path):
+    config = _sample_deck_config()
+    deck_dir = tmp_path / config.slug
+    deck_dir.mkdir()
+    csv_path = deck_dir / "tier1-vocabulary.csv"
+    create_sample_csv(csv_path)
+
+    result = validate_tier(config, 1, decks_root=tmp_path)
+    assert result.csv_valid
+    assert result.row_count == 1
+    assert result.is_valid

@@ -1,168 +1,117 @@
-"""Data models for anki-voiced."""
+"""Data models for anki-voiced (Japanese-only)."""
 
+from enum import Enum
 from pathlib import Path
-from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 
-# Language configuration
-# Maps user-facing language names to Kokoro lang codes
-LANGUAGES = {
-    "english": {"code": "a", "default_voice": "af_heart"},
-    "japanese": {"code": "j", "default_voice": "jm_kumo"},
-    "french": {"code": "f", "default_voice": "ff_siwis"},
-    "portuguese": {"code": "p", "default_voice": "pf_camila"},
-}
-
-# Short aliases for languages
-LANGUAGE_ALIASES = {
-    "en": "english",
-    "ja": "japanese",
-    "jp": "japanese",
-    "fr": "french",
-    "pt": "portuguese",
-}
-
-# Available voices per language (Kokoro voices)
+# Edge TTS Japanese voices
 VOICES = {
-    "english": {
-        "male": ["am_adam", "am_michael"],
-        "female": ["af_heart", "af_bella", "af_nicole", "af_sarah", "af_sky"],
-    },
-    "japanese": {
-        "male": ["jm_kumo"],
-        "female": ["jf_alpha", "jf_gongitsune", "jf_nezumi", "jf_tebukuro"],
-    },
-    "french": {
-        "male": [],
-        "female": ["ff_siwis"],
-    },
-    "portuguese": {
-        "male": [],
-        "female": ["pf_camila"],
-    },
+    "male": "ja-JP-KeitaNeural",
+    "female": "ja-JP-NanamiNeural",
 }
 
-# Templates available
-TEMPLATES = ["basic", "double-card", "cloze"]
+DEFAULT_VOICE_GENDER = "male"
 
 
-def normalize_language(lang: str) -> str:
-    """Normalize language input to canonical form."""
-    lang_lower = lang.lower().strip()
-    return LANGUAGE_ALIASES.get(lang_lower, lang_lower)
+class Register(str, Enum):
+    """Japanese speech register."""
+
+    CASUAL = "casual"
+    POLITE = "polite"
+    FORMAL = "formal"
+    KEIGO = "keigo"
 
 
-def get_lang_code(language: str) -> str:
-    """Get Kokoro language code for a language."""
-    lang = normalize_language(language)
-    if lang in LANGUAGES:
-        return LANGUAGES[lang]["code"]
-    return "a"  # Default to English
-
-
-def get_default_voice(language: str, gender: str = "female") -> str:
-    """Get the default voice for a language and gender."""
-    lang = normalize_language(language)
-    if lang not in VOICES:
-        lang = "english"
-
-    voices = VOICES[lang].get(gender, [])
-    if voices:
-        return voices[0]
-
-    # Fall back to opposite gender
-    other_gender = "female" if gender == "male" else "male"
-    voices = VOICES[lang].get(other_gender, [])
-    if voices:
-        return voices[0]
-
-    return LANGUAGES.get(lang, LANGUAGES["english"])["default_voice"]
-
-
-def resolve_voice(voice: str, language: str) -> str:
-    """Resolve a voice specification to an actual voice ID.
-
-    Args:
-        voice: Either 'male', 'female', or a specific voice ID
-        language: The target language
-    """
-    if voice in ("male", "female"):
-        return get_default_voice(language, voice)
+def resolve_voice(voice: str) -> str:
+    """Resolve 'male'/'female' or a voice ID into an Edge TTS voice name."""
+    if voice in VOICES:
+        return VOICES[voice]
     return voice
 
 
 class VocabEntry(BaseModel):
-    """A single vocabulary entry."""
+    """A single vocabulary entry.
 
-    # For double-card template
-    sentence: str = Field(default="", description="Target language sentence")
-    translation: str = Field(default="", description="Translation")
-    pronunciation: str = Field(default="", description="Reading/pronunciation guide")
-    tts_pronunciation: str = Field(default="", description="Direct TTS input (skips preprocessing)")
-    hint: str = Field(default="", description="Hint for production card")
-    tags: list[str] = Field(default_factory=list, description="Tags for categorization")
-    audio_file: str | None = Field(default=None, description="Path to audio file")
+    Mirrors the CSV schema ported from nihongo-it-anki. The Pronunciation
+    field is dual-purpose: card display (via to_ruby_html) AND TTS input
+    (via preprocess_for_tts). Never replace kanji with kana in the CSV to
+    fix TTS issues - add to TTS_KANJI_OVERRIDES instead.
+    """
 
-    # Cloze/key word support
-    cloze: str = Field(default="", description="Key vocabulary word for cloze deletion")
-    key_meaning: str = Field(default="", description="English meaning of key word")
+    model_config = ConfigDict(protected_namespaces=())
 
-    # Aliases for basic template compatibility
-    @property
-    def front(self) -> str:
-        return self.sentence
-
-    @property
-    def back(self) -> str:
-        return self.translation
-
-    # For cloze template
-    text: str = Field(default="", description="Text with {{c1::cloze}} markers")
-    extra: str = Field(default="", description="Extra information for cloze")
+    sentence: str = Field(..., description="Japanese sentence (display form)")
+    translation: str = Field(..., description="English translation")
+    cloze: str = Field(default="", description="Key vocabulary word to test")
+    pronunciation: str = Field(
+        default="",
+        description="Japanese with furigana brackets, e.g. 会議【かいぎ】",
+    )
+    note: str = Field(default="", description="Category/context for tagging")
+    register: str = Field(default="", description="casual|polite|formal|keigo")
+    key_meaning: str = Field(default="", description="English gloss of Cloze")
+    pitch_accent: str = Field(
+        default="",
+        description="Auto-generated colored ruby HTML for Cloze word",
+    )
+    audio_file: str | None = Field(
+        default=None, description="Generated audio filename"
+    )
 
 
 class TierConfig(BaseModel):
-    """Configuration for a single tier in multi-tier decks."""
+    """Configuration for a single tier in a deck."""
 
-    name: str = Field(..., description="Subdeck name")
-    data: str = Field(..., description="Path to CSV file")
+    number: int = Field(..., ge=1, description="Tier number (1-based)")
+    name: str = Field(..., description="Tier display name")
+    size: int = Field(..., ge=0, description="Expected row count")
 
 
 class DeckConfig(BaseModel):
-    """Configuration for deck generation."""
+    """Per-deck configuration, loaded from decks/<slug>/deck.toml."""
 
-    name: str = Field(default="My Vocabulary", description="Deck name")
-    input_csv: Path | None = Field(default=None, description="Path to input CSV file")
-    output: Path = Field(default=Path("."), description="Output path for .apkg file")
-    language: str = Field(default="english", description="Target language")
-    voice: str = Field(default="female", description="Voice ID or gender")
-    template: Literal["basic", "double-card", "cloze"] = Field(
-        default="double-card", description="Card template to use"
-    )
+    slug: str = Field(..., description="Deck directory name")
+    name: str = Field(..., description="Human-readable deck name")
+    model_id: int = Field(..., description="Stable Anki model ID")
+    deck_base_id: int = Field(..., description="Base deck ID; tier ID = base + tier")
+    tiers: list[TierConfig] = Field(..., description="Tier definitions")
 
-    # Multi-tier support
-    tiers: list[TierConfig] = Field(default_factory=list, description="Tier configurations")
-
-    # Processing options
-    force: bool = Field(default=False, description="Force regenerate audio")
-    dry_run: bool = Field(default=False, description="Show what would be generated")
+    # Runtime options
+    voice: str = Field(default=DEFAULT_VOICE_GENDER)
+    force: bool = Field(default=False)
+    dry_run: bool = Field(default=False)
 
     @property
     def resolved_voice(self) -> str:
-        """Get the resolved Kokoro voice ID."""
-        return resolve_voice(self.voice, self.language)
+        return resolve_voice(self.voice)
 
     @property
-    def lang_code(self) -> str:
-        """Get the Kokoro language code."""
-        return get_lang_code(self.language)
+    def tier_count(self) -> int:
+        return len(self.tiers)
 
-    @property
-    def is_multi_tier(self) -> bool:
-        """Check if this is a multi-tier deck."""
-        return len(self.tiers) > 0
+    def tier(self, number: int) -> TierConfig:
+        for t in self.tiers:
+            if t.number == number:
+                return t
+        raise KeyError(f"No tier {number} in deck {self.slug}")
+
+    def tier_range(self) -> range:
+        return range(1, self.tier_count + 1)
+
+    def get_deck_id(self, tier: int) -> int:
+        return self.deck_base_id + tier
+
+    def data_dir(self, decks_root: Path) -> Path:
+        return decks_root / self.slug
+
+    def csv_path(self, decks_root: Path, tier: int) -> Path:
+        return self.data_dir(decks_root) / f"tier{tier}-vocabulary.csv"
+
+    def audio_dir(self, decks_root: Path, tier: int, female: bool = False) -> Path:
+        suffix = "-female" if female else ""
+        return self.data_dir(decks_root) / f"tier{tier}-audio{suffix}"
 
 
 class GenerationResult(BaseModel):
@@ -172,8 +121,22 @@ class GenerationResult(BaseModel):
     card_count: int
     note_count: int
     audio_count: int
-    template: str
-    language: str
     voice: str
-    cached_audio: int = 0
     generated_audio: int = 0
+    cached_audio: int = 0
+
+
+# CSV column names (canonical, case-insensitive)
+CSV_COLUMNS = [
+    "Sentence",
+    "Translation",
+    "Cloze",
+    "Pronunciation",
+    "Note",
+    "Register",
+    "KeyMeaning",
+    "PitchAccent",
+    "Audio",
+]
+
+REQUIRED_CSV_COLUMNS = {"Sentence", "Translation", "Cloze", "Pronunciation", "KeyMeaning"}

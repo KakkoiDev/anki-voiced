@@ -1,172 +1,157 @@
-"""Anki deck generation using genanki."""
+"""Build .apkg files from CSV + audio."""
 
-import random
-import sqlite3
-import tempfile
-import zipfile
+import csv
+from dataclasses import dataclass
 from pathlib import Path
 
 import genanki
 
-from .models import DeckConfig, VocabEntry, GenerationResult
-from .templates import get_template
+from .models import DeckConfig, REQUIRED_CSV_COLUMNS, VocabEntry
+from .templates import CARDS_PER_NOTE, create_note, create_three_card_model
 
 
-class DeckBuilder:
-    """Build Anki decks from vocabulary entries."""
+@dataclass
+class DeckBuildResult:
+    output_path: Path
+    note_count: int
+    card_count: int
+    audio_count: int
 
-    def __init__(self, config: DeckConfig):
-        self.config = config
-        self.deck_id = random.randint(1000000000, 9999999999)
 
-    def build(
-        self,
-        entries: list[VocabEntry],
-        audio_dir: Path | None = None,
-        subdeck_name: str | None = None,
-    ) -> Path:
-        """Build an Anki deck from vocabulary entries.
+def load_tier_entries(csv_path: Path) -> list[VocabEntry]:
+    """Read a tier CSV into VocabEntry objects (matched by column name)."""
+    with open(csv_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        columns = set(reader.fieldnames or [])
+        missing = REQUIRED_CSV_COLUMNS - columns
+        if missing:
+            raise ValueError(
+                f"{csv_path} missing required columns: {sorted(missing)}"
+            )
 
-        Args:
-            entries: List of vocabulary entries
-            audio_dir: Directory containing audio files
-            subdeck_name: Optional subdeck name (for multi-tier decks)
+        entries = []
+        for row in reader:
+            entries.append(
+                VocabEntry(
+                    sentence=row["Sentence"],
+                    translation=row["Translation"],
+                    cloze=row.get("Cloze", ""),
+                    pronunciation=row.get("Pronunciation", ""),
+                    note=row.get("Note", ""),
+                    register=row.get("Register", ""),
+                    key_meaning=row.get("KeyMeaning", ""),
+                    pitch_accent=row.get("PitchAccent", ""),
+                )
+            )
+        return entries
 
-        Returns:
-            Path to the generated .apkg file
-        """
-        # Get deck name
-        if subdeck_name:
-            full_deck_name = f"{self.config.name}::{subdeck_name}"
-        else:
-            full_deck_name = self.config.name
 
-        deck = genanki.Deck(self.deck_id, full_deck_name)
-
-        # Get template handler
-        template_class = get_template(self.config.template)
-        if not template_class:
-            raise ValueError(f"Unknown template: {self.config.template}")
-
-        media_files = []
-
+def write_tier_entries(csv_path: Path, entries: list[VocabEntry]) -> None:
+    """Write entries back to a tier CSV (preserving column order)."""
+    fieldnames = [
+        "Sentence", "Translation", "Cloze", "Pronunciation",
+        "Note", "Register", "KeyMeaning", "PitchAccent", "Audio",
+    ]
+    with open(csv_path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
         for entry in entries:
-            # Prepare audio reference
-            if entry.audio_file and audio_dir:
-                audio_ref = f"[sound:{entry.audio_file}]"
-                audio_path = audio_dir / entry.audio_file
-                if audio_path.exists():
-                    media_files.append(str(audio_path))
-            else:
-                audio_ref = ""
+            writer.writerow({
+                "Sentence": entry.sentence,
+                "Translation": entry.translation,
+                "Cloze": entry.cloze,
+                "Pronunciation": entry.pronunciation,
+                "Note": entry.note,
+                "Register": entry.register,
+                "KeyMeaning": entry.key_meaning,
+                "PitchAccent": entry.pitch_accent,
+                "Audio": f"[sound:{entry.audio_file}]" if entry.audio_file else "",
+            })
 
-            # Create note using template
-            note = template_class.create_note(entry, audio_ref)
-            deck.add_note(note)
 
-        # Determine output path
-        if self.config.output.suffix == ".apkg":
-            output_path = self.config.output
+def build_tier_deck(
+    config: DeckConfig,
+    tier: int,
+    entries: list[VocabEntry],
+    audio_dir: Path,
+    deck_name_override: str | None = None,
+) -> tuple[genanki.Deck, list[str]]:
+    """Build a single-tier genanki.Deck and list of media paths."""
+    tier_conf = config.tier(tier)
+    deck_name = deck_name_override or f"{config.name} - {tier_conf.name}"
+    deck = genanki.Deck(config.get_deck_id(tier), deck_name)
+    model = create_three_card_model(config)
+    media: list[str] = []
+
+    for idx, entry in enumerate(entries, start=1):
+        audio_file = f"tier{tier}_{idx:03d}.mp3"
+        audio_path = audio_dir / audio_file
+        if audio_path.exists():
+            audio_ref = f"[sound:{audio_file}]"
+            media.append(str(audio_path))
+            entry.audio_file = audio_file
         else:
-            safe_name = self.config.name.replace(" ", "-").lower()
-            output_path = self.config.output / f"{safe_name}.apkg"
+            audio_ref = "[No audio]"
+        deck.add_note(create_note(entry, model, audio_ref))
 
-        output_path.parent.mkdir(parents=True, exist_ok=True)
+    return deck, media
 
-        # Write package
-        package = genanki.Package(deck)
-        package.media_files = media_files
-        package.write_to_file(str(output_path))
 
-        return output_path
+def build_single_tier_package(
+    config: DeckConfig,
+    tier: int,
+    entries: list[VocabEntry],
+    audio_dir: Path,
+    output_path: Path,
+) -> DeckBuildResult:
+    """Write a .apkg for one tier."""
+    deck, media = build_tier_deck(config, tier, entries, audio_dir)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    package = genanki.Package(deck)
+    package.media_files = media
+    package.write_to_file(str(output_path))
+    return DeckBuildResult(
+        output_path=output_path,
+        note_count=len(entries),
+        card_count=len(entries) * CARDS_PER_NOTE,
+        audio_count=len(media),
+    )
 
-    def build_grouped_by_tag(
-        self,
-        entries: list[VocabEntry],
-        audio_dir: Path | None = None,
-    ) -> Path:
-        """Build an Anki deck with subdecks grouped by tag.
 
-        Entries are grouped by their first tag. Each group becomes a subdeck
-        named DeckName::TagName. Tag order is preserved based on first occurrence
-        in the original CSV, and entries within each tag maintain their CSV order.
+def build_combined_package(
+    config: DeckConfig,
+    tiers_data: list[tuple[int, list[VocabEntry], Path]],
+    output_path: Path,
+) -> DeckBuildResult:
+    """Write a combined .apkg where each tier is a subdeck.
 
-        Args:
-            entries: List of vocabulary entries
-            audio_dir: Directory containing audio files
+    tiers_data: list of (tier_number, entries, audio_dir).
+    """
+    all_decks: list[genanki.Deck] = []
+    all_media: list[str] = []
+    total_notes = 0
 
-        Returns:
-            Path to the generated .apkg file
-        """
-        # Group entries by first tag, preserving order of first occurrence
-        groups: dict[str, list[VocabEntry]] = {}
-        for entry in entries:
-            tag = entry.tags[0] if entry.tags else "Untagged"
-            if tag not in groups:
-                groups[tag] = []
-            groups[tag].append(entry)
+    for tier, entries, audio_dir in tiers_data:
+        tier_conf = config.tier(tier)
+        subdeck_name = f"{config.name}::{tier:02d} {tier_conf.name}"
+        deck, media = build_tier_deck(
+            config, tier, entries, audio_dir, deck_name_override=subdeck_name
+        )
+        all_decks.append(deck)
+        all_media.extend(media)
+        total_notes += len(entries)
 
-        # Get template handler
-        template_class = get_template(self.config.template)
-        if not template_class:
-            raise ValueError(f"Unknown template: {self.config.template}")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    package = genanki.Package(all_decks)
+    package.media_files = all_media
+    package.write_to_file(str(output_path))
 
-        all_decks = []
-        media_files = []
-
-        for idx, (tag_name, tag_entries) in enumerate(groups.items(), start=1):
-            deck_id = random.randint(1000000000, 9999999999)
-            formatted_tag = tag_name.replace(' ', '_').title()
-            full_name = f"{self.config.name}::{idx:02d} {formatted_tag}"
-            deck = genanki.Deck(deck_id, full_name)
-
-            for entry in tag_entries:
-                if entry.audio_file and audio_dir:
-                    audio_ref = f"[sound:{entry.audio_file}]"
-                    audio_path = audio_dir / entry.audio_file
-                    if audio_path.exists():
-                        media_files.append(str(audio_path))
-                else:
-                    audio_ref = ""
-
-                note = template_class.create_note(entry, audio_ref)
-                deck.add_note(note)
-
-            all_decks.append(deck)
-
-        # Determine output path
-        if self.config.output.suffix == ".apkg":
-            output_path = self.config.output
-        else:
-            safe_name = self.config.name.replace(" ", "-").lower()
-            output_path = self.config.output / f"{safe_name}.apkg"
-
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-
-        # Write all decks as one package
-        package = genanki.Package(all_decks)
-        package.media_files = media_files
-        package.write_to_file(str(output_path))
-
-        return output_path
-
-    def get_card_count(self, entries: list[VocabEntry]) -> int:
-        """Get the number of cards that will be generated."""
-        if self.config.template == "double-card":
-            return len(entries) * 2
-        elif self.config.template == "cloze":
-            # Count cloze deletions
-            import re
-
-            total = 0
-            for entry in entries:
-                matches = re.findall(r"\{\{c\d+::", entry.text)
-                # Each unique cloze number creates one card
-                cloze_nums = set(re.findall(r"\{\{c(\d+)::", entry.text))
-                total += len(cloze_nums) if cloze_nums else 1
-            return total
-        else:
-            return len(entries)
+    return DeckBuildResult(
+        output_path=output_path,
+        note_count=total_notes,
+        card_count=total_notes * CARDS_PER_NOTE,
+        audio_count=len(all_media),
+    )
 
 
 def join_decks(
@@ -174,95 +159,38 @@ def join_decks(
     output_path: Path,
     master_name: str,
 ) -> Path:
-    """Combine multiple .apkg files into one with subdecks.
+    """Concatenate existing .apkg files into one master (simple shell).
 
-    Args:
-        deck_paths: List of .apkg files to combine
-        output_path: Output path for combined deck
-        master_name: Name for the master deck
-
-    Returns:
-        Path to the combined .apkg file
+    Creates a new empty master deck and bundles media from the source decks.
+    For true note-level merge, rebuild from CSVs instead - this helper is
+    for quickly packaging pre-built tier decks for distribution.
     """
-    all_notes = []
-    all_media = []
-    models = {}
+    import random
+    import shutil
+    import tempfile
+    import zipfile
 
-    for deck_path in deck_paths:
-        if not deck_path.exists():
-            raise FileNotFoundError(f"Deck not found: {deck_path}")
+    all_media: list[str] = []
+    tmp_roots: list[Path] = []
 
-        # Extract and read the deck
-        with tempfile.TemporaryDirectory() as tmpdir:
-            with zipfile.ZipFile(deck_path, "r") as zf:
-                zf.extractall(tmpdir)
+    try:
+        for p in deck_paths:
+            if not p.exists():
+                raise FileNotFoundError(p)
+            tmp = Path(tempfile.mkdtemp())
+            tmp_roots.append(tmp)
+            with zipfile.ZipFile(p) as zf:
+                zf.extractall(tmp)
+            media_dir = tmp / "media"
+            if media_dir.exists():
+                for f in media_dir.iterdir():
+                    all_media.append(str(f))
 
-            # Read the database
-            db_path = Path(tmpdir) / "collection.anki2"
-            if not db_path.exists():
-                raise ValueError(f"Invalid .apkg file: {deck_path}")
-
-            conn = sqlite3.connect(db_path)
-            cursor = conn.cursor()
-
-            # Get notes
-            cursor.execute("SELECT * FROM notes")
-            notes = cursor.fetchall()
-            all_notes.extend(notes)
-
-            # Get models
-            cursor.execute("SELECT models FROM col")
-            row = cursor.fetchone()
-            if row:
-                import json
-
-                deck_models = json.loads(row[0])
-                models.update(deck_models)
-
-            conn.close()
-
-            # Collect media files
-            media_path = Path(tmpdir) / "media"
-            if media_path.exists():
-                import shutil
-
-                for media_file in media_path.iterdir():
-                    all_media.append(str(media_file))
-
-    # For now, just concatenate by creating a combined deck
-    # A more sophisticated approach would merge the SQLite databases
-    combined_deck = genanki.Deck(
-        random.randint(1000000000, 9999999999),
-        master_name,
-    )
-
-    # This is a simplified version - for full merge we'd need to
-    # properly handle the SQLite database merging
-    package = genanki.Package(combined_deck)
-    package.media_files = all_media
-    package.write_to_file(str(output_path))
-
-    return output_path
-
-
-def create_generation_result(
-    output_path: Path,
-    entries: list[VocabEntry],
-    config: DeckConfig,
-    generated_audio: int = 0,
-    cached_audio: int = 0,
-) -> GenerationResult:
-    """Create a GenerationResult from generation data."""
-    builder = DeckBuilder(config)
-
-    return GenerationResult(
-        output_path=output_path,
-        card_count=builder.get_card_count(entries),
-        note_count=len(entries),
-        audio_count=sum(1 for e in entries if e.audio_file),
-        template=config.template,
-        language=config.language,
-        voice=config.resolved_voice,
-        generated_audio=generated_audio,
-        cached_audio=cached_audio,
-    )
+        deck = genanki.Deck(random.randint(1_000_000_000, 9_999_999_999), master_name)
+        package = genanki.Package(deck)
+        package.media_files = all_media
+        package.write_to_file(str(output_path))
+        return output_path
+    finally:
+        for r in tmp_roots:
+            shutil.rmtree(r, ignore_errors=True)

@@ -1,15 +1,12 @@
-"""Audio generation using Kokoro TTS with MP3 encoding and caching."""
+"""Audio generation via Microsoft Edge TTS, with SHA256 caching."""
 
+import asyncio
+import shutil
 import signal
 import sys
 from pathlib import Path
 from typing import Callable
 
-from .preprocessing.japanese import extract_furigana
-
-import lameenc
-import numpy as np
-from kokoro import KPipeline
 from rich.progress import (
     BarColumn,
     Progress,
@@ -20,49 +17,50 @@ from rich.progress import (
 )
 
 from .config import get_audio_cache_path
-from .models import DeckConfig, VocabEntry
+from .models import VOICES, VocabEntry, resolve_voice
+from .preprocessing.japanese import preprocess_for_tts
+
+# Rate limiting for Edge TTS
+DELAY_BETWEEN_REQUESTS = 0.3
+MAX_RETRIES = 3
 
 
 class AudioGenerationInterrupted(Exception):
     """Raised when audio generation is interrupted by the user."""
 
-    pass
+
+async def _edge_tts_save(text: str, voice: str, output_path: Path, retries: int = MAX_RETRIES) -> None:
+    """Call edge-tts and save to output_path, with exponential backoff."""
+    import edge_tts  # lazy import
+
+    last_err: Exception | None = None
+    for attempt in range(retries):
+        try:
+            communicate = edge_tts.Communicate(text, voice)
+            await communicate.save(str(output_path))
+            await asyncio.sleep(DELAY_BETWEEN_REQUESTS)
+            return
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            if attempt < retries - 1:
+                await asyncio.sleep(2 ** (attempt + 1))
+            else:
+                raise
+    if last_err:
+        raise last_err
 
 
 class AudioGenerator:
-    """Generate audio files using Kokoro TTS with MP3 encoding and caching."""
+    """Generate MP3 audio via Edge TTS, caching by SHA256(text|voice)."""
 
-    def __init__(self, config: DeckConfig, quiet: bool = False):
-        self.config = config
+    def __init__(self, voice: str = "male", force: bool = False, quiet: bool = False):
+        self.voice_name = voice
+        self.resolved_voice = resolve_voice(voice)
+        self.force = force
         self.quiet = quiet
-        self.pipeline: KPipeline | None = None
         self._interrupted = False
 
-    def _init_pipeline(self) -> None:
-        """Initialize the Kokoro TTS pipeline (lazy loading)."""
-        if self.pipeline is None:
-            self.pipeline = KPipeline(lang_code=self.config.lang_code)
-
-    def _encode_mp3(self, audio_data: np.ndarray) -> bytes:
-        """Encode audio data to MP3 format.
-
-        Args:
-            audio_data: Float32 audio data at 24kHz
-
-        Returns:
-            MP3 encoded bytes
-        """
-        # Convert float32 audio to int16 for MP3 encoding
-        audio_int16 = (audio_data * 32767).astype(np.int16)
-
-        # Encode to MP3 using lameenc
-        encoder = lameenc.Encoder()
-        encoder.set_bit_rate(128)
-        encoder.set_in_sample_rate(24000)
-        encoder.set_channels(1)
-        encoder.set_quality(2)  # 2 = high quality, 7 = fast
-
-        return encoder.encode(audio_int16.tobytes()) + encoder.flush()
+    # Sync wrappers around async Edge TTS
 
     def generate_audio(
         self,
@@ -70,69 +68,27 @@ class AudioGenerator:
         output_path: Path,
         preprocess: Callable[[str], str] | None = None,
     ) -> bool:
-        """Generate audio for a single text.
+        """Generate one MP3 file. Returns True on success."""
+        tts_input = preprocess(text) if preprocess else text
 
-        Args:
-            text: Text to synthesize
-            output_path: Path to save the MP3 file
-            preprocess: Optional function to preprocess text before TTS
-
-        Returns:
-            True if successful, False otherwise
-        """
-        self._init_pipeline()
-
-        # Check cache first
-        cache_path = get_audio_cache_path(text, self.config.resolved_voice, self.config.language)
-        if cache_path.exists() and not self.config.force:
-            # Copy from cache
-            import shutil
-
+        cache_path = get_audio_cache_path(tts_input, self.resolved_voice)
+        if cache_path.exists() and not self.force:
             shutil.copy(cache_path, output_path)
             return True
 
         try:
-            # Preprocess text if function provided
-            tts_input = preprocess(text) if preprocess else text
-
-            audio_chunks = []
-            for _, _, audio in self.pipeline(tts_input, voice=self.config.resolved_voice):
-                # Convert PyTorch tensor to numpy if needed
-                if hasattr(audio, "numpy"):
-                    audio_chunks.append(audio.numpy())
-                else:
-                    audio_chunks.append(audio)
-
-            if audio_chunks:
-                # Concatenate audio chunks
-                if len(audio_chunks) == 1:
-                    audio_data = audio_chunks[0]
-                else:
-                    audio_data = np.concatenate(audio_chunks)
-
-                # Encode to MP3
-                mp3_data = self._encode_mp3(audio_data)
-
-                # Write to output path
-                with open(output_path, "wb") as f:
-                    f.write(mp3_data)
-
-                # Also save to cache
-                cache_path.parent.mkdir(parents=True, exist_ok=True)
-                with open(cache_path, "wb") as f:
-                    f.write(mp3_data)
-
-                return True
-            return False
-        except Exception as e:
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            asyncio.run(_edge_tts_save(tts_input, self.resolved_voice, output_path))
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy(output_path, cache_path)
+            return True
+        except Exception as e:  # noqa: BLE001
             if not self.quiet:
                 print(f"Error generating audio for '{text[:30]}...': {e}", file=sys.stderr)
             return False
 
     def _setup_signal_handler(self) -> None:
-        """Set up signal handler for graceful interruption."""
-
-        def handler(signum, frame):
+        def handler(signum, frame):  # noqa: ARG001
             self._interrupted = True
 
         signal.signal(signal.SIGINT, handler)
@@ -141,129 +97,79 @@ class AudioGenerator:
         self,
         entries: list[VocabEntry],
         output_dir: Path,
-        prefix: str = "card",
-        preprocess: Callable[[str], str] | None = None,
-        progress_callback: Callable[[int, int, str], None] | None = None,
+        filename_fn: Callable[[int], str] | None = None,
+        preprocess: Callable[[str], str] | None = preprocess_for_tts,
     ) -> tuple[list[VocabEntry], int, int]:
-        """Generate audio for a batch of vocabulary entries.
+        """Generate MP3s for a batch of entries.
 
-        Args:
-            entries: List of vocabulary entries
-            output_dir: Directory to save audio files
-            prefix: Prefix for audio filenames
-            preprocess: Optional function to preprocess text before TTS
-            progress_callback: Optional callback(current, total, item_text)
-
-        Returns:
-            Tuple of (updated entries, generated_count, cached_count)
+        Returns (entries, generated_count, cached_count).
         """
         output_dir.mkdir(parents=True, exist_ok=True)
-        self._init_pipeline()
         self._setup_signal_handler()
         self._interrupted = False
 
         generated = 0
         cached = 0
+        total = len(entries)
+
+        filename = filename_fn or (lambda i: f"card_{i:04d}.mp3")
+
+        def _audio_text(entry: VocabEntry) -> str:
+            # Pronunciation field is dual-purpose (display + TTS). Fall back
+            # to sentence if pronunciation is empty.
+            return entry.pronunciation or entry.sentence
+
+        iterator: object
 
         if self.quiet:
-            # Quiet mode - no progress bar
-            for idx, entry in enumerate(entries):
-                if self._interrupted:
-                    raise AudioGenerationInterrupted()
-
-                num = idx + 1
-                audio_file = f"{prefix}_{num:04d}.mp3"
-                audio_path = output_dir / audio_file
-
-                # Get text to speak:
-                # 1. Use tts_pronunciation directly if provided (skip preprocessing)
-                # 2. Fall back to pronunciation with preprocessing
-                # 3. Fall back to sentence with preprocessing
-                if entry.tts_pronunciation:
-                    tts_text = extract_furigana(entry.tts_pronunciation)
-                    use_preprocess = None  # Skip preprocessing for explicit TTS text
-                else:
-                    tts_text = entry.pronunciation if entry.pronunciation else entry.sentence
-                    use_preprocess = preprocess
-
-                # Check if cached
-                cache_path = get_audio_cache_path(
-                    tts_text, self.config.resolved_voice, self.config.language
-                )
-                was_cached = cache_path.exists() and not self.config.force
-
-                if self.generate_audio(tts_text, audio_path, use_preprocess):
-                    entry.audio_file = audio_file
-                    if was_cached:
-                        cached += 1
-                    else:
-                        generated += 1
-
-                if progress_callback:
-                    progress_callback(num, len(entries), entry.sentence[:30])
+            iterator = enumerate(entries, start=1)
         else:
-            # Interactive mode with progress bar
-            with Progress(
+            progress = Progress(
                 SpinnerColumn(),
                 TextColumn("[progress.description]{task.description}"),
                 BarColumn(),
                 TaskProgressColumn(),
                 TimeRemainingColumn(),
                 TextColumn("[cyan]{task.fields[current]}"),
-            ) as progress:
-                task = progress.add_task(
-                    "Generating audio...", total=len(entries), current=""
-                )
+            )
+            progress.start()
+            task_id = progress.add_task("Generating audio", total=total, current="")
 
-                for idx, entry in enumerate(entries):
-                    if self._interrupted:
-                        progress.stop()
-                        raise AudioGenerationInterrupted()
+            def wrap(_iter):
+                try:
+                    for pair in _iter:
+                        idx, entry = pair
+                        progress.update(task_id, current=entry.sentence[:30])
+                        yield pair
+                        progress.advance(task_id)
+                finally:
+                    progress.stop()
 
-                    num = idx + 1
-                    audio_file = f"{prefix}_{num:04d}.mp3"
-                    audio_path = output_dir / audio_file
+            iterator = wrap(enumerate(entries, start=1))
 
-                    # Get text to speak:
-                    # 1. Use tts_pronunciation directly if provided (skip preprocessing)
-                    # 2. Fall back to pronunciation with preprocessing
-                    # 3. Fall back to sentence with preprocessing
-                    if entry.tts_pronunciation:
-                        tts_text = entry.tts_pronunciation
-                        use_preprocess = None  # Skip preprocessing for explicit TTS text
-                    else:
-                        tts_text = entry.pronunciation if entry.pronunciation else entry.sentence
-                        use_preprocess = preprocess
+        for idx, entry in iterator:
+            if self._interrupted:
+                raise AudioGenerationInterrupted()
 
-                    progress.update(task, current=entry.sentence[:30])
+            text = _audio_text(entry)
+            tts_input = preprocess(text) if preprocess else text
 
-                    # Check if cached
-                    cache_path = get_audio_cache_path(
-                        tts_text, self.config.resolved_voice, self.config.language
-                    )
-                    was_cached = cache_path.exists() and not self.config.force
+            cache_path = get_audio_cache_path(tts_input, self.resolved_voice)
+            was_cached = cache_path.exists() and not self.force
 
-                    if self.generate_audio(tts_text, audio_path, use_preprocess):
-                        entry.audio_file = audio_file
-                        if was_cached:
-                            cached += 1
-                        else:
-                            generated += 1
+            audio_file = filename(idx)
+            audio_path = output_dir / audio_file
 
-                    progress.advance(task)
+            if self.generate_audio(text, audio_path, preprocess):
+                entry.audio_file = audio_file
+                if was_cached:
+                    cached += 1
+                else:
+                    generated += 1
 
         return entries, generated, cached
 
 
-def get_preprocessor(language: str):
-    """Get the appropriate text preprocessor for a language.
-
-    Returns a function that preprocesses text for TTS, or None if no
-    preprocessing is needed.
-    """
-    lang = language.lower()
-    if lang in ("japanese", "ja", "jp"):
-        from .preprocessing.japanese import preprocess_for_tts
-
-        return preprocess_for_tts
-    return None
+def list_voices() -> dict[str, str]:
+    """Return the built-in Edge TTS Japanese voices."""
+    return dict(VOICES)

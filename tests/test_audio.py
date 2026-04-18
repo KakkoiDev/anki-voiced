@@ -1,113 +1,85 @@
-"""Tests for audio generation TTS text selection logic."""
+"""Tests for audio generation (Edge TTS + cache)."""
 
-import pytest
+from pathlib import Path
+from unittest.mock import patch
 
+from anki_voiced.audio import AudioGenerator
 from anki_voiced.models import VocabEntry
 
 
-class TestTtsTextSelection:
-    """Tests for TTS text selection priority in VocabEntry."""
+class TestVoiceResolution:
+    def test_resolves_male_to_keita(self):
+        g = AudioGenerator(voice="male")
+        assert g.resolved_voice == "ja-JP-KeitaNeural"
 
-    def test_tts_pronunciation_field_exists(self):
-        """Test that VocabEntry has tts_pronunciation field."""
-        entry = VocabEntry(
-            sentence="テスト",
-            translation="Test",
-            tts_pronunciation="custom tts",
-        )
-        assert entry.tts_pronunciation == "custom tts"
+    def test_resolves_female_to_nanami(self):
+        g = AudioGenerator(voice="female")
+        assert g.resolved_voice == "ja-JP-NanamiNeural"
 
-    def test_tts_pronunciation_default_empty(self):
-        """Test that tts_pronunciation defaults to empty string."""
-        entry = VocabEntry(sentence="テスト", translation="Test")
-        assert entry.tts_pronunciation == ""
-
-    def test_all_fields_populated(self):
-        """Test entry with all pronunciation fields populated."""
-        entry = VocabEntry(
-            sentence="会議【かいぎ】です",
-            translation="It's a meeting",
-            pronunciation="かいぎです",
-            tts_pronunciation="かいぎ、です",
-        )
-        assert entry.sentence == "会議【かいぎ】です"
-        assert entry.pronunciation == "かいぎです"
-        assert entry.tts_pronunciation == "かいぎ、です"
+    def test_passes_through_voice_id(self):
+        g = AudioGenerator(voice="ja-JP-KeitaNeural")
+        assert g.resolved_voice == "ja-JP-KeitaNeural"
 
 
-class TestTtsTextSelectionLogic:
-    """Tests for the TTS text selection logic used in audio generation.
+class TestCacheLookup:
+    def test_uses_cache_when_present(self, tmp_path: Path):
+        """If the cache file exists and force=False, we should copy from cache."""
+        from anki_voiced.config import get_audio_cache_path
+        from anki_voiced.preprocessing.japanese import preprocess_for_tts
 
-    The priority is:
-    1. tts_pronunciation (if provided) - used directly, no preprocessing
-    2. pronunciation (if provided) - used with preprocessing
-    3. sentence - used with preprocessing
-    """
+        text = "テストです。"
+        voice = "ja-JP-KeitaNeural"
+        cache_path = get_audio_cache_path(preprocess_for_tts(text), voice)
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        cache_path.write_bytes(b"FAKEMP3DATA")
 
-    def get_tts_text_and_preprocess(self, entry: VocabEntry):
-        """Simulate the TTS text selection logic from audio.py."""
-        if entry.tts_pronunciation:
-            return entry.tts_pronunciation, False  # No preprocessing
-        elif entry.pronunciation:
-            return entry.pronunciation, True  # With preprocessing
-        else:
-            return entry.sentence, True  # With preprocessing
+        g = AudioGenerator(voice="male", quiet=True)
+        out = tmp_path / "out.mp3"
 
-    def test_priority_tts_pronunciation_first(self):
-        """tts_pronunciation takes priority over pronunciation and sentence."""
-        entry = VocabEntry(
-            sentence="会議【かいぎ】です",
-            pronunciation="かいぎです",
-            tts_pronunciation="かいぎ、です",
-            translation="Meeting",
-        )
-        text, needs_preprocess = self.get_tts_text_and_preprocess(entry)
-        assert text == "かいぎ、です"
-        assert needs_preprocess is False
+        with patch("anki_voiced.audio._edge_tts_save") as mocked:
+            success = g.generate_audio(text, out, preprocess=preprocess_for_tts)
+            assert success
+            assert not mocked.called  # network call skipped
+        assert out.read_bytes() == b"FAKEMP3DATA"
 
-    def test_priority_pronunciation_second(self):
-        """pronunciation used when tts_pronunciation is empty."""
-        entry = VocabEntry(
-            sentence="会議【かいぎ】です",
-            pronunciation="かいぎです",
-            tts_pronunciation="",
-            translation="Meeting",
-        )
-        text, needs_preprocess = self.get_tts_text_and_preprocess(entry)
-        assert text == "かいぎです"
-        assert needs_preprocess is True
+    def test_force_bypasses_cache(self, tmp_path: Path):
+        from anki_voiced.config import get_audio_cache_path
+        from anki_voiced.preprocessing.japanese import preprocess_for_tts
 
-    def test_priority_sentence_last(self):
-        """sentence used when both tts_pronunciation and pronunciation are empty."""
-        entry = VocabEntry(
-            sentence="会議【かいぎ】です",
-            pronunciation="",
-            tts_pronunciation="",
-            translation="Meeting",
-        )
-        text, needs_preprocess = self.get_tts_text_and_preprocess(entry)
-        assert text == "会議【かいぎ】です"
-        assert needs_preprocess is True
+        text = "こんにちは。"
+        voice = "ja-JP-KeitaNeural"
+        cache_path = get_audio_cache_path(preprocess_for_tts(text), voice)
+        cache_path.parent.mkdir(parents=True, exist_ok=True)
+        cache_path.write_bytes(b"OLDBYTES")
 
-    def test_tts_pronunciation_skips_preprocessing(self):
-        """tts_pronunciation should skip preprocessing entirely."""
-        entry = VocabEntry(
-            sentence="APIを使う",
-            tts_pronunciation="エーピーアイを、使う",
-            translation="Use the API",
-        )
-        text, needs_preprocess = self.get_tts_text_and_preprocess(entry)
-        # The text should be used as-is
-        assert text == "エーピーアイを、使う"
-        assert needs_preprocess is False
+        g = AudioGenerator(voice="male", force=True, quiet=True)
+        out = tmp_path / "out.mp3"
 
-    def test_pronunciation_with_preprocessing(self):
-        """pronunciation should go through preprocessing."""
-        entry = VocabEntry(
-            sentence="APIを使う",
-            pronunciation="APIを使う",
-            translation="Use the API",
-        )
-        text, needs_preprocess = self.get_tts_text_and_preprocess(entry)
-        assert text == "APIを使う"
-        assert needs_preprocess is True
+        async def fake_save(text, voice, path, retries=3):  # noqa: ARG001
+            Path(path).write_bytes(b"NEWBYTES")
+
+        with patch("anki_voiced.audio._edge_tts_save", side_effect=fake_save):
+            g.generate_audio(text, out, preprocess=preprocess_for_tts)
+        assert out.read_bytes() == b"NEWBYTES"
+
+
+class TestBatch:
+    def test_batch_updates_audio_filenames(self, tmp_path: Path):
+        entries = [
+            VocabEntry(sentence="一つ目。", translation="first", cloze="一つ", pronunciation="一【ひと】つ目【め】。", key_meaning="first"),
+            VocabEntry(sentence="二つ目。", translation="second", cloze="二つ", pronunciation="二【ふた】つ目【め】。", key_meaning="second"),
+        ]
+        g = AudioGenerator(voice="male", quiet=True)
+
+        async def fake_save(text, voice, path, retries=3):  # noqa: ARG001
+            Path(path).write_bytes(b"FAKEFAKEFAKEFAKE" * 100)
+
+        with patch("anki_voiced.audio._edge_tts_save", side_effect=fake_save):
+            updated, gen, cached = g.generate_batch(
+                entries,
+                tmp_path,
+                filename_fn=lambda i: f"t1_{i:03d}.mp3",
+            )
+        assert updated[0].audio_file == "t1_001.mp3"
+        assert updated[1].audio_file == "t1_002.mp3"
+        assert (tmp_path / "t1_001.mp3").exists()

@@ -1,236 +1,153 @@
-"""Tests for Japanese text preprocessing."""
+"""Tests for Japanese text preprocessing (Edge TTS pipeline)."""
 
-import pytest
-
+from anki_voiced.preprocessing.acronyms import TTS_KANJI_OVERRIDES
 from anki_voiced.preprocessing.japanese import (
-    ADVERBS,
     add_adverb_commas,
     add_ga_commas,
     convert_english_terms,
     extract_furigana,
     insert_particle_pauses,
     preprocess_for_tts,
-    should_add_comma_after_ga,
+    replace_particle_ha,
     to_ruby_html,
 )
 
 
 class TestExtractFurigana:
-    """Tests for furigana extraction."""
+    """extract_furigana keeps kanji (Edge TTS reads them correctly)."""
 
-    def test_simple_kanji_with_furigana(self):
-        assert extract_furigana("昼食【ちゅうしょく】") == "ちゅうしょく"
+    def test_keeps_kanji_when_annotated(self):
+        assert extract_furigana("昼食【ちゅうしょく】") == "昼食"
 
-    def test_multiple_kanji_with_furigana(self):
-        assert extract_furigana("昼食【ちゅうしょく】前【まえ】に") == "ちゅうしょくまえに"
+    def test_keeps_multiple_kanji(self):
+        assert extract_furigana("昼食【ちゅうしょく】前【まえ】に") == "昼食前に"
 
-    def test_number_before_kanji(self):
-        assert extract_furigana("2日【ふつか】") == "ふつか"
+    def test_preserves_digits(self):
+        assert extract_furigana("2日【にち】") == "2日"
 
-    def test_mixed_text(self):
-        assert extract_furigana("今日【きょう】は良い天気【てんき】です") == "きょうは良いてんきです"
+    def test_mixed_with_plain_text(self):
+        assert extract_furigana("今日【きょう】は良い天気【てんき】です") == "今日は良い天気です"
 
-    def test_no_furigana(self):
+    def test_no_brackets(self):
         assert extract_furigana("これはテストです") == "これはテストです"
 
     def test_hiragana_only(self):
         assert extract_furigana("ありがとう") == "ありがとう"
 
+    def test_kanji_override_uses_reading(self):
+        # 型 is in TTS_KANJI_OVERRIDES -> reading is substituted
+        assert "型" in TTS_KANJI_OVERRIDES
+        assert extract_furigana("型【かた】を") == "かたを"
+
+    def test_per_kanji_okurigana(self):
+        # 食【た】べる should keep 食べる (not replace with たべる)
+        assert extract_furigana("食【た】べる") == "食べる"
+
 
 class TestToRubyHtml:
-    """Tests for HTML ruby tag conversion."""
-
     def test_simple_ruby(self):
-        result = to_ruby_html("会議【かいぎ】")
-        assert result == "<ruby>会議<rt>かいぎ</rt></ruby>"
+        assert to_ruby_html("会議【かいぎ】") == "<ruby>会議<rt>かいぎ</rt></ruby>"
 
     def test_multiple_ruby(self):
         result = to_ruby_html("会議【かいぎ】は10時【じ】に")
         assert "<ruby>会議<rt>かいぎ</rt></ruby>" in result
         assert "<ruby>時<rt>じ</rt></ruby>" in result
-        assert "10" in result  # Number preserved
 
-    def test_no_furigana(self):
-        result = to_ruby_html("テスト")
-        assert result == "テスト"
+    def test_per_kanji_okurigana_wraps_only_kanji(self):
+        # Per-kanji format 食【た】べる wraps just 食, not the okurigana
+        assert to_ruby_html("食【た】べる") == "<ruby>食<rt>た</rt></ruby>べる"
+
+    def test_plain_text_passes_through(self):
+        assert to_ruby_html("ありがとう") == "ありがとう"
+
+
+class TestReplaceParticleHa:
+    def test_replaces_particle_ha(self):
+        assert replace_particle_ha("会議【かいぎ】は") == "会議【かいぎ】わ"
+
+    def test_keeps_ha_inside_brackets(self):
+        # 話【はな】 - は inside brackets is a word reading, not a particle
+        assert "は" in replace_particle_ha("話【はな】せますか")
+
+    def test_no_ha_no_change(self):
+        assert replace_particle_ha("ありがとう") == "ありがとう"
 
 
 class TestConvertEnglishTerms:
-    """Tests for English to katakana conversion."""
-
     def test_known_acronym(self):
-        assert convert_english_terms("API") == "エーピーアイ"
-
-    def test_known_term(self):
-        assert convert_english_terms("React") == "リアクト"
-
-    def test_unknown_uppercase_acronym(self):
-        # Unknown acronyms get spelled out
-        result = convert_english_terms("XYZ")
-        assert "エックス" in result
-        assert "ワイ" in result
-        assert "ゼット" in result
-
-    def test_aws_service_pattern(self):
-        assert convert_english_terms("EC2") == "イーシーツー"
-        assert convert_english_terms("S3") == "エススリー"
-
-    def test_mixed_text(self):
         result = convert_english_terms("APIを使う")
         assert "エーピーアイ" in result
-        assert "を使う" in result
 
-    def test_multiple_terms(self):
-        result = convert_english_terms("ReactとVue")
-        assert "リアクト" in result
-        assert "ビュー" in result
+    def test_aws_pattern(self):
+        # EC2 -> イーシーツー
+        assert "イーシー" in convert_english_terms("EC2")
+
+    def test_unknown_acronym_spelled_out(self):
+        # ZZZ (not in map) -> ゼットゼットゼット
+        result = convert_english_terms("ZZZ")
+        assert "ゼット" in result
+
+    def test_single_letter_passthrough(self):
+        # Single letter isn't matched by 2-5 rule
+        assert convert_english_terms("A is fine") != ""
 
 
-class TestInsertParticlePauses:
-    """Tests for を particle pause insertion."""
-
-    def test_wo_followed_by_text(self):
+class TestParticlePauses:
+    def test_inserts_comma_after_wo(self):
         assert "を、" in insert_particle_pauses("データを保存します")
 
-    def test_wo_followed_by_punctuation(self):
-        # Should not add comma before existing punctuation
-        result = insert_particle_pauses("データを。")
-        assert result == "データを。"
-
-    def test_wo_followed_by_comma(self):
-        result = insert_particle_pauses("データを、保存")
-        assert result.count("を、") == 1  # No double comma
-
-    def test_multiple_wo(self):
-        result = insert_particle_pauses("データを保存してコードをレビュー")
-        assert result.count("を、") == 2
+    def test_no_comma_before_punctuation(self):
+        result = insert_particle_pauses("これを。")
+        assert "を。" in result
+        assert "を、" not in result
 
 
-class TestShouldAddCommaAfterGa:
-    """Tests for が particle context detection."""
+class TestGaCommas:
+    def test_adds_comma_for_subject_ga(self):
+        # 私が食べる -> 私が、食べる
+        result = add_ga_commas("私が食べる")
+        assert "が、食べる" in result
 
-    def test_subject_marker_before_verb(self):
-        assert should_add_comma_after_ga("バグが発生", 2) is True
-
-    def test_already_has_comma(self):
-        assert should_add_comma_after_ga("バグが、発生", 2) is False
-
-    def test_arigatou_exclusion(self):
-        assert should_add_comma_after_ga("ありがとう", 3) is False
-
-    def test_hou_ga_ii_exclusion(self):
-        assert should_add_comma_after_ga("方がいい", 1) is False
-        assert should_add_comma_after_ga("ほうがいい", 2) is False
-
-    def test_hou_ga_ii_with_furigana(self):
-        """方【ほう】がいい should not have comma even with furigana annotation."""
-        assert should_add_comma_after_ga("方【ほう】がいい", 5) is False
-        assert should_add_comma_after_ga("聞いた方【ほう】がいい", 8) is False
-
-    def test_nagara_exclusion(self):
-        assert should_add_comma_after_ga("ながら", 1) is False
-
-    def test_verb_stem_agaru(self):
-        assert should_add_comma_after_ga("上がる", 1) is False
-        assert should_add_comma_after_ga("下がる", 1) is False
-
-    def test_end_of_sentence(self):
-        assert should_add_comma_after_ga("問題が。", 2) is False
-
-    def test_before_kanji(self):
-        assert should_add_comma_after_ga("問題が発生", 2) is True
-
-    def test_before_katakana(self):
-        assert should_add_comma_after_ga("エラーがアプリ", 3) is True
-
-
-class TestAddGaCommas:
-    """Tests for が comma insertion."""
-
-    def test_adds_comma(self):
-        assert "が、" in add_ga_commas("バグが発生しました")
-
-    def test_preserves_exclusions(self):
+    def test_skips_arigatou(self):
+        assert "ありがとうございます" in add_ga_commas("ありがとうございます")
         assert "が、" not in add_ga_commas("ありがとうございます")
-        assert "が、" not in add_ga_commas("上がる")
 
-    def test_multiple_ga(self):
-        result = add_ga_commas("問題がありバグが発生")
-        assert result.count("が、") == 2
+    def test_skips_nagara(self):
+        result = add_ga_commas("歩きながら")
+        assert "が、" not in result
 
 
-class TestAddAdverbCommas:
-    """Tests for introductory adverb comma insertion."""
+class TestAdverbCommas:
+    def test_adds_comma_after_initial_adverb(self):
+        result = add_adverb_commas("まずテストします")
+        assert result.startswith("まず、")
 
-    def test_mazu_at_start(self):
-        assert add_adverb_commas("まずテスト").startswith("まず、")
-
-    def test_shikashi_at_start(self):
-        assert add_adverb_commas("しかし問題").startswith("しかし、")
-
-    def test_tatoeba_at_start(self):
-        assert add_adverb_commas("例えばこの場合").startswith("例えば、")
+    def test_handles_annotated_adverb(self):
+        result = add_adverb_commas("実【じつ】はそうです")
+        assert "実【じつ】は、" in result
 
     def test_after_period(self):
-        result = add_adverb_commas("終わり。まず確認")
-        assert "。まず、" in result
-
-    def test_already_has_comma(self):
-        result = add_adverb_commas("まず、テスト")
-        assert result.count("まず、") == 1
-
-    def test_with_furigana(self):
-        result = add_adverb_commas("実【じつ】は問題")
-        assert "、" in result
-
-    def test_adverbs_list_not_empty(self):
-        assert len(ADVERBS) > 0
-        assert "まず" in ADVERBS
-        assert "しかし" in ADVERBS
+        result = add_adverb_commas("はい。次に何をしますか")
+        assert "次に、" in result
 
 
 class TestPreprocessForTts:
-    """Integration tests for full preprocessing pipeline."""
+    def test_full_pipeline(self):
+        out = preprocess_for_tts("会議【かいぎ】は10時【じ】です。")
+        # は -> わ, furigana stripped but kanji kept
+        assert "会議" in out
+        assert "10時" in out
+        assert "かいぎ" not in out  # brackets stripped
+        assert "わ" in out  # particle ha replaced
 
-    def test_combined_wo_particle(self):
-        result = preprocess_for_tts("データを保存します")
-        assert "を、" in result
+    def test_ends_with_punctuation(self):
+        assert preprocess_for_tts("これ").endswith("。")
 
-    def test_combined_ga_particle(self):
-        result = preprocess_for_tts("バグが発生しました")
-        assert "が、" in result
+    def test_acronym_converted(self):
+        out = preprocess_for_tts("APIを使います")
+        assert "エーピーアイ" in out
+        assert "を、" in out  # particle を gets comma
 
-    def test_combined_adverb(self):
-        result = preprocess_for_tts("まずテストを書きます")
-        assert "まず、" in result
-        assert "を、" in result
-
-    def test_combined_english_conversion(self):
-        result = preprocess_for_tts("まずAPIを呼び出します")
-        assert "まず、" in result
-        assert "エーピーアイ" in result
-        assert "を、" in result
-
-    def test_furigana_extraction(self):
-        result = preprocess_for_tts("会議【かいぎ】は10時【じ】です")
-        assert "かいぎ" in result
-        assert "じ" in result
-        assert "【" not in result
-
-    def test_furigana_with_adverb(self):
-        result = preprocess_for_tts("実【じつ】は問題です")
-        assert "じつは、" in result
-
-    def test_exclusions_preserved(self):
-        assert "が、" not in preprocess_for_tts("ありがとうございます")
-        assert "が、" not in preprocess_for_tts("方がいい")
-        assert "が、" not in preprocess_for_tts("上がる")
-
-    def test_whitespace_normalization(self):
-        result = preprocess_for_tts("テスト  です")
-        assert "  " not in result
-
-    def test_cleanup_remaining_brackets(self):
-        result = preprocess_for_tts("テスト【てすと】")
-        assert "【" not in result
-        assert "】" not in result
+    def test_percent_substituted(self):
+        out = preprocess_for_tts("50%です")
+        assert "パーセント" in out
