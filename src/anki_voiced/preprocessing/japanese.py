@@ -21,7 +21,7 @@ CRITICAL: The Pronunciation field serves DUAL purpose:
 
 import re
 
-from jp_core import furigana
+from jp_core import furigana, web
 
 from .acronyms import ACRONYM_MAP, LETTER_MAP, NUMBER_MAP, TTS_KANJI_OVERRIDES
 
@@ -78,7 +78,7 @@ def to_ruby_html(text: str) -> str:
       食【た】べる -> <ruby>食<rt>た</rt></ruby>べる
     Furigana appears over kanji only, never over trailing okurigana.
     """
-    return furigana.to_ruby(text)
+    return web.ruby_html(text)
 
 
 # ---------- English acronym conversion ----------
