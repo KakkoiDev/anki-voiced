@@ -25,6 +25,8 @@ The common Anki Japanese deck tools are either clunky or generic. Typical pain p
 
 `anki-voiced` ports the proven design from a production deck into a clean Python package:
 
+Its reusable Japanese primitives come from [JP Core](https://github.com/KakkoiDev/jp-core); this repository owns the deck-oriented CLI, schemas, templates, and orchestration.
+
 - **Edge TTS** (`ja-JP-KeitaNeural` / `NanamiNeural`) for natural prosody
 - **UniDic-powered pitch accent** coloring (high=green, low=red) on every key word
 - **Per-kanji furigana** format (`取【と】り組【く】む`)
