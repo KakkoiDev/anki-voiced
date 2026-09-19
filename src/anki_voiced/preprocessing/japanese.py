@@ -21,6 +21,8 @@ CRITICAL: The Pronunciation field serves DUAL purpose:
 
 import re
 
+from jp_core import furigana
+
 from .acronyms import ACRONYM_MAP, LETTER_MAP, NUMBER_MAP, TTS_KANJI_OVERRIDES
 
 # Character ranges
@@ -66,16 +68,7 @@ def extract_furigana(text: str) -> str:
     reading instead of being kept, because Edge TTS misreads them.
     E.g. 型【かた】 -> かた (since TTS reads 型 as がた).
     """
-    # [digits][kanji]【reading】 -> [digits]kanji (or [digits]reading if override)
-    pattern = rf"([0-9]*)([{_KANJI}]+)【([^】]+)】"
-
-    def keep_kanji_or_override(match):
-        digits, kanji, reading = match.group(1), match.group(2), match.group(3)
-        if kanji in TTS_KANJI_OVERRIDES:
-            return digits + reading
-        return digits + kanji
-
-    return re.sub(pattern, keep_kanji_or_override, text)
+    return furigana.keep_base(text, overrides=TTS_KANJI_OVERRIDES)
 
 
 def to_ruby_html(text: str) -> str:
@@ -85,11 +78,7 @@ def to_ruby_html(text: str) -> str:
       食【た】べる -> <ruby>食<rt>た</rt></ruby>べる
     Furigana appears over kanji only, never over trailing okurigana.
     """
-    return re.sub(
-        rf"([{_KANJI}]+)【([^】]+)】",
-        r"<ruby>\1<rt>\2</rt></ruby>",
-        text,
-    )
+    return furigana.to_ruby(text)
 
 
 # ---------- English acronym conversion ----------
