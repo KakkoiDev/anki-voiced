@@ -175,7 +175,7 @@ requires-dist = [
     { name = "edge-tts", specifier = ">=6.1.0" },
     { name = "fugashi", specifier = ">=1.5.2" },
     { name = "genanki", specifier = ">=0.13.1" },
-    { name = "jp-core", git = "https://github.com/KakkoiDev/jp-core.git?rev=ac0b2bf56e058e6d93b5c7413f76b9f4dbfd026f" },
+    { name = "jp-core", git = "https://github.com/KakkoiDev/jp-core.git?rev=211c0b079bbc18925b3ba2976f78c74b15cf1cc7" },
     { name = "pydantic", specifier = ">=2.0.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.0.0" },
     { name = "pytest-asyncio", marker = "extra == 'dev'", specifier = ">=0.23.0" },
@@ -757,8 +757,8 @@ wheels = [
 
 [[package]]
 name = "jp-core"
-version = "0.1.0"
-source = { git = "https://github.com/KakkoiDev/jp-core.git?rev=ac0b2bf56e058e6d93b5c7413f76b9f4dbfd026f#ac0b2bf56e058e6d93b5c7413f76b9f4dbfd026f" }
+version = "0.2.0"
+source = { git = "https://github.com/KakkoiDev/jp-core.git?rev=211c0b079bbc18925b3ba2976f78c74b15cf1cc7#211c0b079bbc18925b3ba2976f78c74b15cf1cc7" }
 dependencies = [
     { name = "genanki" },
     { name = "tomli", marker = "python_full_version < '3.11'" },
