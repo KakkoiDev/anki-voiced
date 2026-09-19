@@ -21,7 +21,7 @@ classifiers = [
     "Topic :: Multimedia :: Sound/Audio :: Speech",
 ]
 dependencies = [
-  "jp-core @ git+https://github.com/KakkoiDev/jp-core.git@ac0b2bf56e058e6d93b5c7413f76b9f4dbfd026f",
+  "jp-core @ git+https://github.com/KakkoiDev/jp-core.git@211c0b079bbc18925b3ba2976f78c74b15cf1cc7",
     "genanki>=0.13.1",
     "edge-tts>=6.1.0",
     "typer>=0.15.0",
